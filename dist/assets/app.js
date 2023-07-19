@@ -61,6 +61,7 @@ function swiperInit() {
 window.addEventListener('DOMContentLoaded', function () {
   swiperInit();
 });
+window.addEventListener('load', function () {});
 
 /***/ })
 
