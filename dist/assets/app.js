@@ -48,6 +48,13 @@ function swiperInit() {
             spaceBetween: 20
           });
           break;
+        case 'recipes':
+          slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
+            modules: [modules/* Navigation */.W_],
+            slidesPerView: 3,
+            spaceBetween: 20
+          });
+          break;
         default:
           break;
       }
