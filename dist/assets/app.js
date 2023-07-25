@@ -33,13 +33,17 @@ function swiperInit() {
       switch (slider_id) {
         case 'main':
           slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
-            modules: [modules/* Navigation */.W_, modules/* Pagination */.tl],
+            modules: [modules/* Navigation */.W_, modules/* Pagination */.tl, modules/* Parallax */.VS],
             loop: true,
             autoHeight: true,
             pagination: {
               el: "[data-swiper-pagination=".concat(slider_id, "]"),
               type: 'bullets'
-            }
+            },
+            breakpoints: _defineProperty({}, 1024, {
+              parallax: true,
+              speed: 1500
+            })
           });
           break;
         case 'products':
@@ -67,7 +71,16 @@ function swiperInit() {
         default:
           break;
       }
-      new swiper/* default */.Z("[data-slider-id=\"".concat(slider_id, "\"]"), slider_options);
+      var slider_el = new swiper/* default */.Z("[data-slider-id=\"".concat(slider_id, "\"]"), slider_options);
+      if (slider_id === 'main' && window.matchMedia('(min-width: 1024px)').matches) {
+        slider_el.on('slideChange', function () {
+          setTimeout(function () {
+            var _document$querySelect, _document$querySelect2;
+            (_document$querySelect = document.querySelector('.main-slider-slide.swiper-slide-active')) === null || _document$querySelect === void 0 || (_document$querySelect = _document$querySelect.querySelector('[data-for-parallax]')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.setAttribute('data-swiper-parallax', '30%');
+            (_document$querySelect2 = document.querySelector('.main-slider-slide.swiper-slide-prev')) === null || _document$querySelect2 === void 0 || (_document$querySelect2 = _document$querySelect2.querySelector('[data-for-parallax]')) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.setAttribute('data-swiper-parallax', '');
+          });
+        });
+      }
     });
   }
 }

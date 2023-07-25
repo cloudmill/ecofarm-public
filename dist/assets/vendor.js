@@ -8,10 +8,11 @@
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   W_: () => (/* reexport */ Navigation),
-  tl: () => (/* reexport */ Pagination)
+  tl: () => (/* reexport */ Pagination),
+  VS: () => (/* reexport */ Parallax)
 });
 
-// UNUSED EXPORTS: A11y, Autoplay, Controller, EffectCards, EffectCoverflow, EffectCreative, EffectCube, EffectFade, EffectFlip, FreeMode, Grid, HashNavigation, History, Keyboard, Manipulation, Mousewheel, Parallax, Scrollbar, Thumbs, Virtual, Zoom
+// UNUSED EXPORTS: A11y, Autoplay, Controller, EffectCards, EffectCoverflow, EffectCreative, EffectCube, EffectFade, EffectFlip, FreeMode, Grid, HashNavigation, History, Keyboard, Manipulation, Mousewheel, Scrollbar, Thumbs, Virtual, Zoom
 
 // EXTERNAL MODULE: ../node_modules/swiper/shared/ssr-window.esm.mjs
 var ssr_window_esm = __webpack_require__(882);
@@ -1964,7 +1965,7 @@ function Parallax(_ref) {
       progress,
       snapGrid
     } = swiper;
-    elementChildren(el, '[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').forEach(subEl => {
+    (0,utils.e)(el, '[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').forEach(subEl => {
       setTransform(subEl, progress);
     });
     slides.forEach((slideEl, slideIndex) => {
