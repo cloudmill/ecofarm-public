@@ -35,6 +35,7 @@ function swiperInit() {
           slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
             modules: [modules/* Navigation */.W_, modules/* Pagination */.tl],
             loop: true,
+            autoHeight: true,
             pagination: {
               el: "[data-swiper-pagination=".concat(slider_id, "]"),
               type: 'bullets'
@@ -44,15 +45,23 @@ function swiperInit() {
         case 'products':
           slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
             modules: [modules/* Navigation */.W_],
-            slidesPerView: 6,
-            spaceBetween: 20
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+            breakpoints: _defineProperty({}, 1024, {
+              slidesPerView: 6,
+              spaceBetween: 20
+            })
           });
           break;
         case 'recipes':
           slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
             modules: [modules/* Navigation */.W_],
-            slidesPerView: 3,
-            spaceBetween: 20
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+            breakpoints: _defineProperty({}, 1024, {
+              slidesPerView: 3,
+              spaceBetween: 20
+            })
           });
           break;
         default:
@@ -66,9 +75,15 @@ function swiperInit() {
 
 
 window.addEventListener('DOMContentLoaded', function () {
-  swiperInit();
+  if (!document.querySelector('[data-slider-id=main]')) {
+    swiperInit();
+  }
 });
-window.addEventListener('load', function () {});
+window.addEventListener('load', function () {
+  if (document.querySelector('[data-slider-id=main]')) {
+    swiperInit();
+  }
+});
 
 /***/ })
 
