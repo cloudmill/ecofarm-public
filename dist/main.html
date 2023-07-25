@@ -82,7 +82,7 @@
 						<div class="swiper main-slider__container" data-slider-id="main">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide main-slider-slide">
-									<div data-for-parallax data-swiper-parallax="30%">
+									<div data-for-parallax>
 										<picture class="main-slider-slide__bg">
 											<source srcset="assets/images/main-slide-1-tablet.avif" type="image/avif" media="(max-width: 1023px)">
 											<source srcset="assets/images/main-slide-1-tablet.webp" type="image/webp" media="(max-width: 1023px)">
@@ -646,57 +646,69 @@
 							</picture>
 							<div class="categories-section__title">Праздничные<br>блюда</div>
 						</a></section>
-					<section class="chick">
-						<picture class="chick__img">
-							<source srcset="assets/images/chick.avif" type="image/avif">
-							<source srcset="assets/images/chick.webp" type="image/webp"><img src="assets/images/chick.png" alt="" loading="lazy">
-						</picture>
-						<h2 class="h1 bitter-heading chick__title">Деревенская еда<br><span>с фермы Евгения Рошаля</span><br>и Краснодарских ферм</h2>
-						<div class="chick-list">
-							<div class="chick-list__item">
-								<div class="chick-list__item-ico"><img class="chick-list__item-ico-1" src="assets/images/svg/chick-list-1.svg" alt=""></div>
-								<div class="chick-list__item-text">Каждую неделю привозим<br>свежие продукты с ферм</div>
+				</div>
+				<section class="chick">
+					<picture class="chick__img only-desktop">
+						<source srcset="assets/images/chick.avif" type="image/avif">
+						<source srcset="assets/images/chick.webp" type="image/webp"><img src="assets/images/chick.png" alt="" loading="lazy">
+					</picture>
+					<h2 class="h1 h1--chick bitter-heading chick__title">Деревенская еда<br><span>с фермы Евгения Рошаля</span><br>и Краснодарских ферм</h2>
+					<div class="chick-list">
+						<div class="chick-list__item">
+							<div class="chick-list__item-ico">
+								<picture class="chick-list__item-ico-1">
+									<source srcset="assets/images/svg/chick-list-1-mob.svg" media="(max-width: 1023px)"><img src="assets/images/svg/chick-list-1.svg" alt="">
+								</picture>
 							</div>
-							<div class="chick-list__item">
-								<div class="chick-list__item-ico"><img class="chick-list__item-ico-2" src="assets/images/svg/chick-list-2.svg" alt=""></div>
-								<div class="chick-list__item-text"><span>6 дней в неделю</span><br>доставляем по Москве<br>и Московской области</div>
+							<div class="chick-list__item-text">Каждую неделю<br class="only-mobile">привозим<br class="only-desktop">свежие<br class="only-mobile">продукты с ферм</div>
+						</div>
+						<div class="chick-list__item">
+							<div class="chick-list__item-ico"><img class="chick-list__item-ico-2" src="assets/images/svg/chick-list-2.svg" alt=""></div>
+							<div class="chick-list__item-text"><span>6 дней в неделю</span><br>доставляем по Москве<br>и Московской области</div>
+						</div>
+					</div>
+					<div class="chick-cards">
+						<div class="chick-cards__item">
+							<div class="chick-cards__item-top">
+								<picture class="chick-cards__item-img">
+									<source srcset="assets/images/chick-card-1.avif" type="image/avif">
+									<source srcset="assets/images/chick-card-1.webp" type="image/webp"><img src="assets/images/chick-card-1.jpg" alt loading="eager">
+								</picture>
+							</div>
+							<div class="chick-cards__item-bottom">
+								<div class="h3 bitter-heading">Выращиваем с 2012 года</div>
+								<div class="chick-cards__item-text">Производим экологически чистую продукцию, которую едим сами<br>и предлагаем всем нашим друзьям и близким</div><button class="button button--red">Больше о нас</button>
 							</div>
 						</div>
-						<div class="chick-cards">
-							<div class="chick-cards__item">
-								<div class="chick-cards__item-top">
-									<picture class="chick-cards__item-img">
-										<source srcset="assets/images/chick-card-1.avif" type="image/avif">
-										<source srcset="assets/images/chick-card-1.webp" type="image/webp"><img src="assets/images/chick-card-1.jpg" alt loading="eager">
-									</picture>
-								</div>
-								<div class="chick-cards__item-bottom">
-									<div class="h3 bitter-heading">Выращиваем с 2012 года</div>
-									<div class="chick-cards__item-text">Производим экологически чистую продукцию, которую едим сами<br>и предлагаем всем нашим друзьям и близким</div><button class="button button--red">Больше о нас</button>
-								</div>
+						<div class="chick-cards__item">
+							<div class="chick-cards__item-top">
+								<picture class="chick-cards__item-img">
+									<source srcset="assets/images/chick-card-2.avif" type="image/avif">
+									<source srcset="assets/images/chick-card-2.webp" type="image/webp"><img src="assets/images/chick-card-2.jpg" alt loading="eager">
+								</picture>
 							</div>
-							<div class="chick-cards__item">
-								<div class="chick-cards__item-top">
-									<picture class="chick-cards__item-img">
-										<source srcset="assets/images/chick-card-2.avif" type="image/avif">
-										<source srcset="assets/images/chick-card-2.webp" type="image/webp"><img src="assets/images/chick-card-2.jpg" alt loading="eager">
-									</picture>
-								</div>
-								<div class="chick-cards__item-bottom">
-									<div class="h3 bitter-heading">Не изменяем традициям<br>и качеству</div>
-									<div class="chick-cards__item-text">У нас все свое — корм, трава, вода и даже солнце</div><button class="button button--red">Покупателям</button>
-								</div>
+							<div class="chick-cards__item-bottom">
+								<div class="h3 bitter-heading">Не изменяем традициям<br>и качеству</div>
+								<div class="chick-cards__item-text">У нас все свое — корм, трава, вода и даже солнце</div><button class="button button--red">Покупателям</button>
 							</div>
 						</div>
-					</section>
+					</div>
+				</section>
+				<div class="container">
 					<section class="partners-section main-section">
 						<picture class="partners-section__bg">
+							<source srcset="assets/images/partners-bg-mob.avif" type="image/avif" media="(max-width: 767px)">
+							<source srcset="assets/images/partners-bg-mob.webp" type="image/webp" media="(max-width: 767px)">
+							<source srcset="assets/images/partners-bg-mob.jpg" type="image/jpeg" media="(max-width: 767px)">
+							<source srcset="assets/images/partners-bg-tablet.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1023px)">
+							<source srcset="assets/images/partners-bg-tablet.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1023px)">
+							<source srcset="assets/images/partners-bg-tablet.jpg" type="image/jpeg" media="(min-width: 768px) and (max-width: 1023px)">
 							<source srcset="assets/images/partners-bg.avif" type="image/avif">
 							<source srcset="assets/images/partners-bg.webp" type="image/webp"><img src="assets/images/partners-bg.jpg" alt loading="lazy">
 						</picture>
 						<div class="partners-section__content">
-							<div class="h1 bitter-heading">Станьте нашим<br>партнером</div>
-							<div class="partners-section__text">Мы работаем с множеством фермеров и нашу продукцию<br>можно найти практически на всех рынках Москвы<br>и популярных маркетплейсах России</div><button class="button button--red">Присоединиться к нам</button>
+							<div class="h1 h1--small bitter-heading">Станьте нашим<br>партнером</div>
+							<div class="partners-section__text">Мы работаем с множеством фермеров<br class="only-mobile">и нашу продукцию<br class="only-desktop">можно найти<br class="only-mobile">практически на всех рынках Москвы<br>и популярных маркетплейсах России</div><button class="button button--red">Присоединиться к нам</button>
 						</div>
 					</section>
 					<section class="main-section recipes">
