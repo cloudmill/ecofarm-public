@@ -9106,7 +9106,7 @@ function fancyboxInit() {
   buttons.forEach(function (button) {
     var id = button.getAttribute('data-fancy-button');
     button === null || button === void 0 ? void 0 : button.addEventListener('click', function () {
-      console.log('CLIIICK');
+      // console.log('CLIIICK', id)
 
       // @ts-ignore
       _t.show([{
@@ -13545,19 +13545,23 @@ var dist_tippy = __webpack_require__(527);
 ;// CONCATENATED MODULE: ./scripts/catalog-menu.js
 /* provided dependency */ var catalog_menu_$ = __webpack_require__(638);
 function catalogMenu() {
-  catalog_menu_$('[data-menu-button]').on('click', function () {
+  catalog_menu_$('[data-menu-button]').on('mouseenter', function () {
     var id = this.getAttribute('data-menu-button');
     if (catalog_menu_$(this).hasClass('active')) {
       catalog_menu_$("[data-menu]").css('display', 'none');
       catalog_menu_$(this).removeClass('active');
+      catalog_menu_$("[data-menu-sub]").css('display', 'none');
+      catalog_menu_$('[data-menu-button-sub]').removeClass('active');
     } else {
       catalog_menu_$("[data-menu]").css('display', 'none');
       catalog_menu_$("[data-menu=\"".concat(id, "\"]")).toggle('slide');
       catalog_menu_$('[data-menu-button]').removeClass('active');
       catalog_menu_$(this).addClass('active');
+      catalog_menu_$("[data-menu-sub]").css('display', 'none');
+      catalog_menu_$('[data-menu-button-sub]').removeClass('active');
     }
   });
-  catalog_menu_$('[data-menu-button-sub]').on('click', function () {
+  catalog_menu_$('[data-menu-button-sub]').on('mouseenter', function () {
     var id = this.getAttribute('data-menu-button-sub');
     if (catalog_menu_$(this).hasClass('active')) {
       catalog_menu_$("[data-menu-sub]").css('display', 'none');
