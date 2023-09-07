@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 876:
+/***/ 457:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13604,8 +13604,16 @@ function tooltip() {
     }
   });
 }
+;// CONCATENATED MODULE: ./scripts/dropdown.js
+/* provided dependency */ var dropdown_$ = __webpack_require__(638);
+function dropdown() {
+  dropdown_$('[data-dropdown-button]').on('click', function () {
+    dropdown_$(this).closest('[data-dropdown]').toggleClass('active');
+    dropdown_$(this).closest('[data-dropdown]').find('[data-dropdown-drop]').slideToggle();
+  });
+}
 ;// CONCATENATED MODULE: ./app.js
-/* provided dependency */ var app_$ = __webpack_require__(638);
+
 
 
 
@@ -13614,6 +13622,9 @@ function tooltip() {
 window.addEventListener('DOMContentLoaded', function () {
   fancyboxInit();
   tooltip();
+  dropdown();
+
+  // на главной свайпер за пускается по load
   if (!document.querySelector('[data-slider-id=main]')) {
     swiperInit();
   }
@@ -13625,10 +13636,6 @@ window.addEventListener('DOMContentLoaded', function () {
       document.querySelector('[data-search]').value = '';
     });
   }
-  app_$('[data-dropdown-button]').on('click', function () {
-    app_$(this).closest('[data-dropdown]').toggleClass('active');
-    app_$(this).closest('[data-dropdown]').find('[data-dropdown-drop]').slideToggle();
-  });
   document.querySelector('[data-insert-script]').innerText = "function cityChoose(name) {document.querySelector('[data-cities-drop-inner]').innerText = name}";
 });
 window.addEventListener('load', function () {
@@ -30223,7 +30230,7 @@ return jQuery;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [407,532], () => (__webpack_require__(876)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [407,532], () => (__webpack_require__(457)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

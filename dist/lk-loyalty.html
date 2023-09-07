@@ -385,61 +385,127 @@
 			</header>
 			<main class="main">
 				<div class="container">
-					<div class="clients-tabs lk-top">
-						<div class="clients-tabs__link active">Заказы</div><a class="clients-tabs__link" href="">Программа лояльности</a><a class="clients-tabs__link" href="">Реферальная программа</a><a class="clients-tabs__link" href="">Адреса доставки</a><a class="clients-tabs__link" href="">Профиль</a><button class="clients-tabs__link lk-top__exit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="lk-top">
+						<div class="lk-top__list"><a class="clients-tabs__link" href="">Заказы</a>
+							<div class="clients-tabs__link active">Программа лояльности</div><a class="clients-tabs__link" href="">Реферальная программа</a><a class="clients-tabs__link" href="">Адреса доставки</a><a class="clients-tabs__link" href="">Профиль</a>
+						</div><button class="clients-tabs__link lk-top__exit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M15.0001 12H3.62012" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg><span>Выйти из аккаунта</span></button>
 					</div>
-					<h1 class="h1 h1--small bitter-heading">Заказы</h1>
-					<div class="orders">
-						<div class="dropdown" data-dropdown>
-							<div class="dropdown__button order1" data-dropdown-button>
-								<div>
-									<div class="dropdown__title">Заказ №323</div>
-									<div class="dropdown__note">24 июня 2023, 18:35</div>
+					<h1 class="h1 h1--small bitter-heading">Программа лояльности</h1>
+					<div class="loyalty-page">
+						<div class="loyalty-levels">
+							<h2 class="h3 bitter-heading loyalty-levels__title">Накапливайте скидки</h2>
+							<div class="loyalty-levels__text">Скидку постоянного покупателя можно получить уже со второго заказа.<br>Размер скидки определяется одним из показателей: <b>суммой всех заказов<br class="only-desktop">или количеством заказов.</b></div>
+							<div class="loyalty-levels__row">
+								<div class="loyalty-levels__info only-desktop">
+									<div class="loyalty-levels__info-txt">Размер скидки</div>
+									<div class="loyalty-levels__info-italic">Одно из условий<br>получения скидки</div>
+									<div class="loyalty-levels__info-bold">Сумма заказов</div>
+									<div class="loyalty-levels__info-bold">Количество заказов</div>
 								</div>
-								<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-								<div class="dropdown__title bold">23 800₽</div>
-								<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
-									</svg></div>
-							</div>
-							<div class="dropdown__drop" data-dropdown-drop>
-								<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+								<div class="loyalty-levels__list">
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-0.svg" alt=""><span>1 000 ₽</span><span>1</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-1.svg" alt=""><span>10 000 ₽</span><span>2</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-2.svg" alt=""><span>20 000 ₽</span><span>5</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-3.svg" alt=""><span>30 000 ₽</span><span>8</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-4.svg" alt=""><span>50 000 ₽</span><span>10</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-5.svg" alt=""><span>60 000 ₽</span><span>Любое</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-6.svg" alt=""><span>70 000 ₽</span><span>Любое</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-7.svg" alt=""><span>80 000 ₽</span><span>Любое</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-8.svg" alt=""><span>90 000 ₽</span><span>Любое</span></div>
+									<div class="loyalty-levels__card"><img src="assets/images/svg/loyalty-9.svg" alt=""><span>&lt;100 000 ₽</span><span>Любое</span></div>
+								</div>
 							</div>
 						</div>
-						<div class="dropdown" data-dropdown>
-							<div class="dropdown__button order1" data-dropdown-button>
-								<div>
-									<div class="dropdown__title">Заказ №323</div>
-									<div class="dropdown__note">24 июня 2023, 18:35</div>
-								</div>
-								<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-								<div class="dropdown__title bold">23 800₽</div>
-								<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
-									</svg></div>
+						<div class="loyalty-cards">
+							<div class="loyalty-cards-item">
+								<div class="loyalty-cards-item__ttl">Ваша скидка</div>
+								<div class="loyalty-cards-item__value green">3%</div>
 							</div>
-							<div class="dropdown__drop" data-dropdown-drop>
-								<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+							<div class="loyalty-cards-item">
+								<div class="loyalty-cards-item__ttl">Сумма покупок</div>
+								<div class="loyalty-cards-item__value">12 340₽</div>
+							</div>
+							<div class="loyalty-cards-item">
+								<div class="loyalty-cards-item__ttl">Количество заказов</div>
+								<div class="loyalty-cards-item__value">7</div>
 							</div>
 						</div>
-						<div class="dropdown" data-dropdown>
-							<div class="dropdown__button order1" data-dropdown-button>
+						<h2 class="bitter-heading h2 loyalty-page__ttl">Доступные промокоды</h2>
+						<div class="loyalty-page__list">
+							<div class="promocode-card">
 								<div>
-									<div class="dropdown__title">Заказ №323</div>
-									<div class="dropdown__note">24 июня 2023, 18:35</div>
+									<div class="promocode-card__title">Скидка 500₽</div>
+									<div class="promocode-card__date">Действует до 31.03.2023</div>
 								</div>
-								<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-								<div class="dropdown__title bold">23 800₽</div>
-								<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+								<div class="promocode-card__code"><span>327E532</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg></div>
 							</div>
-							<div class="dropdown__drop" data-dropdown-drop>
-								<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+							<div class="promocode-card">
+								<div>
+									<div class="promocode-card__title">Бесплатная доставка</div>
+									<div class="promocode-card__date">Действует до 31.03.2023</div>
+								</div>
+								<div class="promocode-card__code"><span>327E532</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+							</div>
+						</div>
+						<h2 class="bitter-heading h2 loyalty-page__ttl">Завершенные заказы</h2>
+						<div class="loyalty-page__list">
+							<div class="dropdown" data-dropdown>
+								<div class="dropdown__button order1" data-dropdown-button>
+									<div>
+										<div class="dropdown__title">Заказ №323</div>
+										<div class="dropdown__note">24 июня 2023, 18:35</div>
+									</div>
+									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
+									<div class="dropdown__title bold">23 800₽</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+										</svg></div>
+								</div>
+								<div class="dropdown__drop" data-dropdown-drop>
+									<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+								</div>
+							</div>
+							<div class="dropdown" data-dropdown>
+								<div class="dropdown__button order1" data-dropdown-button>
+									<div>
+										<div class="dropdown__title">Заказ №323</div>
+										<div class="dropdown__note">24 июня 2023, 18:35</div>
+									</div>
+									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
+									<div class="dropdown__title bold">23 800₽</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+										</svg></div>
+								</div>
+								<div class="dropdown__drop" data-dropdown-drop>
+									<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+								</div>
+							</div>
+							<div class="dropdown" data-dropdown>
+								<div class="dropdown__button order1" data-dropdown-button>
+									<div>
+										<div class="dropdown__title">Заказ №323</div>
+										<div class="dropdown__note">24 июня 2023, 18:35</div>
+									</div>
+									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
+									<div class="dropdown__title bold">23 800₽</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+										</svg></div>
+								</div>
+								<div class="dropdown__drop" data-dropdown-drop>
+									<div class="faq-item__drop-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod unde recusandae consequatur odit magnam, sit impedit velit asperiores. Commodi maxime ullam recusandae aut, id reprehenderit nihil labore corrupti ut.</div>
+								</div>
 							</div>
 						</div>
 					</div>
