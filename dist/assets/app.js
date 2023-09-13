@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 457:
+/***/ 355:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9036,7 +9036,7 @@ function swiperInit() {
         case 'main':
           slider_options = _objectSpread(_objectSpread({}, slider_options), {}, {
             modules: [Navigation, Pagination, Parallax],
-            // loop: true,
+            loop: true,
             autoHeight: true,
             parallax: true,
             speed: 500,
@@ -13612,7 +13612,23 @@ function dropdown() {
     dropdown_$(this).closest('[data-dropdown]').find('[data-dropdown-drop]').slideToggle();
   });
 }
+;// CONCATENATED MODULE: ./scripts/tabs.js
+function tabs() {
+  var panels = document.querySelectorAll('[data-tabs-panel]');
+  panels.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      var activeTab = e.target.closest('[data-tab]');
+      var activePanel = e.target.closest('[data-tabs-panel]');
+      var oldActiveTab = activePanel.querySelector('[data-tab].active');
+      if (activeTab) {
+        oldActiveTab.classList.remove('active');
+        activeTab.classList.add('active');
+      }
+    });
+  });
+}
 ;// CONCATENATED MODULE: ./app.js
+
 
 
 
@@ -13623,6 +13639,7 @@ window.addEventListener('DOMContentLoaded', function () {
   fancyboxInit();
   tooltip();
   dropdown();
+  tabs();
 
   // на главной свайпер за пускается по load
   if (!document.querySelector('[data-slider-id=main]')) {
@@ -30230,7 +30247,7 @@ return jQuery;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [407,532], () => (__webpack_require__(457)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [407,532], () => (__webpack_require__(355)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

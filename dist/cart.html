@@ -386,87 +386,197 @@
 			</header>
 			<main class="main">
 				<div class="container">
-					<div class="lk-top">
-						<div class="lk-top__list"><a class="tabs__item" href="">Заказы</a><a class="tabs__item" href="">Программа лояльности</a>
-							<div class="tabs__item active">Реферальная программа</div><a class="tabs__item" href="">Адреса доставки</a><a class="tabs__item" href="">Профиль</a>
-						</div><button class="clients-tabs__link lk-top__exit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M15.0001 12H3.62012" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg><span>Выйти из аккаунта</span></button>
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+							<li class="breadcrumbs__item">
+								<div class="breadcrumbs__text">Корзина</div>
+							</li>
+						</ul>
 					</div>
-					<h1 class="h1 h1--small bitter-heading">Реферальная программа</h1>
-					<div class="referal">
-						<div class="referal-main">
-							<div class="referal-main-top">
-								<div class="referal-main-top__item">
-									<div class="referal-main-top__item-ttl">Пригласить друга</div>
-									<div class="referal-main-top__item-link"><span>gurmanych.ru/registr&id324</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></div>
-									<div class="referal-main-top__item-note">Отправьте ссылку другу и он станет<br>вашим рефером</div>
+					<div class="cart-page">
+						<div class="cart-page__col">
+							<div class="cart-block">
+								<h2 class="cart-page__ttl bitter-heading">Ваши данные</h2><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required><span class="form-placeholder">Телефон*</span></label>
+							</div>
+							<div class="cart-block">
+								<h2 class="cart-page__ttl bitter-heading">Способ получения</h2>
+								<div class="delivery-tabs">
+									<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab>Доставка</button><button class="tabs__item" data-tab>Самовывоз</button></div><a class="delivery-tabs__link" href=""><span>Условия доставки</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.7839 13.7386C19.7048 12.9411 19.7048 11.5124 18.7839 10.7149L14.839 7.29847C13.5437 6.17672 11.5297 7.09683 11.5297 8.81033L11.5297 15.6432C11.5297 17.3567 13.5437 18.2768 14.839 17.155L18.7839 13.7386Z" fill="#14362A"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5293 12.2267C3.5293 11.8369 3.84533 11.5208 4.23518 11.5208L11.9999 11.5208C12.3897 11.5208 12.7058 11.8369 12.7058 12.2267C12.7058 12.6166 12.3897 12.9326 11.9999 12.9326L4.23518 12.9326C3.84533 12.9326 3.5293 12.6166 3.5293 12.2267Z" fill="#14362A"></path>
+										</svg></a>
+								</div><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Город</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Улица*</span></label>
+								<div class="row-3-inputs"><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Квартира</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Подъезд</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Этаж</span></label></div>
+							</div>
+							<div class="cart-block">
+								<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+								<div class="cart-delivery-error"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.9994 21.41H5.93944C2.46944 21.41 1.01944 18.93 2.69944 15.9L5.81944 10.28L8.75944 5C10.5394 1.79 13.4594 1.79 15.2394 5L18.1794 10.29L21.2994 15.91C22.9794 18.94 21.5194 21.42 18.0594 21.42H11.9994V21.41Z" fill="#E94C4D"></path>
+										<path d="M12 9V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M11.9941 17H12.0031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg><span>Выберите адрес доставки, чтобы узнать стоимость</span></div>
+							</div>
+							<div class="cart-block">
+								<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+								<div class="cart-delivery-result">490₽</div>
+							</div>
+							<div class="cart-block">
+								<h3 class="h4 bitter-heading">Дата доставки</h3>
+								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>07.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>По согласованию</span></label></div>
+							</div>
+							<div class="cart-block">
+								<h3 class="h4 bitter-heading">Удобный интервал доставки</h3>
+								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>9:00–14:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>14:00–18:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>18:00–22:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>По согласованию</span></label></div>
+							</div>
+							<div class="cart-block">
+								<h3 class="h4 bitter-heading">Способ оплаты</h3>
+								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Курьеру наличными</span></label><label class="cart-radio-item"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Курьеру картой</span></label></div>
+							</div><label class="form-label cart-comment only-mobile"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
+						</div>
+						<div class="cart-page__col">
+							<div class="cart-page__top">
+								<h1 class="cart-page__ttl bitter-heading">Корзина</h1><button class="cart-page__clear"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+										<path opacity="0.4" d="M16.6435 7.48844C16.6435 7.55644 16.1105 14.2972 15.8061 17.1341C15.6155 18.875 14.4932 19.931 12.8097 19.961C11.5162 19.99 10.2499 20 9.00407 20C7.68139 20 6.3879 19.99 5.13233 19.961C3.50525 19.922 2.38196 18.845 2.20106 17.1341C1.8879 14.2872 1.36467 7.55644 1.35494 7.48844C1.34522 7.28345 1.41135 7.08846 1.54556 6.93046C1.67783 6.78447 1.86845 6.69647 2.06879 6.69647H15.9393C16.1387 6.69647 16.3196 6.78447 16.4626 6.93046C16.5958 7.08846 16.6629 7.28345 16.6435 7.48844Z" fill="#65897C"></path>
+										<path d="M18 3.97686C18 3.56588 17.6761 3.24389 17.2871 3.24389H14.3714C13.7781 3.24389 13.2627 2.8219 13.1304 2.22692L12.967 1.49795C12.7385 0.616978 11.9498 0 11.0647 0H6.93624C6.0415 0 5.26054 0.616978 5.02323 1.54595L4.87054 2.22792C4.7373 2.8219 4.22185 3.24389 3.62957 3.24389H0.713853C0.32386 3.24389 0 3.56588 0 3.97686V4.35685C0 4.75783 0.32386 5.08982 0.713853 5.08982H17.2871C17.6761 5.08982 18 4.75783 18 4.35685V3.97686Z" fill="#65897C"></path>
+									</svg><span>Удалить все</span></button>
+							</div>
+							<div>
+								<div class="cart-card"><img class="cart-card__img" src="assets/images/cart-card.jpg" alt="">
+									<div>
+										<div class="cart-card__title">Утиные окорочка</div>
+										<div class="cart-card__price"><b>378₽</b><span class="old">560₽</span><span>/шт</span><span>/2 кг</span></div>
+										<div class="cart-card__code">Артикул: 774706</div>
+									</div>
+									<div class="cart-card__last">
+										<div class="counter"><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+											<div class="counter__result">12</div><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14 21V7" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+										</div><button class="cart-card__delete"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.05029 9.05023L18.9498 18.9497" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M9.05021 18.9497L18.9497 9.05023" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></button>
+										<div class="cart-card__final">5 670₽</div>
+									</div>
 								</div>
-								<div class="referal-main-top__item">
-									<div class="referal-main-top__item-ttl">Бонусы</div>
-									<div class="referal-main-top__item-num">1 345₽</div>
-									<div class="referal-main-top__item-note">Доступно для списания</div>
+								<div class="cart-card"><img class="cart-card__img" src="assets/images/cart-card.jpg" alt="">
+									<div>
+										<div class="cart-card__title">Утиные окорочка</div>
+										<div class="cart-card__price"><b>378₽</b><span class="old">560₽</span><span>/шт</span><span>/2 кг</span></div>
+										<div class="cart-card__code">Артикул: 774706</div>
+									</div>
+									<div class="cart-card__last">
+										<div class="counter"><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+											<div class="counter__result">12</div><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14 21V7" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+										</div><button class="cart-card__delete"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.05029 9.05023L18.9498 18.9497" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M9.05021 18.9497L18.9497 9.05023" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></button>
+										<div class="cart-card__final">5 670₽</div>
+									</div>
+								</div>
+								<div class="cart-card"><img class="cart-card__img" src="assets/images/cart-card.jpg" alt="">
+									<div>
+										<div class="cart-card__title">Утиные окорочка</div>
+										<div class="cart-card__price"><b>378₽</b><span class="old">560₽</span><span>/шт</span><span>/2 кг</span></div>
+										<div class="cart-card__code">Артикул: 774706</div>
+									</div>
+									<div class="cart-card__last">
+										<div class="counter"><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+											<div class="counter__result">12</div><button class="counter__button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14 21V7" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg></button>
+										</div><button class="cart-card__delete"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.05029 9.05023L18.9498 18.9497" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M9.05021 18.9497L18.9497 9.05023" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></button>
+										<div class="cart-card__final">5 670₽</div>
+									</div>
 								</div>
 							</div>
-							<h2 class="bitter-heading referal-main__ttl h3 h3--small">Приглашенные друзья</h2>
-							<ul class="referal-main-list">
-								<li class="referal-main-list__item">
-									<div class="referal-main-list__bold">+7 911 245 43 23</div>
-									<div>
-										<div class="referal-main-list__bold">+300 баллов</div>
-										<div class="referal-main-list__note">31.03.2023</div>
-									</div>
-								</li>
-								<li class="referal-main-list__item">
-									<div class="referal-main-list__bold">+7 911 245 43 23</div>
-									<div>
-										<div class="referal-main-list__bold">+300 баллов</div>
-										<div class="referal-main-list__note">31.03.2023</div>
-									</div>
-								</li>
-								<li class="referal-main-list__item">
-									<div class="referal-main-list__bold">+7 911 245 43 23</div>
-									<div>
-										<div class="referal-main-list__bold">+300 баллов</div>
-										<div class="referal-main-list__note">31.03.2023</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="referal-info">
-							<h3 class="h4 h4--small bitter-heading">Как приглашать новых<br>людей и получать бонусы?</h3>
-							<ul class="referal-info-list">
-								<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="30" height="30" rx="8" fill="#EFE0BB"></rect>
-										<path d="M18.2552 7.49985H11.7527C9.21024 7.49985 7.50024 9.28485 7.50024 11.9398V18.0673C7.50024 20.7148 9.21024 22.4998 11.7527 22.4998H18.2552C20.7977 22.4998 22.5002 20.7148 22.5002 18.0673V11.9398C22.5002 9.28485 20.7977 7.49985 18.2552 7.49985Z" fill="#F5A163"></path>
-										<path d="M14.11 17.4359C13.942 17.4359 13.774 17.3722 13.6457 17.2439L11.866 15.4642C11.6095 15.2077 11.6095 14.7922 11.866 14.5364C12.1225 14.2799 12.5372 14.2792 12.7937 14.5357L14.11 15.8519L17.206 12.7559C17.4625 12.4994 17.8772 12.4994 18.1337 12.7559C18.3902 13.0124 18.3902 13.4279 18.1337 13.6844L14.5742 17.2439C14.446 17.3722 14.278 17.4359 14.11 17.4359Z" fill="#FBF6EA"></path>
-									</svg><span>Чтобы пригласить друга, требуется, чтобы он указал ваш номер телефона в личном кабинете</span></li>
-								<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="30" height="30" rx="8" fill="#EFE0BB"></rect>
-										<path d="M18.2552 7.49985H11.7527C9.21024 7.49985 7.50024 9.28485 7.50024 11.9398V18.0673C7.50024 20.7148 9.21024 22.4998 11.7527 22.4998H18.2552C20.7977 22.4998 22.5002 20.7148 22.5002 18.0673V11.9398C22.5002 9.28485 20.7977 7.49985 18.2552 7.49985Z" fill="#F5A163"></path>
-										<path d="M14.11 17.4359C13.942 17.4359 13.774 17.3722 13.6457 17.2439L11.866 15.4642C11.6095 15.2077 11.6095 14.7922 11.866 14.5364C12.1225 14.2799 12.5372 14.2792 12.7937 14.5357L14.11 15.8519L17.206 12.7559C17.4625 12.4994 17.8772 12.4994 18.1337 12.7559C18.3902 13.0124 18.3902 13.4279 18.1337 13.6844L14.5742 17.2439C14.446 17.3722 14.278 17.4359 14.11 17.4359Z" fill="#FBF6EA"></path>
-									</svg><span>После того, как друг получит первый заказ, вы получите бонус 300 баллов на счет</span></li>
-								<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="30" height="30" rx="8" fill="#EFE0BB"></rect>
-										<path d="M18.2552 7.49985H11.7527C9.21024 7.49985 7.50024 9.28485 7.50024 11.9398V18.0673C7.50024 20.7148 9.21024 22.4998 11.7527 22.4998H18.2552C20.7977 22.4998 22.5002 20.7148 22.5002 18.0673V11.9398C22.5002 9.28485 20.7977 7.49985 18.2552 7.49985Z" fill="#F5A163"></path>
-										<path d="M14.11 17.4359C13.942 17.4359 13.774 17.3722 13.6457 17.2439L11.866 15.4642C11.6095 15.2077 11.6095 14.7922 11.866 14.5364C12.1225 14.2799 12.5372 14.2792 12.7937 14.5357L14.11 15.8519L17.206 12.7559C17.4625 12.4994 17.8772 12.4994 18.1337 12.7559C18.3902 13.0124 18.3902 13.4279 18.1337 13.6844L14.5742 17.2439C14.446 17.3722 14.278 17.4359 14.11 17.4359Z" fill="#FBF6EA"></path>
-									</svg><span>Бонус получаете единоразово, за каждого нового друга</span></li>
-								<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="30" height="30" rx="8" fill="#EFE0BB"></rect>
-										<path d="M18.2552 7.49985H11.7527C9.21024 7.49985 7.50024 9.28485 7.50024 11.9398V18.0673C7.50024 20.7148 9.21024 22.4998 11.7527 22.4998H18.2552C20.7977 22.4998 22.5002 20.7148 22.5002 18.0673V11.9398C22.5002 9.28485 20.7977 7.49985 18.2552 7.49985Z" fill="#F5A163"></path>
-										<path d="M14.11 17.4359C13.942 17.4359 13.774 17.3722 13.6457 17.2439L11.866 15.4642C11.6095 15.2077 11.6095 14.7922 11.866 14.5364C12.1225 14.2799 12.5372 14.2792 12.7937 14.5357L14.11 15.8519L17.206 12.7559C17.4625 12.4994 17.8772 12.4994 18.1337 12.7559C18.3902 13.0124 18.3902 13.4279 18.1337 13.6844L14.5742 17.2439C14.446 17.3722 14.278 17.4359 14.11 17.4359Z" fill="#FBF6EA"></path>
-									</svg><span>1 бонус = 1 рубль</span></li>
-								<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="30" height="30" rx="8" fill="#EFE0BB"></rect>
-										<path d="M18.2552 7.49985H11.7527C9.21024 7.49985 7.50024 9.28485 7.50024 11.9398V18.0673C7.50024 20.7148 9.21024 22.4998 11.7527 22.4998H18.2552C20.7977 22.4998 22.5002 20.7148 22.5002 18.0673V11.9398C22.5002 9.28485 20.7977 7.49985 18.2552 7.49985Z" fill="#F5A163"></path>
-										<path d="M14.11 17.4359C13.942 17.4359 13.774 17.3722 13.6457 17.2439L11.866 15.4642C11.6095 15.2077 11.6095 14.7922 11.866 14.5364C12.1225 14.2799 12.5372 14.2792 12.7937 14.5357L14.11 15.8519L17.206 12.7559C17.4625 12.4994 17.8772 12.4994 18.1337 12.7559C18.3902 13.0124 18.3902 13.4279 18.1337 13.6844L14.5742 17.2439C14.446 17.3722 14.278 17.4359 14.11 17.4359Z" fill="#FBF6EA"></path>
-									</svg><span>Вы сможете списывать бонусы при оформлении заказа</span></li>
-							</ul>
+							<div class="promocode">
+								<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab>Промокод</button><button class="tabs__item" data-tab>Списать бонусы</button></div>
+								<div class="promocode__row"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Введите промокод</span></label><button class="button button--green"><span>Применить</span></button></div>
+							</div>
+							<div class="cart-table">
+								<div class="cart-table__row">
+									<div class="cart-table__title">Сумма заказа</div>
+									<div class="cart-table__value">18 670₽</div>
+								</div>
+								<div class="cart-table__row">
+									<div class="cart-table__title">Доставка</div>
+									<div class="cart-table__value">600₽</div>
+								</div>
+								<div class="cart-table__row">
+									<div class="cart-table__title">Скидки</div>
+									<div class="cart-table__value green">-1 200₽</div>
+								</div>
+								<div class="cart-table__row">
+									<div class="cart-table__title">Промокод</div>
+									<div class="cart-table__value green">-600₽</div>
+								</div>
+								<div class="cart-table__result">
+									<div class="cart-table__title">Итого ваш заказ</div>
+									<div class="cart-table__value">15 890₽</div>
+								</div>
+							</div>
+							<div class="loyalty-top-note cart-note"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">После подтверждения заказа стоимость может измениться. Наш менеджер сообщит вам об этом.</span></div><label class="form-label cart-comment only-desktop"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><button class="button button--green cart-submit"><span>Оформить заказ</span></button>
 						</div>
 					</div>
 					<section class="subscribe">
