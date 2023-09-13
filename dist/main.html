@@ -15,7 +15,7 @@
 	<body class="body">
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__container">
+				<div class="header__container" data-aos="fade-up">
 					<div class="header__row">
 						<div class="location-container"><button class="location only-desktop" data-cities-drop><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M6.16641 5.26667L13.2414 2.90834C16.4164 1.85001 18.1414 3.58334 17.0914 6.75834L14.7331 13.8333C13.1497 18.5917 10.5497 18.5917 8.96641 13.8333L8.26641 11.7333L6.16641 11.0333C1.40807 9.45001 1.40807 6.85834 6.16641 5.26667Z" fill="#65897C"></path>
@@ -385,8 +385,11 @@
 				</div>
 			</header>
 			<main class="main">
+				<div class="preloader" id="loader-main">
+					<div class="preloader__container" id="loader"></div>
+				</div>
 				<div class="container">
-					<section class="main-slider first-section">
+					<section class="main-slider first-section" data-aos="fade-up">
 						<div class="swiper main-slider__container" data-slider-id="main">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide main-slider-slide">
@@ -445,7 +448,7 @@
 							<div class="main-slider-pagination swiper-pagination" data-swiper-pagination="main"></div>
 						</div>
 					</section>
-					<section class="main-section">
+					<section class="main-section" data-aos="fade-up">
 						<div class="main-section__top">
 							<div class="main-section__title-ico"><img src="assets/images/svg/actions.svg" alt="">
 								<h2 class="h2 bitter-heading">Товары по акции</h2>
@@ -673,7 +676,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="main-section">
+					<section class="main-section" data-aos="fade-up">
 						<div class="main-section__top">
 							<div class="main-section__title-ico"><img src="assets/images/svg/recommend.svg" alt="">
 								<h2 class="h2 bitter-heading">Рекомендуем</h2>
@@ -897,7 +900,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="categories-section main-section"><a class="categories-section__cell" href="">
+					<section class="categories-section main-section" data-aos="fade-up"><a class="categories-section__cell" href="">
 							<picture class="categories-section__bg">
 								<source srcset="assets/images/main-category-0.avif" type="image/avif">
 								<source srcset="assets/images/main-category-0.webp" type="image/webp"><img src="assets/images/main-category-0.jpg" alt loading="lazy">
@@ -959,7 +962,7 @@
 							<div class="categories-section__title">Праздничные<br />блюда</div>
 						</a></section>
 				</div>
-				<section class="chick">
+				<section class="chick" data-aos="fade-up">
 					<picture class="chick__img only-desktop">
 						<source srcset="assets/images/chick.avif" type="image/avif">
 						<source srcset="assets/images/chick.webp" type="image/webp"><img src="assets/images/chick.png" alt="" loading="lazy">
@@ -979,7 +982,7 @@
 							<div class="chick-list__item-text"><span>6 дней в неделю</span><br>доставляем по Москве<br>и Московской области</div>
 						</div>
 					</div>
-					<div class="chick-cards">
+					<div class="chick-cards" data-aos="fade-up">
 						<div class="chick-cards__item">
 							<div class="chick-cards__item-top">
 								<picture class="chick-cards__item-img">
@@ -1007,7 +1010,7 @@
 					</div>
 				</section>
 				<div class="container">
-					<section class="partners-section main-section">
+					<section class="partners-section main-section" data-aos="fade-up">
 						<picture class="partners-section__bg">
 							<source srcset="assets/images/partners-bg-mob.avif" type="image/avif" media="(max-width: 767px)">
 							<source srcset="assets/images/partners-bg-mob.webp" type="image/webp" media="(max-width: 767px)">
@@ -1023,7 +1026,7 @@
 							<div class="partners-section__text">Мы работаем с множеством фермеров<br class="only-mobile">и нашу продукцию<br class="only-desktop">можно найти<br class="only-mobile">практически на всех рынках Москвы<br>и популярных маркетплейсах России</div><button class="button button--red">Присоединиться к нам</button>
 						</div>
 					</section>
-					<section class="main-section recipes">
+					<section class="main-section recipes" data-aos="fade-up">
 						<div class="recipes__top">
 							<h2 class="h1 h1--small bitter-heading">Рецепты</h2><button class="button button--red only-desktop">Все рецепты</button>
 							<div class="slider-controls recipes__controls only-desktop"><button class="slider-controls__item" data-prev="recipes"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1251,7 +1254,7 @@
 							</div>
 						</div><button class="button button--red only-mobile recipes-more"><span>Все рецепты</span></button>
 					</section>
-					<section class="subscribe">
+					<section class="subscribe" data-aos="fade-up">
 						<div class="subscribe__title">
 							<h2 class="h1 bitter-heading">Специальные<br>предложения</h2>
 							<div class="subscribe__txt only-mobile">Подпишитесь на рассылку специальных предложений,<br class="only-desktop">чтобы первыми получать<br class="only-mobile">уведомления о скидках и акциях.</div>
@@ -1263,7 +1266,7 @@
 					</section>
 				</div>
 			</main>
-			<footer class="footer">
+			<footer class="footer" data-aos="fade-up">
 				<div class="container">
 					<div class="footer__main">
 						<div class="footer__main-col1-container">
