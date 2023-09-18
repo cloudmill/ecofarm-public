@@ -9138,8 +9138,6 @@ function swiperInit() {
     });
   }
   var productThumbs = new Swiper('[data-slider-id="product-thumbs"]', {
-    // modules: [Navigation, Thumbs],
-
     slidesPerView: 'auto',
     spaceBetween: 4
   });
@@ -9151,6 +9149,20 @@ function swiperInit() {
     },
     thumbs: {
       swiper: productThumbs
+    }
+  });
+  var aboutThumbs = new Swiper('[data-slider-id="about-thumbs"]', {
+    slidesPerView: 'auto',
+    spaceBetween: 4
+  });
+  var aboutImg = new Swiper('[data-slider-id="about"]', {
+    modules: [Navigation, Thumb],
+    navigation: {
+      prevEl: "[data-prev=\"about\"]",
+      nextEl: "[data-next=\"about\"]"
+    },
+    thumbs: {
+      swiper: aboutThumbs
     }
   });
 }
@@ -13640,28 +13652,32 @@ function catalogMenu() {
 function tooltip() {
   var template1 = document.getElementById('city-drop');
   var template2 = document.getElementById('catalog-menu');
-  tippy_esm('[data-cities-drop]', {
-    content: template1.innerHTML,
-    maxWidth: 400,
-    placement: 'bottom',
-    arrow: false,
-    allowHTML: true,
-    interactive: true,
-    trigger: 'click'
-  });
-  tippy_esm('[data-catalog-button]', {
-    content: template2.innerHTML,
-    placement: 'bottom',
-    arrow: false,
-    allowHTML: true,
-    interactive: true,
-    trigger: 'click',
-    onShow: function onShow() {
-      setTimeout(function () {
-        catalogMenu();
-      }, 100);
-    }
-  });
+  if (template1) {
+    tippy_esm('[data-cities-drop]', {
+      content: template1.innerHTML,
+      maxWidth: 400,
+      placement: 'bottom',
+      arrow: false,
+      allowHTML: true,
+      interactive: true,
+      trigger: 'click'
+    });
+  }
+  if (template2) {
+    tippy_esm('[data-catalog-button]', {
+      content: template2.innerHTML,
+      placement: 'bottom',
+      arrow: false,
+      allowHTML: true,
+      interactive: true,
+      trigger: 'click',
+      onShow: function onShow() {
+        setTimeout(function () {
+          catalogMenu();
+        }, 100);
+      }
+    });
+  }
 }
 ;// CONCATENATED MODULE: ./scripts/dropdown.js
 /* provided dependency */ var dropdown_$ = __webpack_require__(638);
@@ -19858,7 +19874,10 @@ window.addEventListener('DOMContentLoaded', function () {
       document.querySelector('[data-search]').value = '';
     });
   }
-  document.querySelector('[data-insert-script]').innerText = "function cityChoose(name) {document.querySelector('[data-cities-drop-inner]').innerText = name}";
+  var insertScript = document.querySelector('[data-insert-script]');
+  if (insertScript) {
+    insertScript.innerText = "function cityChoose(name) {document.querySelector('[data-cities-drop-inner]').innerText = name}";
+  }
 });
 window.addEventListener('load', function () {
   var loader = document.getElementById('loader-main');
