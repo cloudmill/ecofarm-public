@@ -440,10 +440,61 @@ function tooltip() {
 ;// CONCATENATED MODULE: ./scripts/dropdown.js
 /* provided dependency */ var dropdown_$ = __webpack_require__(638);
 function dropdown() {
-  dropdown_$('[data-dropdown-button]').on('click', function () {
-    dropdown_$(this).closest('[data-dropdown]').toggleClass('active');
-    dropdown_$(this).closest('[data-dropdown]').find('[data-dropdown-drop]').slideToggle();
-  });
+  var drops = dropdown_$('[data-dropdown]');
+  if (drops) {
+    // при клике в любом месте страницы
+    // кроме внутренности выпадающего блока
+    // закрываются открытые селекты
+    dropdown_$(window).on('click', function (e) {
+      var drop = e.target.closest('[data-dropdown-drop]');
+      if (!drop) {
+        dropdown_$('[data-dropdown-drop]').slideUp(100);
+        dropdown_$('[data-dropdown]').removeClass('active');
+      }
+    });
+
+    // если был клик по селекту - он открывается
+    dropdown_$('[data-dropdown-button]').on('click', function () {
+      var select = dropdown_$(this).closest('[data-dropdown]');
+      if (!select.hasClass('active')) {
+        // таймаут, потому что клик по окну
+        // всплывает дольше
+        setTimeout(function () {
+          select.addClass('active');
+          select.find('[data-dropdown-drop]').slideDown(100);
+        });
+      }
+    });
+    var selectChecks = document.querySelectorAll('[data-select-checkboxes]');
+    selectChecks.forEach(function (drop) {
+      drop.addEventListener('click', function (e) {
+        setTimeout(function () {
+          var activeSelect = e.target.closest('[data-dropdown]');
+          var titleEl = activeSelect.querySelector('[data-select-active]');
+          var titleArr = [];
+          var checked = drop.querySelectorAll('input[type=checkbox]:checked');
+          if (checked.length > 0) {
+            checked.forEach(function (it) {
+              return titleArr.push(it.getAttribute('data-select-checkbox').toLowerCase());
+            });
+            var titleStr = titleArr.join(', ');
+            titleEl.innerText = titleStr[0].toUpperCase() + titleStr.slice(1);
+          } else {
+            var _titleStr = activeSelect.getAttribute('data-dropdown-title');
+            titleEl.innerText = _titleStr;
+          }
+        });
+      });
+    });
+    dropdown_$('[data-filters-reset]').on('click', function () {
+      dropdown_$('[data-select-checkbox]').prop('checked', false);
+      var selects = document.querySelectorAll('[data-dropdown-title]');
+      selects.forEach(function (el) {
+        var defaultTitle = el.getAttribute('data-dropdown-title');
+        el.querySelector('[data-select-active]').innerText = defaultTitle;
+      });
+    });
+  }
 }
 ;// CONCATENATED MODULE: ./scripts/tabs.js
 function tabs() {
