@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<meta property="og:title" content="ЭкоФерма">
 		<title>ЭкоФерма</title>
-		<script defer="defer" src="assets/styles.js"></script>
+		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="407.css" rel="stylesheet">
+		<link href="633.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -389,7 +389,7 @@
 					<div class="lk-top">
 						<div class="lk-top__list"><a class="tabs__item" href="">Заказы</a><a class="tabs__item" href="">Программа лояльности</a><a class="tabs__item" href="">Реферальная программа</a><a class="tabs__item" href="">Адреса доставки</a>
 							<div class="tabs__item active">Профиль</div>
-						</div><button class="clients-tabs__link lk-top__exit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						</div><button class="lk-top__exit tabs__item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M15.0001 12H3.62012" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -577,7 +577,10 @@
 		<div class="modals">
 			<div class="modal success-modal" id="fancy-modal-edit-profile">
 				<h2 class="bitter-heading modal__title">Изменить данные</h2>
-				<form class="edit-profile-form"><label class="form-label"><input class="form-input" data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
+				<form class="edit-profile-form" data-form-w-seccess="success-prof"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input data-mask-bday><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
+			</div>
+			<div class="modal success-modal" id="success-prof">
+				<h2 class="bitter-heading modal__title">Данные сохранены</h2><button class="button button--red" data-fancybox-close><span>Ок</span></button>
 			</div>
 		</div>
 		<script data-insert-script></script>
