@@ -395,8 +395,8 @@
 								<path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg><span>Выйти из аккаунта</span></button>
 					</div>
-					<h1 class="h1 h1--small bitter-heading">Профиль</h1>
-					<div class="profile">
+					<h1 class="h1 h1--small bitter-heading" data-aos="fade-up">Профиль</h1>
+					<div class="profile" data-aos="fade-up">
 						<div class="profile-block">
 							<div class="profile-block__title bitter-heading">ФИО</div>
 							<div class="profile-block__value">Алексев Денис Юрьевич</div>
@@ -424,7 +424,7 @@
 						</div>
 						<div class="subscribe__col">
 							<div class="subscribe__txt only-desktop">Подпишитесь на рассылку специальных предложений,<br>чтобы первыми получать уведомления о скидках и акциях.</div>
-							<form class="subscribe__form" data-form-w-seccess="subscribe-modal"><input class="subscribe__input" type="email" name="email" autocomplete="email" placeholder="E-mail"><button class="button button--red" type="submit">Подписаться</button></form>
+							<form class="subscribe__form" data-form-w-seccess="subscribe-modal"><input class="subscribe__input" type="email" name="email" autocomplete="email" placeholder="E-mail" required><button class="button button--red" type="submit">Подписаться</button></form>
 						</div>
 					</section>
 				</div>
@@ -578,11 +578,13 @@
 			<div class="modal success-modal" id="fancy-modal-edit-profile">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Изменить данные</h2>
-					<form class="edit-profile-form" data-form-w-seccess="success-prof"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input data-mask-bday><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
+					<form class="edit-profile-form" data-form-w-seccess="saved"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input data-mask-bday><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
 				</div>
 			</div>
-			<div class="modal success-modal" id="success-prof">
-				<h2 class="bitter-heading modal__title">Данные сохранены</h2><button class="button button--red" data-fancybox-close><span>Ок</span></button>
+			<div class="modal success-modal" id="saved">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Данные сохранены</h2><button class="button button--red" data-fancybox-close><span>Ок</span></button>
+				</div>
 			</div>
 		</div>
 	</body>
