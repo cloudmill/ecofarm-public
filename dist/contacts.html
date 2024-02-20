@@ -394,7 +394,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="contacts-title">
+					<div class="contacts-title" data-aos="fade-up">
 						<h1 class="h1 h1--small bitter-heading">Контакты</h1>
 						<div class="faq-socials"><a class="faq-socials__item" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g clip-path="url(#clip0_607_39485)">
@@ -420,7 +420,7 @@
 								</svg><span>Телеграм</span></a></div>
 					</div>
 					<div class="contacts">
-						<div class="contacts-top">
+						<div class="contacts-top" data-aos="fade-up">
 							<div class="contacts-top__item"><img class="contacts-top__svg" src="assets/images/svg/contact-0.svg" alt="">
 								<div class="contacts-top__ttl bitter-heading">Сделать заказ</div>
 								<ul class="contacts-top__txt list">
@@ -439,19 +439,19 @@
 							</div>
 						</div>
 						<div class="contacts-bottom">
-							<div class="contacts-coop">
+							<div class="contacts-coop" data-aos="fade-up">
 								<h2 class="bitter-heading contacts-coop__title">Сотрудничество</h2>
 								<div class="contacts-coop__text">Мы приглашаем к сотрудничеству всех, кому интересен наш продукт, кому близки понятия «здоровое питание», «экологически чистые продукты».</div>
 								<div class="contacts-coop__text">Мы с удовольствием сотрудничаем с прямыми потребителями (любым жителем города), частными реализаторами, розничными сетями, рестораторами.</div>
 							</div>
-							<form class="contacts-form">
-								<h3 class="bitter-heading h3 h3--small faq-form__title1">Задать вопрос или<br class="only-mobile">обсудить условия<br class="only-mobile">сотрудничества</h3><label class="form-label"><input class="form-input" required data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" required data-input><span class="form-placeholder">E-mail*</span></label><label class="form-label"><input class="form-input" type="tel" required data-input><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" required data-input><span class="form-placeholder">Тема</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
+							<form class="contacts-form" data-aos="fade-up" data-form-w-seccess="contacts-success">
+								<h3 class="bitter-heading h3 h3--small faq-form__title1">Задать вопрос или &nbsp;<br class="only-mobile">обсудить условия &nbsp;<br class="only-mobile">сотрудничества</h3><label class="form-label"><input class="form-input" data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" required data-input autocomplete="email"><span class="form-placeholder">E-mail*</span></label><label class="form-label"><input class="form-input" type="tel" data-input autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" data-input><span class="form-placeholder">Тема</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
 								<div class="form-bottom"><label class="checkbox">
 										<div class="checkbox__container"><input class="checkbox__input" id="checkbox" type="checkbox" required><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
 												<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 											</svg></div>
-										<div class="checkbox__caption">Согласен с <a href="">политикой в отношении обработки<br>персональных данных</a></div>
+										<div class="checkbox__caption">Согласен с <a href="">политикой в отношении обработки &nbsp;<br class="only-desktop">персональных данных</a></div>
 									</label><button class="button button--red">Отправить</button></div>
 							</form>
 						</div>
@@ -613,7 +613,19 @@
 				</div>
 			</footer>
 		</div>
-		<div class="modals"></div>
+		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
+			<div class="modal success-modal" data-fancy-modal="contacts-success" id="contacts-success">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Сообщение отправлено</h2>
+					<div class="modal__text">Спасибо, мы получили ваш вопрос и ответим<br>на него ближайшее время.</div><button class="button button--red" data-fancybox-close><span>Понятно</span></button>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>

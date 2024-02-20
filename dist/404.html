@@ -387,9 +387,9 @@
 			<main class="main">
 				<div class="container">
 					<div class="error-page">
-						<div class="error-page__title bitter-heading">404</div>
-						<div class="error-page__text">Ой, что-то пошло не так...<br>Страница не найдена.</div>
-						<div class="error-page__buttons"><a class="button button--green-border" href>Каталог</a><a class="button button--green-border" href>Главная</a></div>
+						<div class="error-page__title bitter-heading" data-aos="fade-up">404</div>
+						<div class="error-page__text" data-aos="fade-up">Ой, что-то пошло не так...<br>Страница не найдена.</div>
+						<div class="error-page__buttons" data-aos="fade-up"><a class="button button--green-border" href>Каталог</a><a class="button button--green-border" href>Главная</a></div>
 					</div>
 					<section class="subscribe" data-aos="fade-up">
 						<div class="subscribe__title">
@@ -548,7 +548,13 @@
 				</div>
 			</footer>
 		</div>
-		<div class="modals"></div>
+		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>

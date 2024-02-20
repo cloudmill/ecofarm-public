@@ -575,10 +575,15 @@
 			</footer>
 		</div>
 		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
 			<div class="modal success-modal" id="fancy-modal-edit-profile">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Изменить данные</h2>
-					<form class="edit-profile-form" data-form-w-seccess="saved"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input data-mask-bday><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
+					<form class="edit-profile-form" data-form-w-seccess="saved"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта</span></label><label class="form-label"><input class="form-input" data-input data-mask-bday><span class="form-placeholder">Дата рождения</span></label><button class="button button--red edit-profile-form__button"><span>Сохранить</span></button></form>
 				</div>
 			</div>
 			<div class="modal success-modal" id="saved">

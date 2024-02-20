@@ -397,7 +397,7 @@
 					<div class="cart-page">
 						<div class="cart-page__col">
 							<div class="cart-block">
-								<h2 class="cart-page__ttl bitter-heading">Ваши данные</h2><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required><span class="form-placeholder">Телефон*</span></label>
+								<h2 class="cart-page__ttl bitter-heading">Ваши данные</h2><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон*</span></label>
 							</div>
 							<div class="cart-block">
 								<h2 class="cart-page__ttl bitter-heading">Способ получения</h2>
@@ -736,7 +736,13 @@
 				</div>
 			</footer>
 		</div>
-		<div class="modals"></div>
+		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>

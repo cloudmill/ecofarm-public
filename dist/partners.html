@@ -419,7 +419,7 @@
 					<section class="partners-form partners-block" data-aos="fade-up">
 						<h2 class="bitter-heading h2 h2--big">Станьте нашим&nbsp;<br class="only-desktop">партнером</h2>
 						<form class="contacts-form" data-form-w-seccess="partner-modal">
-							<p class="partners-form__text">Если вы хотите стать нашими партнерами, напишите на почту <b>partners@roshal.eco</b> или позвоните по телефону &nbsp;<br class="only-desktop"><b>8 912 345-67-89</b></p><label class="form-label"><input class="form-input" id="fio" required data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" id="mail" type="email" required data-input><span class="form-placeholder">E-mail*</span></label><label class="form-label"><input class="form-input" id="tel" type="tel" required data-input data-mask-phone><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" id="theme" required data-input><span class="form-placeholder">Тема</span></label><label class="form-label"><textarea class="form-input form-textarea" id="message" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
+							<p class="partners-form__text">Если вы хотите стать нашими партнерами, напишите на почту <b>partners@roshal.eco</b> или позвоните по телефону &nbsp;<br class="only-desktop"><b>8 912 345-67-89</b></p><label class="form-label"><input class="form-input" id="fio" required data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" id="mail" type="email" required data-input autocomplete="email"><span class="form-placeholder">E-mail*</span></label><label class="form-label"><input class="form-input" id="tel" type="tel" required data-input data-mask-phone autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" id="theme" required data-input><span class="form-placeholder">Тема</span></label><label class="form-label"><textarea class="form-input form-textarea" id="message" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
 							<div class="form-bottom"><label class="checkbox">
 									<div class="checkbox__container"><input class="checkbox__input" id="checkbox" type="checkbox" required><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
@@ -587,15 +587,15 @@
 			</footer>
 		</div>
 		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
 			<div class="modal success-modal" data-fancy-modal="partner-modal" id="partner-modal">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Сообщение отправлено</h2>
 					<div class="modal__text">Спасибо, мы получили ваш вопрос и ответим<br>на него ближайшее время.</div><button class="button button--red" data-fancybox-close><span>Понятно</span></button>
-				</div>
-			</div>
-			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
-				<div class="modal__wrapper">
-					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
 				</div>
 			</div>
 		</div>

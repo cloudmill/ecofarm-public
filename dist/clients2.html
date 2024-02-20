@@ -447,7 +447,7 @@
 						<div class="clients-form">
 							<h2 class="clients-form__title h2 bitter-heading">У вас остались вопросы?</h2>
 							<form>
-								<h3 class="bitter-heading h3 h3--small faq-form__title1">Напишите нам на почту</h3><label class="form-label"><input class="form-input" required data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" required data-input><span class="form-placeholder">E-mail*</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
+								<h3 class="bitter-heading h3 h3--small faq-form__title1">Напишите нам на почту</h3><label class="form-label"><input class="form-input" required data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" required data-input autocomplete="email"><span class="form-placeholder">E-mail*</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
 								<div class="form-bottom"><label class="checkbox">
 										<div class="checkbox__container"><input class="checkbox__input" type="checkbox" required><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
@@ -635,7 +635,13 @@
 				</div>
 			</footer>
 		</div>
-		<div class="modals"></div>
+		<div class="modals">
+			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
