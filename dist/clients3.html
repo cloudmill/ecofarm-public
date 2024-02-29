@@ -71,7 +71,7 @@
 								</svg></button><button class="header__search-button">Найти</button></label><button class="header__search only-mobile"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M18.9304 20.6898C19.4604 22.2898 20.6704 22.4498 21.6004 21.0498C22.4504 19.7698 21.8904 18.7198 20.3504 18.7198C19.2104 18.7098 18.5704 19.5998 18.9304 20.6898Z" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg></button><button class="header__profile only-desktop"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							</svg></button><button class="header__profile only-desktop" data-profile-button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.8327 7.83333C17.8327 11.055 15.221 13.6667 11.9993 13.6667C8.77769 13.6667 6.16602 11.055 6.16602 7.83333C6.16602 4.61167 8.77769 2 11.9993 2C13.5464 2 15.0302 2.61458 16.1241 3.70854C17.2181 4.80251 17.8327 6.28624 17.8327 7.83333Z" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M2 22C8.12553 18.6667 15.8745 18.6667 22 22" stroke="#65897C" stroke-width="2" stroke-linecap="round"></path>
 							</svg></button><button class="header__cart only-desktop"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,6 +86,31 @@
 						<div data-cities-drop-item>Санкт-Петербург</div>
 						<div data-cities-drop-item>Новосибирск</div>
 						<div data-cities-drop-item>Омск</div>
+					</div>
+				</div>
+				<div class="display-none" id="lk-modal">
+					<div class="lk-modal">
+						<div class="lk-modal__ttl bitter-heading">Личный кабинет</div>
+						<div class="lk-modal__txt">Авторизуйтесь в личном кабинете по номеру телефона. Вы сможете:</div>
+						<ul class="lk-modal__list">
+							<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="30" height="30" rx="8" fill="#E9F4E4"></rect>
+									<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M17.9395 6.04167H12.0618H12.0618C11.4982 6.04167 11.0436 6.04166 10.6736 6.06691C10.2931 6.09287 9.95666 6.1476 9.6381 6.27955C8.87239 6.59672 8.26403 7.20507 7.94686 7.97079C7.81491 8.28935 7.76018 8.62577 7.73422 9.00624C7.70898 9.37624 7.70898 9.83087 7.70898 10.3945V10.3945V19.6055C7.70898 20.1691 7.70898 20.6238 7.73422 20.9938C7.76018 21.3742 7.81491 21.7107 7.94686 22.0292C8.26403 22.7949 8.87239 23.4033 9.6381 23.7205C9.95666 23.8524 10.2931 23.9071 10.6736 23.9331C11.0435 23.9583 11.4982 23.9583 12.0617 23.9583H12.0618H17.9395H17.9396C18.5031 23.9583 18.9578 23.9583 19.3278 23.9331C19.7082 23.9071 20.0446 23.8524 20.3632 23.7205C21.1289 23.4033 21.7373 22.7949 22.0544 22.0292C22.1864 21.7107 22.2411 21.3742 22.2671 20.9938C22.2923 20.6238 22.2923 20.1691 22.2923 19.6055V10.3945C22.2923 9.83087 22.2923 9.37624 22.2671 9.00624C22.2411 8.62577 22.1864 8.28935 22.0544 7.97079C21.7373 7.20507 21.1289 6.59672 20.3632 6.27955C20.0446 6.1476 19.7082 6.09287 19.3278 6.06691C18.9577 6.04166 18.5031 6.04167 17.9395 6.04167Z" fill="#32691A"></path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.041 11.6667C11.041 11.3215 11.3208 11.0417 11.666 11.0417H14.9993C15.3445 11.0417 15.6243 11.3215 15.6243 11.6667C15.6243 12.0118 15.3445 12.2917 14.9993 12.2917H11.666C11.3208 12.2917 11.041 12.0118 11.041 11.6667Z" fill="#32691A"></path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.041 15C11.041 14.6548 11.3208 14.375 11.666 14.375H18.3327C18.6779 14.375 18.9577 14.6548 18.9577 15C18.9577 15.3452 18.6779 15.625 18.3327 15.625H11.666C11.3208 15.625 11.041 15.3452 11.041 15Z" fill="#32691A"></path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.041 18.3333C11.041 17.9882 11.3208 17.7083 11.666 17.7083H18.3327C18.6779 17.7083 18.9577 17.9882 18.9577 18.3333C18.9577 18.6785 18.6779 18.9583 18.3327 18.9583H11.666C11.3208 18.9583 11.041 18.6785 11.041 18.3333Z" fill="#32691A"></path>
+								</svg><span>Просматривать и повторять заказы</span></li>
+							<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="30" height="30" rx="8" fill="#E9F4E4"></rect>
+									<path opacity="0.4" d="M21.9611 17.1413C21.3002 17.6729 20.6252 17.9319 19.9361 17.9184C19.2564 17.8972 18.6664 17.6147 18.1658 17.0709C17.9463 16.8373 17.7595 16.6247 17.6054 16.4331C17.4532 16.2243 17.2741 15.982 17.0679 15.7061C16.6362 15.0911 16.4733 14.4571 16.579 13.8041C16.6943 13.1434 17.1016 12.5319 17.8007 11.9695C18.4999 11.4071 19.1797 11.1441 19.8401 11.1808C20.5102 11.2097 21.0945 11.5047 21.5932 12.0658C21.8281 12.3185 22.0264 12.5455 22.1882 12.7466C22.3423 12.9381 22.5099 13.1661 22.6911 13.4306C23.1246 14.0283 23.2742 14.6652 23.1397 15.3413C23.0148 16.0097 22.6219 16.6097 21.9611 17.1413ZM20.8285 15.7334C20.953 15.6332 21.0296 15.5322 21.0581 15.4304C21.0789 15.319 21.0738 15.2048 21.0428 15.0878C21.004 14.9612 20.9461 14.85 20.8691 14.7543C20.7265 14.5377 20.5742 14.3289 20.4125 14.1278C20.2507 13.9266 20.0831 13.738 19.9099 13.5619C19.7771 13.4163 19.6261 13.3169 19.457 13.2636C19.2879 13.2103 19.1172 13.253 18.9448 13.3917C18.7629 13.5381 18.6798 13.6996 18.6956 13.8761C18.7115 14.0527 18.7762 14.2215 18.8899 14.3824C19.0344 14.5816 19.1876 14.7818 19.3494 14.983C19.5112 15.1841 19.6777 15.3814 19.8491 15.5748C19.9357 15.6628 20.0319 15.7432 20.1377 15.8159C20.2453 15.8712 20.3558 15.9007 20.4691 15.9042C20.5842 15.8905 20.704 15.8335 20.8285 15.7334ZM11.5118 17.2414C10.851 17.773 10.1846 18.033 9.51272 18.0214C8.83311 18.0002 8.23823 17.7215 7.72808 17.1854C7.50862 16.9518 7.32184 16.7392 7.16775 16.5477C7.01553 16.3389 6.83635 16.0965 6.63021 15.8206C6.19855 15.2056 6.04038 14.5678 6.15569 13.9071C6.27101 13.2464 6.67345 12.6387 7.36302 12.084C8.06217 11.5216 8.74197 11.2587 9.40243 11.2953C10.0725 11.3242 10.6616 11.6154 11.1699 12.1688C11.4048 12.4215 11.6031 12.6485 11.7649 12.8496C11.919 13.0411 12.0866 13.2691 12.2678 13.5335C12.6917 14.139 12.8365 14.7798 12.702 15.4558C12.5694 16.1146 12.1727 16.7098 11.5118 17.2414ZM10.3908 15.8479C10.5154 15.7478 10.5919 15.6468 10.6204 15.545C10.6412 15.4336 10.6361 15.3194 10.6051 15.2024C10.5663 15.0758 10.5084 14.9646 10.4314 14.8688C10.2811 14.6427 10.1288 14.4339 9.97475 14.2423C9.81296 14.0412 9.64544 13.8526 9.4722 13.6764C9.33935 13.5309 9.18839 13.4315 9.01932 13.3782C8.85983 13.3172 8.68909 13.3599 8.50712 13.5063C8.32515 13.6526 8.24209 13.8141 8.25792 13.9907C8.27375 14.1672 8.33852 14.336 8.45221 14.4969C8.59672 14.6962 8.74987 14.8964 8.91166 15.0975C9.06575 15.2891 9.23233 15.4863 9.4114 15.6893C9.49803 15.7774 9.59422 15.8578 9.7 15.9304C9.80765 15.9858 9.9229 16.0114 10.0457 16.0072C10.1609 15.9935 10.2759 15.9404 10.3908 15.8479Z" fill="#32691A"></path>
+									<path d="M13.8272 23.092C13.9813 23.2835 14.1685 23.2907 14.3888 23.1135L15.653 22.0965C15.7871 21.9887 15.8684 21.8838 15.8969 21.782C15.9254 21.6802 15.9385 21.5592 15.9362 21.4191L15.5213 6.37222C15.5211 6.29351 15.4979 6.22543 15.4516 6.16796C15.2975 5.97642 15.1104 5.96924 14.8901 6.14644L13.6259 7.16342C13.4918 7.27128 13.4057 7.37997 13.3676 7.4895C13.3391 7.59131 13.326 7.71229 13.3283 7.85241L13.7576 22.8877C13.7578 22.9664 13.781 23.0345 13.8272 23.092Z" fill="#32691A"></path>
+								</svg><span>Отслеживать актуальный статус в программе лояльности</span></li>
+							<li><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="30" height="30" rx="8" fill="#E9F4E4"></rect>
+									<path opacity="0.4" d="M6.66602 13.75C6.66602 13.0596 7.22566 12.5 7.91602 12.5C8.60637 12.5 9.16602 13.0596 9.16602 13.75V20C9.16602 21.3807 8.04673 22.5 6.66602 22.5V13.75Z" fill="#32691A"></path>
+									<path d="M11.666 17.9167V15.2162C11.666 14.7346 11.666 14.4938 11.7093 14.2643C11.767 13.9582 11.8814 13.6655 12.0466 13.4015C12.1705 13.2034 12.3339 13.0265 12.6605 12.6726L16.666 8.33334L16.9989 8.66622C17.161 8.82831 17.242 8.90936 17.2964 9.0026C17.3689 9.12692 17.4079 9.26789 17.4097 9.41178C17.4111 9.5197 17.3833 9.63089 17.3277 9.85327L17.3277 9.85328L16.6376 12.6135C16.5202 13.0831 16.4615 13.3179 16.5015 13.5062C16.5547 13.7572 16.7206 13.9697 16.9512 14.0823C17.1242 14.1667 17.3662 14.1667 17.8503 14.1667H20.7912C21.7346 14.1667 22.4993 14.9314 22.4993 15.8748C22.4993 16.122 22.4457 16.3662 22.3421 16.5906L21.0048 19.4881L21.0048 19.4881C20.6813 20.1891 20.5196 20.5395 20.2842 20.8095C19.9704 21.1695 19.56 21.432 19.1017 21.5661C18.7579 21.6667 18.3719 21.6667 17.6 21.6667H15.416C14.2512 21.6667 13.6687 21.6667 13.2093 21.4764C12.5967 21.2226 12.1101 20.7359 11.8563 20.1234C11.666 19.6639 11.666 19.0815 11.666 17.9167Z" fill="#32691A"></path>
+								</svg><span>Рекомендовать нас друзьям и копить бонусы</span></li>
+						</ul><button class="button button--red" data-fancy-button="profile-register">Войти</button>
 					</div>
 				</div>
 				<div id="catalog-menu" style="display: none">
@@ -624,6 +649,29 @@
 			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+				</div>
+			</div>
+			<div class="modal success-modal" id="fancy-modal-profile-register">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Личный кабинет</h2>
+					<div class="tabs no-margin">
+						<div class="tabs__item active">Регистрация</div><button class="tabs__item" data-fancy-button="profile-login">Вход</button>
+					</div>
+					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Повторите пароль</span></label><button class="button button--red edit-profile-form__button"><span>Регистрация</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="fancy-modal-profile-login">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Личный кабинет</h2>
+					<div class="tabs no-margin"><button class="tabs__item" data-fancy-button="profile-register">Регистрация</button>
+						<div class="tabs__item active">Вход</div>
+					</div>
+					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><button class="button button--red edit-profile-form__button"><span>Войти</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="profile-sms">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Введите код из смс</h2>
 				</div>
 			</div>
 			<div class="modal success-modal" data-fancy-modal="clients" id="clients">

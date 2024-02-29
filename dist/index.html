@@ -52,6 +52,29 @@
 					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
 				</div>
 			</div>
+			<div class="modal success-modal" id="fancy-modal-profile-register">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Личный кабинет</h2>
+					<div class="tabs no-margin">
+						<div class="tabs__item active">Регистрация</div><button class="tabs__item" data-fancy-button="profile-login">Вход</button>
+					</div>
+					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Повторите пароль</span></label><button class="button button--red edit-profile-form__button"><span>Регистрация</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="fancy-modal-profile-login">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Личный кабинет</h2>
+					<div class="tabs no-margin"><button class="tabs__item" data-fancy-button="profile-register">Регистрация</button>
+						<div class="tabs__item active">Вход</div>
+					</div>
+					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><button class="button button--red edit-profile-form__button"><span>Войти</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="profile-sms">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Введите код из смс</h2>
+				</div>
+			</div>
 		</div>
 	</body>
 
