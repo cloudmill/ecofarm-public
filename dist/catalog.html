@@ -690,7 +690,8 @@
 		<div class="modals">
 			<div class="modal success-modal" data-fancy-modal="subscribe-modal" id="subscribe-modal">
 				<div class="modal__wrapper">
-					<h2 class="bitter-heading modal__title">Подписка оформлена</h2><button class="button button--red" data-fancybox-close><span>Спасибо!</span></button>
+					<h2 class="bitter-heading modal__title">Подписка оформлена</h2>
+					<div class="modal__text">Вы успешно подписались на уведомления<br>о скидках и акциях.</div><button class="button button--red" data-fancybox-close><span>Понятно</span></button>
 				</div>
 			</div>
 			<div class="modal success-modal" id="fancy-modal-profile-register">
@@ -699,7 +700,19 @@
 					<div class="tabs no-margin">
 						<div class="tabs__item active">Регистрация</div><button class="tabs__item" data-fancy-button="profile-login">Вход</button>
 					</div>
-					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Повторите пароль</span></label><button class="button button--red edit-profile-form__button"><span>Регистрация</span></button></form>
+					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">E-mail</span></label><label class="form-label" data-password-label><input class="form-input" id="profile-password" type="password" data-input required><span class="form-placeholder">Пароль</span><button class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button></label><label class="form-label" data-password-label><input class="form-input" type="password" data-input data-parsley-equalto="#profile-password" required><span class="form-placeholder">Повторите пароль</span><button class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button></label><label class="checkbox">
+							<div class="checkbox__container"><input class="checkbox__input" id="checkbox" type="checkbox" required checked="checked"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+									<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div>
+							<div class="checkbox__caption">Согласен с <a href="">политикой в отношении обработки персональных данных</a></div>
+						</label><button class="button button--red edit-profile-form__button"><span>Регистрация</span></button></form>
 				</div>
 			</div>
 			<div class="modal success-modal" id="fancy-modal-profile-login">
@@ -714,6 +727,16 @@
 			<div class="modal success-modal" id="profile-sms">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Введите код из смс</h2>
+					<div class="modal__text">Отправили на номер<br>+7 (981) 157-92-90</div>
+					<form class="edit-profile-form" data-form-w-seccess="registry-done"><label class="form-label"><input class="form-input" data-input required data-sms-input><span class="form-placeholder">Код</span></label>
+						<div class="modal__text">Отправить код еще раз</div><button class="button button--red edit-profile-form__button" data-sms-button disabled="disabled"><span>Отправить код</span></button>
+					</form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="registry-done">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Готово</h2>
+					<div class="modal__text">Вы успешно зарегистрировались. Теперь вы<br>можете пользоваться личным кабинетом.</div><button class="button button--red full-width" data-fancy-button="profile-login"><span>Понятно</span></button>
 				</div>
 			</div>
 		</div>
