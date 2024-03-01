@@ -655,22 +655,61 @@
 					<div class="tabs no-margin"><button class="tabs__item" data-fancy-button="profile-register">Регистрация</button>
 						<div class="tabs__item active">Вход</div>
 					</div>
-					<form class="edit-profile-form" data-form-w-seccess="profile-sms"><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Пароль</span></label><button class="button button--red edit-profile-form__button"><span>Войти</span></button></form>
+					<form class="edit-profile-form"><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label" data-password-label><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span><button class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button></label><button class="modal__text green-text in-form text-button" data-fancy-button="reset-password" data-password-reset type="button"><span>Забыли пароль?</span></button><button class="button button--red edit-profile-form__button" type="submit"><span>Войти</span></button>
+						<div class="loyalty-top-note product-page-note profile-modal-error"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">Не можем найти такую комбинацию телефона и пароля.<br>Попробуйте другую.</span></div>
+					</form>
 				</div>
 			</div>
 			<div class="modal success-modal" id="profile-sms">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Введите код из смс</h2>
-					<div class="modal__text">Отправили на номер<br>+7 (981) 157-92-90</div>
+					<div class="modal__text green-text">Отправили на номер<br>+7 (981) 157-92-90 <button data-fancy-button="profile-register">Изменить</button></div>
 					<form class="edit-profile-form" data-form-w-seccess="registry-done"><label class="form-label"><input class="form-input" data-input required data-sms-input><span class="form-placeholder">Код</span></label>
-						<div class="modal__text">Отправить код еще раз</div><button class="button button--red edit-profile-form__button" data-sms-button disabled="disabled"><span>Отправить код</span></button>
+						<div class="modal__text green-text in-form">Вы сможете запросить новый код через <span data-sms-time>0:56</span></div><button class="modal__text green-text in-form text-button" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg><span>Отправить код еще раз</span></button><button class="button button--red edit-profile-form__button" type="submit" data-sms-button disabled="disabled"><span>Отправить код</span></button>
 					</form>
 				</div>
 			</div>
 			<div class="modal success-modal" id="registry-done">
 				<div class="modal__wrapper">
 					<h2 class="bitter-heading modal__title">Готово</h2>
-					<div class="modal__text">Вы успешно зарегистрировались. Теперь вы<br>можете пользоваться личным кабинетом.</div><button class="button button--red full-width" data-fancy-button="profile-login"><span>Понятно</span></button>
+					<div class="modal__text">Вы успешно зарегистрировались. Теперь вы<br>можете пользоваться личным кабинетом.</div><button class="button button--red full-width" data-fancy-button="profile-login">Войти</button>
+				</div>
+			</div>
+			<div class="modal success-modal" id="fancy-modal-reset-password">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Сброс пароля</h2>
+					<div class="modal__text green-text">Укажите телефон, указанный ранее<br>при регистрации</div>
+					<form class="edit-profile-form" data-form-w-seccess="reset-result"><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><button class="button button--red edit-profile-form__button" type="submit"><span>Отправить</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="reset-result">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Сброс пароля</h2>
+					<div class="modal__text green-text">На вашу почту <span class="span-mail">*****ch@mail.ru</span> отправлена<br>ссылка для сброса пароля</div>
+				</div>
+			</div>
+			<div class="modal success-modal" id="new-password">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Придумайте новый<br>пароль</h2>
+					<form class="edit-profile-form" data-form-w-seccess="password-success"><label class="form-label" data-password-label><input class="form-input" id="profile-password2" type="password" data-input required><span class="form-placeholder">Пароль</span><button class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button></label><label class="form-label" data-password-label><input class="form-input" type="password" data-input data-parsley-equalto="#profile-password2" required><span class="form-placeholder">Повторите пароль</span><button class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button></label><button class="button button--red edit-profile-form__button"><span>Сохранить пароль</span></button></form>
+				</div>
+			</div>
+			<div class="modal success-modal" id="password-success">
+				<div class="modal__wrapper">
+					<h2 class="bitter-heading modal__title">Ваш пароль<br>успешно сохранен</h2><button class="button button--red full-width" data-fancy-button="profile-login">Войти</button>
 				</div>
 			</div>
 		</div>
