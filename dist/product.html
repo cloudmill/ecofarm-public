@@ -445,6 +445,80 @@
 				</div>
 			</header>
 			<main class="main">
+				<div class="overlay"></div>
+				<div class="review-modal" data-modal-wrapper="check-review">
+					<div class="review-modal__close" data-modal-close="check-review"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="review-modal__inner">
+						<div class="review-modal__top">
+							<div class="review-card__col">
+								<div class="review-card__name">Nadine Zakharova</div>
+								<div class="review-card__date">12 мая 2023</div>
+							</div>
+						</div>
+						<div class="review-modal__stars">
+							<div class="review-card__col">
+								<div class="review-card__rate"><img src="assets/images/svg/star-active.svg" alt=""><img src="assets/images/svg/star-active.svg" alt=""><img src="assets/images/svg/star-active.svg" alt=""><img src="assets/images/svg/star-active.svg" alt=""><img src="assets/images/svg/star-inactive.svg" alt=""></div>
+								<div class="review-card__count">4</div>
+							</div>
+						</div>
+						<div class="review-modal__text">
+							<p class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети «Каждый день». Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг. Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети «Каждый день». Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</p>
+						</div>
+					</div>
+				</div>
+				<form class="create-modal" data-modal-wrapper="create-review" data-send-wrapper="send-review">
+					<div class="create-modal__close" data-modal-close="create-review"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="create-modal__inner">
+						<div class="create-modal__title">
+							<h2 class="bitter-heading modal__title">Оставить отзыв о&nbsp;продукте</h2>
+						</div>
+						<div class="create-modal__inputs">
+							<div class="create-modal__input"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label></div>
+							<div class="create-modal__input"><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label></div>
+						</div>
+						<div class="create-modal__rate">
+							<p class="create-modal__rate-text">Ваша оценка</p>
+							<div class="create-modal__rate-stars">
+								<div class="create-modal__rate-star" data-rate-star="1"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z" fill="#A1BBB2"></path>
+									</svg></div>
+								<div class="create-modal__rate-star" data-rate-star="2"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z" fill="#A1BBB2"></path>
+									</svg></div>
+								<div class="create-modal__rate-star" data-rate-star="3"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z" fill="#A1BBB2"></path>
+									</svg></div>
+								<div class="create-modal__rate-star" data-rate-star="4"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z" fill="#A1BBB2"></path>
+									</svg></div>
+								<div class="create-modal__rate-star" data-rate-star="5"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z" fill="#A1BBB2"></path>
+									</svg></div>
+							</div>
+						</div>
+						<div class="create-modal__message"><label class="form-label"><textarea data-input></textarea><span class="form-placeholder">Сообщение</span></label></div>
+						<div class="create-modal__btn"><button class="button button--red edit-profile-form__button"><span>Отправить</span></button></div>
+					</div>
+				</form>
+				<div class="review-send" data-modal-wrapper="send-review">
+					<div class="review-send__close" data-modal-close="send-review"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="review-send__inner">
+						<div class="review-send__title">
+							<h2 class="bitter-heading modal__title">Отзыв отправлен</h2>
+						</div>
+						<p class="review-send__text">Спасибо за ваш отзыв! Он будет опубликован после прохождения модерации.</p>
+						<div class="review-send__btn"><button class="button button--red edit-profile-form__button" data-modal-close="send-review"><span>Понятно</span></button></div>
+					</div>
+				</div>
 				<div class="modal-zones" data-modal-wrapper="map-zones">
 					<div class="modal-zones__close" data-modal-close="map-zones"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -499,8 +573,7 @@
 										</div>
 										<div class="swiper-slide">
 											<picture>
-												<source srcset="assets/images/product-main.avif" type="image/avif">
-												<source srcset="assets/images/product-main.webp" type="image/webp"><img src="assets/images/product-main.jpg" alt loading="eager">
+												<source srcset="assets/images/image-plug.webp" type="image/webp"><img src="assets/images/image-plug.jpg" alt loading="eager">
 											</picture>
 										</div>
 									</div>
@@ -529,8 +602,7 @@
 											</div>
 											<div class="swiper-slide">
 												<picture class="product-thumbs-slide">
-													<source srcset="assets/images/product-main.avif" type="image/avif">
-													<source srcset="assets/images/product-main.webp" type="image/webp"><img src="assets/images/product-main.jpg" alt loading="eager">
+													<source srcset="assets/images/image-plug.webp" type="image/webp"><img src="assets/images/image-plug.jpg" alt loading="eager">
 												</picture>
 											</div>
 										</div>
@@ -563,12 +635,64 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-available">
+							<div class="product-available top">
 								<div class="product-available__col">Охлажденка</div>
 								<div class="product-available__col">Заморозка</div>
-								<div class="product-available__col">Артикул: 774706s</div>
+								<div class="product-available__col only-desktop">Артикул: 774706s</div>
 							</div>
-							<div class="product-order" id="product-order">
+							<div class="product-available">
+								<div class="product-available__item">
+									<div class="product-available__item-icon"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_121_12823)">
+												<path d="M8.45757 7.37336C9.27261 6.14002 9.68013 5.52335 10.2273 5.1098C10.7318 4.72854 11.3194 4.4723 11.9421 4.3621C12.6174 4.24257 13.3466 4.3636 14.805 4.60564L18.3791 5.19884L21.871 6.16451C23.2958 6.55853 24.0083 6.75554 24.5707 7.14814C25.0892 7.51009 25.5144 7.98979 25.8117 8.54791C26.134 9.15331 26.2443 9.8842 26.4647 11.346L27.005 14.9285L27.1657 18.5479C27.2312 20.0247 27.264 20.7632 27.0644 21.4194C26.8804 22.0243 26.5556 22.577 26.1167 23.0322C25.6405 23.5259 24.9795 23.8565 23.6573 24.5179L20.4172 26.1388L17.0245 27.4101C15.6402 27.9288 14.9481 28.1882 14.2623 28.2011C13.6301 28.2131 13.0041 28.075 12.4356 27.7981C11.8189 27.4978 11.3001 26.9713 10.2625 25.9183L7.71971 23.3376L5.46228 20.5039C4.54117 19.3476 4.08061 18.7695 3.85638 18.1213C3.64967 17.5237 3.58756 16.8856 3.67517 16.2594C3.7702 15.5801 4.11063 14.924 4.79148 13.6118L6.46011 10.396L8.45757 7.37336Z" fill="#32691A"></path>
+												<g clip-path="url(#clip1_121_12823)">
+													<mask id="mask0_121_12823" style="mask-type:alpha" maskunits="userSpaceOnUse" x="3" y="4" width="25" height="25">
+														<path d="M9.21652 6.22531C9.75987 5.40309 10.0316 4.99198 10.3963 4.71627C10.7326 4.4621 11.1244 4.29127 11.5395 4.21781C11.9898 4.13812 12.4759 4.21881 13.4481 4.38017L18.3795 5.19864L23.1975 6.53101C24.1474 6.79369 24.6223 6.92504 24.9972 7.18677C25.3429 7.42807 25.6264 7.74787 25.8246 8.11995C26.0395 8.52354 26.113 9.0108 26.26 9.98532L27.0054 14.9283L27.2271 19.9222C27.2708 20.9067 27.2927 21.399 27.1596 21.8365C27.0369 22.2398 26.8204 22.6083 26.5277 22.9117C26.2103 23.2408 25.7696 23.4613 24.8882 23.9022L20.4176 26.1386L15.7366 27.8927C14.8137 28.2385 14.3523 28.4114 13.8951 28.42C13.4736 28.428 13.0563 28.3359 12.6773 28.1513C12.2662 27.9512 11.9203 27.6001 11.2286 26.8981L7.72012 23.3374L4.60543 19.4275C3.99135 18.6567 3.68432 18.2713 3.53483 17.8391C3.39702 17.4408 3.35562 17.0154 3.41402 16.5979C3.47737 16.145 3.70432 15.7077 4.15823 14.8329L6.46052 10.3958L9.21652 6.22531Z" fill="#FFD066"></path>
+													</mask>
+													<g mask="url(#mask0_121_12823)">
+														<path d="M11.2959 18.2768L15.3174 19.4233L19.1597 11.9848" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+													</g>
+												</g>
+											</g>
+											<defs>
+												<clippath id="clip0_121_12823">
+													<rect width="32" height="32" fill="white"></rect>
+												</clippath>
+												<clippath id="clip1_121_12823">
+													<rect width="35.6067" height="41.0133" fill="white"></rect>
+												</clippath>
+											</defs>
+										</svg></div>
+									<p class="product-available__item-text">Есть в наличии</p>
+								</div>
+								<div class="product-available__item not">
+									<div class="product-available__item-icon"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_121_13075)">
+												<path d="M8.45757 7.37336C9.27261 6.14002 9.68013 5.52335 10.2273 5.1098C10.7318 4.72854 11.3194 4.4723 11.9421 4.3621C12.6174 4.24257 13.3466 4.3636 14.805 4.60564L18.3791 5.19884L21.871 6.16451C23.2958 6.55853 24.0083 6.75554 24.5707 7.14814C25.0892 7.51009 25.5144 7.98979 25.8117 8.54791C26.134 9.15331 26.2443 9.8842 26.4647 11.346L27.005 14.9285L27.1657 18.5479C27.2312 20.0247 27.264 20.7632 27.0644 21.4194C26.8804 22.0243 26.5556 22.577 26.1167 23.0322C25.6405 23.5259 24.9795 23.8565 23.6573 24.5179L20.4172 26.1388L17.0245 27.4101C15.6402 27.9288 14.9481 28.1882 14.2623 28.2011C13.6301 28.2131 13.0041 28.075 12.4356 27.7981C11.8189 27.4978 11.3001 26.9713 10.2625 25.9183L7.71971 23.3376L5.46228 20.5039C4.54117 19.3476 4.08061 18.7695 3.85638 18.1213C3.64967 17.5237 3.58756 16.8856 3.67517 16.2594C3.7702 15.5801 4.11063 14.924 4.79148 13.6118L6.46011 10.396L8.45757 7.37336Z" fill="#A1BBB2"></path>
+												<g clip-path="url(#clip1_121_13075)">
+													<mask id="mask0_121_13075" style="mask-type:alpha" maskunits="userSpaceOnUse" x="3" y="4" width="25" height="25">
+														<path d="M9.21652 6.22531C9.75987 5.40309 10.0316 4.99198 10.3963 4.71627C10.7326 4.4621 11.1244 4.29127 11.5395 4.21781C11.9898 4.13812 12.4759 4.21881 13.4481 4.38017L18.3795 5.19864L23.1975 6.53101C24.1474 6.79369 24.6223 6.92504 24.9972 7.18677C25.3429 7.42807 25.6264 7.74787 25.8246 8.11995C26.0395 8.52354 26.113 9.0108 26.26 9.98532L27.0054 14.9283L27.2271 19.9222C27.2708 20.9067 27.2927 21.399 27.1596 21.8365C27.0369 22.2398 26.8204 22.6083 26.5277 22.9117C26.2103 23.2408 25.7696 23.4613 24.8882 23.9022L20.4176 26.1386L15.7366 27.8927C14.8137 28.2385 14.3523 28.4114 13.8951 28.42C13.4736 28.428 13.0563 28.3359 12.6773 28.1513C12.2662 27.9512 11.9203 27.6001 11.2286 26.8981L7.72012 23.3374L4.60543 19.4275C3.99135 18.6567 3.68432 18.2713 3.53483 17.8391C3.39702 17.4408 3.35562 17.0154 3.41402 16.5979C3.47737 16.145 3.70432 15.7077 4.15823 14.8329L6.46052 10.3958L9.21652 6.22531Z" fill="#A1BBB2"></path>
+													</mask>
+													<g mask="url(#mask0_121_13075)">
+														<path d="M19.3336 17.6183L12.0488 15.6664" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M16.6477 13.0788L14.6957 20.3636" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													</g>
+												</g>
+											</g>
+											<defs>
+												<clippath id="clip0_121_13075">
+													<rect width="32" height="32" fill="white"></rect>
+												</clippath>
+												<clippath id="clip1_121_13075">
+													<rect width="35.6067" height="41.0133" fill="white"></rect>
+												</clippath>
+											</defs>
+										</svg></div>
+									<p class="product-available__item-text">Нет в наличии</p>
+								</div>
+							</div>
+							<div class="product-available__col only-mobile articul">Артикул: 774706s</div>
+							<div class="product-order static" id="product-order">
 								<div class="card-price"><img class="card-price__ico" src="assets/images/svg/discount.svg" alt="">
 									<div class="card-price__actual"><span>756</span>₽</div>
 									<div class="card-price__old"><span>980</span>₽</div>
@@ -597,7 +721,19 @@
 							</div>
 							<h2 class="bitter-heading product-about-title">О продукте</h2>
 							<div class="product-about-block">
-								<div class="product-about-block__ttl">Сезонность</div>
+								<div class="product-about__row">
+									<div class="product-about-block__ttl">Сезонность</div>
+									<div class="product-about__tooltip" data-tooltip>
+										<div class="product-about__tooltip-icon"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="20" height="20" rx="10" fill="#FFD066"></rect>
+												<path d="M10.0059 6V11" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M10 14H10.009" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></div>
+										<div class="product-about__tooltip-content" data-tooltip-content>
+											<p class="product-about__tooltip-text">Время года, когда продукт растет лучше всего</p>
+										</div>
+									</div>
+								</div>
 								<div class="product-about-block__txt">Сентябрь-апрель</div>
 							</div>
 							<div class="product-about-block">
@@ -634,7 +770,20 @@
 								<div class="product-about-block__txt">При температуре 0…4 градуса — до 3 суток, после чего его нужно подвергнуть тепловой обработке.<br>При температуре 18 гр хранится 180 суток.</div>
 							</div>
 							<div class="product-about-block">
-								<div class="product-about-block__ttl">Микронутриенты, микроэлементы</div>
+								<div class="product-about-block__ttl"></div>
+								<div class="product-about__row">
+									<div class="product-about-block__ttl">Микронутриенты, микроэлементы</div>
+									<div class="product-about__tooltip" data-tooltip>
+										<div class="product-about__tooltip-icon"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="20" height="20" rx="10" fill="#FFD066"></rect>
+												<path d="M10.0059 6V11" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M10 14H10.009" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg></div>
+										<div class="product-about__tooltip-content" data-tooltip-content>
+											<p class="product-about__tooltip-text">Микро - от слова микрофон</p>
+										</div>
+									</div>
+								</div>
 								<div class="product-about-block__txt">Железо, медь, селен, фосфор, цинк, сера</div>
 							</div>
 							<div class="product-about-block">
@@ -874,7 +1023,7 @@
 						</section>
 						<section class="main-section recipes" data-aos="fade-up">
 							<div class="recipes__top">
-								<h2 class="h1 h1--small bitter-heading">Отзывы</h2><button class="button button--red only-desktop">Отправить свой отзыв</button>
+								<h2 class="h1 h1--small bitter-heading">Отзывы</h2><button class="button button--red only-desktop" data-modal-btn="create-review">Отправить свой отзыв</button>
 								<div class="slider-controls recipes__controls only-desktop"><button class="slider-controls__item" data-prev="review"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#A18E86"></path>
@@ -898,7 +1047,7 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 										<div class="swiper-slide">
@@ -913,7 +1062,7 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 										<div class="swiper-slide">
@@ -928,7 +1077,7 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 										<div class="swiper-slide">
@@ -943,7 +1092,7 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 										<div class="swiper-slide">
@@ -958,7 +1107,7 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 										<div class="swiper-slide">
@@ -973,12 +1122,12 @@
 														<div class="review-card__count">4</div>
 													</div>
 												</div>
-												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button">Читать полностью</button>
+												<div class="review-card__text">Добрый день дорогие друзья. На прошлой неделе супруге захотелось приготовить куриные котлеты на пару. Для этого при посещении магазина Атак от Ашана мы купили грудку куриную с кожей под собственной торговой маркой сети "Каждый день". Стоимость килограмма продукта составила 200 рублей. Взяли одну куриную грудку, так как она была довольно крупная и весила чуть меньше 1 кг.</div><button class="button" data-modal-btn="check-review">Читать полностью</button>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div><button class="button button--red only-mobile recipes-more"><span>Отправить свой отзыв</span></button>
+							</div><button class="button button--red only-mobile recipes-more" data-modal-btn="create-review"><span>Отправить свой отзыв</span></button>
 						</section>
 						<section class="main-section recipes" data-aos="fade-up">
 							<div class="recipes__top">
