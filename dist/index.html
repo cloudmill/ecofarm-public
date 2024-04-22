@@ -9,7 +9,7 @@
 		<title>ЭкоФерма</title>
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="633.css" rel="stylesheet">
+		<link href="368.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -177,7 +177,7 @@
 			</div>
 			<div class="modal__wrapper burger-modal__wrapper" data-header-modal="burger-menu">
 				<div class="mobile-modal__wrapper burger-modal root">
-					<div class="mobile-modal"><button class="burger-modal__location" data-cities-drop><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="mobile-modal"><button class="burger-modal__location" data-cities-drop data-tippy-trigger><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.16641 5.26667L13.2414 2.90834C16.4164 1.85001 18.1414 3.58334 17.0914 6.75834L14.7331 13.8333C13.1497 18.5917 10.5497 18.5917 8.96641 13.8333L8.26641 11.7333L6.16641 11.0333C1.40807 9.45001 1.40807 6.85834 6.16641 5.26667Z" fill="#65897C"></path>
 							</svg><span data-cities-drop-inner>Краснодар</span><button class="button button--light-green burger-modal__catalog-btn" data-burger-menu-btn="catalog"><span>Каталог</span><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
@@ -437,7 +437,7 @@
 						<div class="tabs center" data-tab-wrapper><button class="tabs__item active" data-tab-btn="reg">Регистрация</button><button class="tabs__item" data-tab-btn="enter">Вход</button></div>
 						<div class="tabs-content">
 							<div class="tabs-content__item active" data-tab-content="reg">
-								<form class="tabs-content__form" action="" data-modal-form="registration-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон*</span></label><label class="form-label"><input class="form-input" type="email" required data-input autocomplete="email"><span class="form-placeholder">E-mail*</span></label><label class="form-label" data-password-label><input class="form-input" id="profile-password3" type="password" data-input minlength="6" maxlength="20" required><span class="form-placeholder">Пароль</span>
+								<form class="tabs-content__form" action="" data-modal-form="registration-sms"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-mask-phone required autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" type="email" required data-input autocomplete="email"><span class="form-placeholder">E-mail</span></label><label class="form-label" data-password-label><input class="form-input" id="profile-password3" type="password" data-input minlength="6" maxlength="20" required><span class="form-placeholder">Пароль</span>
 										<div class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 												<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -527,16 +527,17 @@
 						<h3 class="authorization-modal__title">Введите код из смс</h3>
 						<h4 class="authorization-modal__subtitle">Отправили на номер<div class="authorization-modal__subtitle-phone"><span>+7 (981) 157-92-90</span><button class="authorization-modal__subtitle-change">Изменить</button></div>
 							<div class="authorization-modal__form-wrapper">
-								<form class="tabs-content__form disabled" id="modal-reg-sms" data-modal-form="registration-sms-success"><label class="form-label"><input class="form-input" type="number" data-input autocomplete="new-password" minlength="6" required><span class="form-placeholder">Код</span></label>
+								<form class="tabs-content__form disabled" id="modal-reg-sms" data-modal-form="registration-sms-success"><label class="form-label"><input class="form-input" type="number" data-input autocomplete="new-password" maxlength="6" required><span class="form-placeholder">Код</span></label>
 									<div class="countdown">
 										<div class="modal__text green-text"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 												<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 												<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 											</svg><span>Отправить код еще раз</span></div>
-									</div><button class="countdown">
+									</div>
+									<div class="countdown">
 										<div class="modal__text green-text"><span>Вы сможете запросить новый код через&#32;</span><span class="timer">0:56</span></div>
-									</button><button class="button button--red full-width" type="submit">Отправить код</button>
+									</div><button class="button button--red full-width" type="submit">Отправить код</button>
 								</form>
 							</div>
 						</h4>
