@@ -476,46 +476,153 @@
 						<ul class="breadcrumbs__list" data-aos="fade-up">
 							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
 							<li class="breadcrumbs__item">
-								<div class="breadcrumbs__text">Партнерам</div>
+								<div class="breadcrumbs__text">Рецепты</div>
 							</li>
 						</ul>
 					</div>
-					<h1 class="h1 h1--small bitter-heading" data-aos="fade-up">Партнерам</h1>
-					<section class="partners-cards" data-aos="fade-up">
-						<h2 class="bitter-heading partners-cards-title h3 h3--small">Наши партнеры представлены&nbsp;<br class="only-desktop">в нескольких группах</h2>
-						<div class="partners-cards-item">
-							<h4 class="bitter-heading h4 h4--small">Дистрибьюторы</h4>
-							<p>Позволяют вам получить нашу продукцию в первозданном виде и в лучшем качестве за самый быстрый срок</p>
-						</div>
-						<div class="partners-cards-item">
-							<h4 class="bitter-heading h4 h4--small">Фермеры</h4>
-							<p>Которые вместе с нами выращивают лучшие продукты в своей категории и мы делимся с ними знаниями и технологиями по сохранению лучших традиций</p>
-						</div>
-					</section>
-					<section class="partners-list" data-aos="fade-up">
-						<h2 class="bitter-heading h2 h2--big">На сегодня наша<br>продукция&nbsp;<br class="only-desktop">представлена</h2>
-						<ul>
-							<li><span>Практически на всех рынках Москвы</span></li>
-							<li><span class="with-img">Крупнейших маркетплейса страны<img class="partners-list-markets" src="assets/images/markets.png" alt=""></span></li>
-							<li><span>Фермерских интернет магазинах партнеров: <i>Ешь Деревенское, Деликатеска.ру, Первый мясной магазин, Деревня живет, Фреш</i> и другие</span></li>
-							<li><span>Фермерские магазины и рестораны Москвы</span></li>
-							<li><span>Собственный интернет-магазин</span></li>
-						</ul>
-					</section>
-					<section class="partners-form partners-block" data-aos="fade-up">
-						<h2 class="bitter-heading h2 h2--big">Станьте нашим&nbsp;<br class="only-desktop">партнером</h2>
-						<form class="contacts-form" data-form-w-seccess="partner-modal">
-							<p class="partners-form__text">Если вы хотите стать нашими партнерами, напишите на почту&#32;<a href="mailto:partners@roshal.eco"> <b>partners@roshal.eco</b></a>&#32;или позвоните по телефону<a href="tel:89123456789"> <b>8&nbsp;912&nbsp;345&#8209;67&#8209;89</b></a></p><label class="form-label"><input class="form-input" id="fio" data-input><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" id="mail" type="email" data-input autocomplete="email" required><span class="form-placeholder">E-mail*</span></label><label class="form-label"><input class="form-input" id="tel" type="tel" data-input data-mask-phone autocomplete="tel"><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" id="theme" data-input><span class="form-placeholder">Тема</span></label>
-							<div class="create-modal__message no-margin"><label class="form-label"><textarea data-input></textarea><span class="form-placeholder">Сообщение</span></label></div>
-							<div class="form-bottom"><label class="checkbox">
-									<div class="checkbox__container"><input class="checkbox__input" id="checkbox-politics" type="checkbox" required><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
-											<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					<h1 class="h1 h1--small bitter-heading" data-aos="fade-up">Рецепты</h1>
+					<div class="recipe-filters" data-aos="fade-up">
+						<div class="select-container">
+							<div class="dropdown mini select" data-select data-select-title="Тип блюда">
+								<div class="dropdown__button" data-select-button>
+									<div class="dropdown__title" data-select-active>Тип блюда</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
 										</svg></div>
-									<div class="checkbox__caption">Согласен с <a href="#">политикой в отношении обработки персональных данных</a></div>
-								</label><button class="button button--red">Отправить</button></div>
-						</form>
-					</section>
+								</div>
+								<div class="dropdown__drop" data-select-drop data-select-checkboxes>
+									<div class="category-select-drop">
+										<div class="category-select-drop__inner"><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Завтрак"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Завтрак</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Обед"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Обед</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Ужин"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Ужин</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Десерт"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Десерт</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Выпечка"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Выпечка</div>
+											</label></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="select-container">
+							<div class="dropdown mini select" data-select data-select-title="Время приготовления">
+								<div class="dropdown__button" data-select-button>
+									<div class="dropdown__title" data-select-active>Время приготовления</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+										</svg></div>
+								</div>
+								<div class="dropdown__drop" data-select-drop data-select-checkboxes>
+									<div class="category-select-drop">
+										<div class="category-select-drop__inner"><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Завтрак"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Завтрак</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Обед"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Обед</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Ужин"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Ужин</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Десерт"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Десерт</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Выпечка"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Выпечка</div>
+											</label></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="select-container">
+							<div class="dropdown mini select" data-select data-select-title="Повод">
+								<div class="dropdown__button" data-select-button>
+									<div class="dropdown__title" data-select-active>Повод</div>
+									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+										</svg></div>
+								</div>
+								<div class="dropdown__drop" data-select-drop data-select-checkboxes>
+									<div class="category-select-drop">
+										<div class="category-select-drop__inner"><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Завтрак"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Завтрак</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Обед"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Обед</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Ужин"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Ужин</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Десерт"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Десерт</div>
+											</label><label class="checkbox">
+												<div class="checkbox__container"><input class="checkbox__input" type="checkbox" data-select-checkbox="Выпечка"><svg class="checkbox__ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect width="24" height="24" rx="8" fill="#FFD066"></rect>
+														<path d="M7 12L10.3294 15L17 9" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></div>
+												<div class="checkbox__caption">Выпечка</div>
+											</label></div>
+									</div>
+								</div>
+							</div>
+						</div><button class="category-top-filters__reset" data-filters-reset><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg><span>Сбросить</span></button>
+					</div>
+					<div class="search-results empty" data-aos="fade-up">Ничего не найдено. Попробуйте изменить значения.</div>
 					<section class="subscribe" data-aos="fade-up">
 						<div class="subscribe__title">
 							<h2 class="h1 h1--small bitter-heading">Специальные<br>предложения</h2>
@@ -1176,12 +1283,6 @@
 					<div class="review-modal__text">
 						<p class="review-card__text">В этом году мы съездили на выставку, на которой нашли новых партнеров. Выставки для нас это всегда праздник...</p>
 					</div>
-				</div>
-			</div>
-			<div class="modal success-modal" data-fancy-modal="partner-modal" id="partner-modal">
-				<div class="modal__wrapper">
-					<h2 class="bitter-heading modal__title">Сообщение отправлено</h2>
-					<div class="modal__text">Мы получили ваще сообщение и ответим, как только сможем.</div><button class="button button--red" data-fancybox-close><span>Понятно</span></button>
 				</div>
 			</div>
 		</div>

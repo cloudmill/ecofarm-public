@@ -64,7 +64,8 @@
 								<li><a class="header__nav1-item" href="#"><span>Рецепты</span></a></li>
 							</ul>
 							<ul class="header__nav2">
-								<li><button class="header__nav2-item drop" data-clients-drop data-tippy-trigger><span>Клиентам</span><svg class="only-desktop" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="only-mobile"><a class="header__nav2-item" href="#"><span>Клиентам</span></a></li>
+								<li class="only-desktop"><button class="header__nav2-item drop" data-clients-drop data-tippy-trigger><span>Клиентам</span><svg class="only-desktop" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
 										</svg></button></li>
 								<li><a class="header__nav2-item" href="#"><span>Об Экоферме</span></a></li>
@@ -278,171 +279,282 @@
 									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
 								</svg></li>
 						</ul>
-						<ul class="catalog-menu-list" data-menu="0">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="1">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="2">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="3">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="4">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="5">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="6">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="7">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="8">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu="9">
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-							<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
-								</svg></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu-sub="0">
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu-sub="1">
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu-sub="2">
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-						</ul>
-						<ul class="catalog-menu-list" data-menu-sub="3">
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-							<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
-						</ul>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="0">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="1">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="2">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="3">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="4">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="5">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="6">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="7">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="8">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-menu-wrapper>
+							<ul class="catalog-menu-list" data-menu="9">
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="0"><a href="#">Утка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="1"><a href="#">Гусь</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="2"><a href="#">Курица</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+								<li class="catalog-menu-list__item submenu" data-menu-button-sub="3"><a href="#">Перепелка</a><svg class="cat-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.7115 11.2599C13.479 10.5952 13.479 9.40472 12.7115 8.7401L9.42407 5.89308C8.34467 4.95829 6.66632 5.72504 6.66632 7.15296L6.66632 12.847C6.66632 14.2749 8.34467 15.0417 9.42407 14.1069L12.7115 11.2599Z" fill="#A1BBB2"></path>
+									</svg></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-submenu-wrapper>
+							<ul class="catalog-menu-list" data-menu-sub="0">
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-submenu-wrapper>
+							<ul class="catalog-menu-list" data-menu-sub="1">
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-submenu-wrapper>
+							<ul class="catalog-menu-list" data-menu-sub="2">
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+							</ul>
+						</div>
+						<div class="catalog-menu-list-wrapper test" data-submenu-wrapper>
+							<ul class="catalog-menu-list" data-menu-sub="3">
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+								<li class="catalog-menu-list__item section"><a href="#">Подраздел</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</header>
 			<main class="main">
-				<div class="container">
+				<div class="modal-clear" data-modal-wrapper="cart-clear">
+					<div class="modal-clear__close" data-modal-close="cart-clear"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner">
+						<p class="modal-clear__title">Очистить корзину?</p>
+						<div class="modal-clear__btns"><button class="button button--green-border" data-modal-close="cart-clear">Нет</button><button class="button button--red">Да</button></div>
+					</div>
+				</div>
+				<div class="modal-zones" data-modal-wrapper="map-zones">
+					<div class="modal-zones__close" data-modal-close="map-zones"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-zones__inner">
+						<div class="modal-zones__title">Зоны доставки</div>
+						<div class="modal-zones__map">
+							<div id="clients-map" data-map-center="37.617698,55.755864"></div>
+						</div>
+					</div>
+				</div>
+				<form class="modal-clear modal-verify" data-modal-wrapper="verify-mobile" data-send-wrapper="verify-sms">
+					<div class="modal-clear__close" data-modal-close="verify-mobile"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner modal-verify__inner">
+						<p class="modal-clear__title">Подтвердить номер телефона</p>
+						<div class="modal-verify__form"><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон</span></label><button class="button button--red">Отправить</button></div>
+					</div>
+				</form>
+				<form class="modal-clear modal-verify" data-modal-wrapper="verify-sms" data-send-wrapper="verify-done">
+					<div class="modal-clear__close" data-modal-close="verify-sms"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner modal-verify__inner">
+						<p class="modal-clear__title">Введите код из смс</p>
+						<div class="modal-verify__top">
+							<p class="modal-verify__text">Отправили на номер</p>
+							<div class="modal-verify__tel">
+								<p class="modal-verify__text">+7 (981) 157-92-90</p>
+								<div class="modal-verify__tel-edit" data-sms-edit>Изменить</div>
+							</div>
+						</div>
+						<div class="modal-verify__form"><label class="form-label"><input class="form-input" type="smsCode" data-input required data-verify-code-input><span class="form-placeholder">Код</span></label>
+							<div class="modal-verify__new active" data-verify-new>
+								<p class="modal-verify__new-text">Вы сможете запросить новый код через</p><span class="modal-verify__new-timer" data-verify-timer>0:56</span>
+							</div>
+							<div class="modal-verify__again active" data-verify-again>
+								<div class="modal-verify__again-icon"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.8901 5.08002C14.0201 4.82002 13.0601 4.65002 12.0001 4.65002C7.21008 4.65002 3.33008 8.53002 3.33008 13.32C3.33008 18.12 7.21008 22 12.0001 22C16.7901 22 20.6701 18.12 20.6701 13.33C20.6701 11.55 20.1301 9.89002 19.2101 8.51002" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16.1302 5.32L13.2402 2" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16.1298 5.31995L12.7598 7.77995" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<p class="modal-verify__again-text modal-verify__new-text">Отправить код еще раз</p>
+							</div><button class="button button--red modal-verify__btn disabled" data-verify-code-button>Подтвердить</button>
+						</div>
+					</div>
+				</form>
+				<div class="success-modal modal-verify_done" data-modal-wrapper="verify-done">
+					<div class="modal-clear__close" data-modal-close="verify-done"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<h2 class="bitter-heading modal__title">Готово</h2>
+					<div class="modal__text">Вы успешно зарегистрировались. Теперь вы можете&nbsp;пользоваться личным кабинетом.</div><button class="button button--red full-width">Войти</button>
+				</div>
+				<form class="success-modal modal-verify_done password" data-modal-wrapper="already-login">
+					<div class="modal-clear__close" data-modal-close="already-login"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<h2 class="bitter-heading modal__title">Вы уже зарегистрированы</h2>
+					<div class="modal-verify__labels"><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон</span></label><label class="form-label" data-password-label><input class="form-input" id="profile-password3" type="password" data-input minlength="6" maxlength="20" required><span class="form-placeholder">Пароль</span>
+							<div class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div>
+						</label></div>
+					<div class="modal__text green-text text-button forgot-password"><span>Забыли пароль?</span></div><button class="button button--red full-width">Войти</button>
+				</form>
+				<div class="container top-section">
 					<div class="breadcrumbs">
 						<ul class="breadcrumbs__list" data-aos="fade-up">
 							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
@@ -451,93 +563,136 @@
 							</li>
 						</ul>
 					</div>
+					<div class="cart-result">
+						<div class="cart-result__inner">
+							<div class="cart-result__top">
+								<p class="cart-result__text">Итого ваш заказ</p>
+								<p class="cart-result__number">15 890₽</p>
+							</div><a class="cart-result__btn" href="#">
+								<p class="cart-result__btn-text">Продолжить оформление заказа</p>
+								<div class="cart-result__btn-icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M26.6094 19.8263C27.9141 18.6965 27.9141 16.6726 26.6094 15.5427L21.0207 10.7028C19.1857 9.11363 16.3325 10.4171 16.3325 12.8446L16.3325 22.5245C16.3325 24.9519 19.1857 26.2554 21.0207 24.6663L26.6094 19.8263Z" fill="#14362A"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17.6844C5 17.1322 5.44772 16.6844 6 16.6844L17 16.6844C17.5523 16.6844 18 17.1322 18 17.6844C18 18.2367 17.5523 18.6844 17 18.6844L6 18.6844C5.44772 18.6844 5 18.2367 5 17.6844Z" fill="#14362A"></path>
+									</svg></div>
+							</a>
+						</div>
+					</div>
 					<div class="cart-page">
-						<div class="cart-page__col">
+						<form class="cart-page__col mob-disable" data-order-form>
 							<div class="cart-block" data-aos="fade-up">
 								<h2 class="cart-page__ttl bitter-heading">Ваши данные</h2><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон*</span></label>
 							</div>
-							<div class="cart-block" data-aos="fade-up">
+							<div class="simple-button" data-modal-btn="verify-mobile">Модалка подтвердить телефон</div>
+							<div class="simple-button" data-modal-btn="already-login">Модалка уже зареганы</div>
+							<div class="cart-block cart-block_ways" data-aos="fade-up">
 								<h2 class="cart-page__ttl bitter-heading">Способ получения</h2>
 								<div class="delivery-tabs">
-									<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab>Доставка</button><button class="tabs__item" data-tab>Самовывоз</button></div><a class="delivery-tabs__link" href="#"><span>Условия доставки</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab type="button" data-delivery-tab="delivery">Доставка</button><button class="tabs__item" data-tab type="button" data-delivery-tab="pickup">Самовывоз</button></div>
+									<div class="delivery-tabs__link" data-modal-btn="map-zones"><span>Условия доставки</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M18.7839 13.7386C19.7048 12.9411 19.7048 11.5124 18.7839 10.7149L14.839 7.29847C13.5437 6.17672 11.5297 7.09683 11.5297 8.81033L11.5297 15.6432C11.5297 17.3567 13.5437 18.2768 14.839 17.155L18.7839 13.7386Z" fill="#14362A"></path>
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5293 12.2267C3.5293 11.8369 3.84533 11.5208 4.23518 11.5208L11.9999 11.5208C12.3897 11.5208 12.7058 11.8369 12.7058 12.2267C12.7058 12.6166 12.3897 12.9326 11.9999 12.9326L4.23518 12.9326C3.84533 12.9326 3.5293 12.6166 3.5293 12.2267Z" fill="#14362A"></path>
-										</svg></a>
-								</div><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Город</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Улица*</span></label>
+										</svg></div>
+								</div>
+							</div>
+							<div class="cart-block__delivery active" data-delivery-block="delivery" data-aos="fade-up"><label class="form-label"><input class="form-input active" data-input required value="Москва"><span class="form-placeholder">Город</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Улица*</span></label>
 								<div class="row-3-inputs"><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Квартира</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Подъезд</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Этаж</span></label></div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-error"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.9994 21.41H5.93944C2.46944 21.41 1.01944 18.93 2.69944 15.9L5.81944 10.28L8.75944 5C10.5394 1.79 13.4594 1.79 15.2394 5L18.1794 10.29L21.2994 15.91C22.9794 18.94 21.5194 21.42 18.0594 21.42H11.9994V21.41Z" fill="#E94C4D"></path>
+											<path d="M12 9V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M11.9941 17H12.0031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg><span>Выберите адрес доставки, чтобы узнать стоимость</span></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-result">490₽</div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Дата доставки</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>07.02.2023</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>По согласованию</span></label></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Удобный интервал доставки</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>9:00–14:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>14:00–18:00</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>18:00–22:00</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>По согласованию</span></label></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Способ оплаты</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>Курьеру наличными</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>Курьеру картой</span></label></div>
+								</div><label class="form-label cart-comment only-mobile" data-aos="fade-up"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
 							</div>
-							<div class="cart-block" data-aos="fade-up">
-								<h3 class="h4 bitter-heading">Стоимость доставки</h3>
-								<div class="cart-delivery-error"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M11.9994 21.41H5.93944C2.46944 21.41 1.01944 18.93 2.69944 15.9L5.81944 10.28L8.75944 5C10.5394 1.79 13.4594 1.79 15.2394 5L18.1794 10.29L21.2994 15.91C22.9794 18.94 21.5194 21.42 18.0594 21.42H11.9994V21.41Z" fill="#E94C4D"></path>
-										<path d="M12 9V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M11.9941 17H12.0031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg><span>Выберите адрес доставки, чтобы узнать стоимость</span></div>
-							</div>
-							<div class="cart-block" data-aos="fade-up">
-								<h3 class="h4 bitter-heading">Стоимость доставки</h3>
-								<div class="cart-delivery-result">490₽</div>
-							</div>
-							<div class="cart-block" data-aos="fade-up">
-								<h3 class="h4 bitter-heading">Дата доставки</h3>
-								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<div class="cart-block__delivery" data-delivery-block="pickup">
+								<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2 desk-grid-2"><input type="radio" name="user-address"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										</svg><span>Балашиха, мкр. Гагарино, 21А, стр. 1</span></label><label class="cart-radio-item mob-grid-2 desk-grid-2"><input type="radio" name="user-address"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										</svg><span>Санкт-Петербург, ул. Генерала Хрулёва, 7</span></label></div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-result">0₽</div>
+								</div>
+								<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>07.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>По согласованию</span></label></div>
-							</div>
-							<div class="cart-block" data-aos="fade-up">
-								<h3 class="h4 bitter-heading">Удобный интервал доставки</h3>
-								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>9:00–14:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>14:00–18:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>18:00–22:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>По согласованию</span></label></div>
-							</div>
-							<div class="cart-block" data-aos="fade-up">
-								<h3 class="h4 bitter-heading">Способ оплаты</h3>
-								<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
-											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
-											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-										</svg><span>Курьеру наличными</span></label><label class="cart-radio-item"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										</svg><span>Курьеру наличными</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
 										</svg><span>Курьеру картой</span></label></div>
-							</div><label class="form-label cart-comment only-mobile" data-aos="fade-up"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label>
-						</div>
+							</div>
+						</form>
 						<div class="cart-page__col">
 							<div class="cart-page__top" data-aos="fade-up">
-								<h1 class="cart-page__ttl bitter-heading">Корзина</h1><button class="cart-page__clear"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+								<h1 class="cart-page__ttl bitter-heading">Корзина</h1><button class="cart-page__clear" data-modal-btn="cart-clear"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
 										<path opacity="0.4" d="M16.6435 7.48844C16.6435 7.55644 16.1105 14.2972 15.8061 17.1341C15.6155 18.875 14.4932 19.931 12.8097 19.961C11.5162 19.99 10.2499 20 9.00407 20C7.68139 20 6.3879 19.99 5.13233 19.961C3.50525 19.922 2.38196 18.845 2.20106 17.1341C1.8879 14.2872 1.36467 7.55644 1.35494 7.48844C1.34522 7.28345 1.41135 7.08846 1.54556 6.93046C1.67783 6.78447 1.86845 6.69647 2.06879 6.69647H15.9393C16.1387 6.69647 16.3196 6.78447 16.4626 6.93046C16.5958 7.08846 16.6629 7.28345 16.6435 7.48844Z" fill="#65897C"></path>
 										<path d="M18 3.97686C18 3.56588 17.6761 3.24389 17.2871 3.24389H14.3714C13.7781 3.24389 13.2627 2.8219 13.1304 2.22692L12.967 1.49795C12.7385 0.616978 11.9498 0 11.0647 0H6.93624C6.0415 0 5.26054 0.616978 5.02323 1.54595L4.87054 2.22792C4.7373 2.8219 4.22185 3.24389 3.62957 3.24389H0.713853C0.32386 3.24389 0 3.56588 0 3.97686V4.35685C0 4.75783 0.32386 5.08982 0.713853 5.08982H17.2871C17.6761 5.08982 18 4.75783 18 4.35685V3.97686Z" fill="#65897C"></path>
 									</svg><span>Удалить все</span></button>
@@ -602,8 +757,54 @@
 								</div>
 							</div>
 							<div class="promocode" data-aos="fade-up">
-								<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab>Промокод</button><button class="tabs__item" data-tab>Списать бонусы</button></div>
-								<div class="promocode__row"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Введите промокод</span></label><button class="button button--green"><span>Применить</span></button></div>
+								<div class="tabs" data-tabs-panel><button class="tabs__item active" data-promocode-tab="promocode">Промокод</button><button class="tabs__item" data-promocode-tab="bonus">Списать бонусы</button></div>
+								<div class="promocode-content">
+									<div class="promocode-wrapper promocode-wrapper_promo active" data-promocode-wrapper="promocode">
+										<div class="promocode-wrapper__blocks" data-promocode-block="promocode">
+											<form class="promocode__row" data-promocode-form="promocode"><label class="form-label"><input class="form-input" data-input><span class="form-placeholder">Введите промокод (test)</span></label><button class="button button--green"><span>Применить</span></button></form>
+											<p class="promocode__error" data-promocode-error>Такого промокода не существует</p>
+										</div>
+										<div class="promocode-wrapper__results" data-promocode-results="promocode">
+											<div class="promocode-wrapper__results-inner">
+												<p class="promocode-wrapper__results-title promocode-bonus__info-number">Промокод применен. Скидка -600₽.</p>
+												<div class="promocode-wrapper__results-btn" data-promocode-reset="promocode"><button class="cart-page__clear"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+															<path opacity="0.4" d="M16.6435 7.48844C16.6435 7.55644 16.1105 14.2972 15.8061 17.1341C15.6155 18.875 14.4932 19.931 12.8097 19.961C11.5162 19.99 10.2499 20 9.00407 20C7.68139 20 6.3879 19.99 5.13233 19.961C3.50525 19.922 2.38196 18.845 2.20106 17.1341C1.8879 14.2872 1.36467 7.55644 1.35494 7.48844C1.34522 7.28345 1.41135 7.08846 1.54556 6.93046C1.67783 6.78447 1.86845 6.69647 2.06879 6.69647H15.9393C16.1387 6.69647 16.3196 6.78447 16.4626 6.93046C16.5958 7.08846 16.6629 7.28345 16.6435 7.48844Z" fill="#65897C"></path>
+															<path d="M18 3.97686C18 3.56588 17.6761 3.24389 17.2871 3.24389H14.3714C13.7781 3.24389 13.2627 2.8219 13.1304 2.22692L12.967 1.49795C12.7385 0.616978 11.9498 0 11.0647 0H6.93624C6.0415 0 5.26054 0.616978 5.02323 1.54595L4.87054 2.22792C4.7373 2.8219 4.22185 3.24389 3.62957 3.24389H0.713853C0.32386 3.24389 0 3.56588 0 3.97686V4.35685C0 4.75783 0.32386 5.08982 0.713853 5.08982H17.2871C17.6761 5.08982 18 4.75783 18 4.35685V3.97686Z" fill="#65897C"></path>
+														</svg><span>Отменить промокод</span></button></div>
+											</div>
+										</div>
+									</div>
+									<div class="promocode-wrapper promocode-wrapper_bonus" data-promocode-wrapper="bonus">
+										<div class="promocode-wrapper__blocks" data-promocode-block="bonus">
+											<form class="promocode-bonus" data-promocode-form="bonus">
+												<div class="promocode-bonus__info">
+													<div class="promocode-bonus__info-top">
+														<p class="promocode-bonus__info-title">Доступно бонусов</p>
+														<p class="promocode-bonus__info-number">1235</p>
+													</div>
+													<p class="promocode-bonus__info-text">1 бонус = 1 рубль</p>
+												</div>
+												<div class="promocode-bonus__range">
+													<div class="promocode-bonus__range-top">
+														<p class="promocode-bonus__range-text">Сколько списать?</p>
+														<p class="promocode-bonus__range-number" data-bonus-number>1</p>
+													</div>
+													<div class="promocode-bonus__range-content"><input class="promocode-bonus__range-input" type="range" min="0" max="1235" step="1" data-bonus-range value="150"></div>
+												</div>
+												<div class="promocode-bonus__btn"><button class="button button--green"><span>Списать бонусы</span></button></div>
+											</form>
+										</div>
+										<div class="promocode-wrapper__results" data-promocode-results="bonus">
+											<div class="promocode-wrapper__results-inner">
+												<p class="promocode-wrapper__results-title promocode-bonus__info-number">Бонусы списаны. Скидка -965₽.</p>
+												<div class="promocode-wrapper__results-btn" data-promocode-reset="bonus"><button class="cart-page__clear"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+															<path opacity="0.4" d="M16.6435 7.48844C16.6435 7.55644 16.1105 14.2972 15.8061 17.1341C15.6155 18.875 14.4932 19.931 12.8097 19.961C11.5162 19.99 10.2499 20 9.00407 20C7.68139 20 6.3879 19.99 5.13233 19.961C3.50525 19.922 2.38196 18.845 2.20106 17.1341C1.8879 14.2872 1.36467 7.55644 1.35494 7.48844C1.34522 7.28345 1.41135 7.08846 1.54556 6.93046C1.67783 6.78447 1.86845 6.69647 2.06879 6.69647H15.9393C16.1387 6.69647 16.3196 6.78447 16.4626 6.93046C16.5958 7.08846 16.6629 7.28345 16.6435 7.48844Z" fill="#65897C"></path>
+															<path d="M18 3.97686C18 3.56588 17.6761 3.24389 17.2871 3.24389H14.3714C13.7781 3.24389 13.2627 2.8219 13.1304 2.22692L12.967 1.49795C12.7385 0.616978 11.9498 0 11.0647 0H6.93624C6.0415 0 5.26054 0.616978 5.02323 1.54595L4.87054 2.22792C4.7373 2.8219 4.22185 3.24389 3.62957 3.24389H0.713853C0.32386 3.24389 0 3.56588 0 3.97686V4.35685C0 4.75783 0.32386 5.08982 0.713853 5.08982H17.2871C17.6761 5.08982 18 4.75783 18 4.35685V3.97686Z" fill="#65897C"></path>
+														</svg><span>Отменить списание</span></button></div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="cart-table" data-aos="fade-up">
 								<div class="cart-table__row">
@@ -627,7 +828,7 @@
 									<div class="cart-table__value">15 890₽</div>
 								</div>
 							</div>
-							<div class="loyalty-top-note cart-note" data-aos="fade-up"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">После подтверждения заказа стоимость может измениться. Наш менеджер сообщит вам об этом.</span></div><label class="form-label cart-comment only-desktop" data-aos="fade-up"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><button class="button button--green cart-submit" data-aos="fade-up"><span>Оформить заказ</span></button>
+							<div class="loyalty-top-note cart-note" data-aos="fade-up"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">После подтверждения заказа стоимость может измениться. Наш менеджер сообщит вам об этом.</span></div><label class="form-label cart-comment only-desktop" data-aos="fade-up"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><button class="button button--green cart-submit" data-aos="fade-up" type="button" data-order-btn><span>Оформить заказ</span></button>
 						</div>
 					</div>
 					<section class="subscribe" data-aos="fade-up">
@@ -1209,7 +1410,7 @@
 								<path d="M10.8332 29.1666L29.1665 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg></button>
 						<h3 class="authorization-modal__title">Сброс пароля</h3>
-						<h4 class="authorization-modal__subtitle">На вашу почту&#32;<span class="authorization-modal__subtitle-email">*****ch@mail.ru</span>&#32;отправлена ссылка для сброса пароля</h4><button class="button button--red full-width show-new-password-modal margin-top" data-burger-menu-btn="set-new-password">окно "придумайте новый пароль" (для теста)</button>
+						<h4 class="authorization-modal__subtitle">На вашу почту&#32;<span class="authorization-modal__subtitle-email">*****ch@mail.ru</span>&#32;отправлена ссылка для сброса пароля</h4>
 					</div>
 				</div>
 				<div class="mobile-modal__wrapper authorization-modal" data-burger-menu-modal="set-new-password" data-submodal>
@@ -1275,7 +1476,25 @@
 					</div>
 				</div>
 			</div>
+			<div class="review-modal history-modal" data-modal-wrapper="history">
+				<div class="review-modal__close" data-modal-close="history"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg></div>
+				<div class="review-modal__inner">
+					<div class="review-modal__top">
+						<div class="review-card__col">
+							<div class="review-card__avatar"><img src="assets/images/history-profile.png" alt=""></div>
+							<div class="review-card__name">Александр Рошаль</div>
+						</div>
+					</div>
+					<div class="review-modal__text">
+						<p class="review-card__text">В этом году мы съездили на выставку, на которой нашли новых партнеров. Выставки для нас это всегда праздник...</p>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=baaa4d77-4eeb-44c8-83d8-80b292a23687&amp;lang=ru_RU&amp;coordorder=longlat"></script>
 	</body>
 
 </html>
