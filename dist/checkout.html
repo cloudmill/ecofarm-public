@@ -14,9 +14,6 @@
 	</head>
 
 	<body class="body">
-		<div class="preloader" id="loader-main">
-			<div class="preloader__container" id="loader"></div>
-		</div>
 		<nav class="mobile-bar only-mobile"><a class="mobile-bar__item" href="#"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M12.5 18V15" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 					<path d="M10.57 2.81997L3.64 8.36997C2.86 8.98997 2.36 10.3 2.53 11.28L3.86 19.24C4.1 20.66 5.46 21.81 6.9 21.81H18.1C19.53 21.81 20.9 20.65 21.14 19.24L22.47 11.28C22.63 10.3 22.13 8.98997 21.36 8.36997L14.43 2.82997C13.36 1.96997 11.63 1.96997 10.57 2.81997Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -108,7 +105,7 @@
 							</svg></button><a class="header__cart only-desktop" href><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M6.41016 20.5885C6.41016 19.7485 7.09016 19.0685 7.93016 19.0685C8.76016 19.0685 9.44016 19.7485 9.44016 20.5885C9.44016 21.4185 8.76016 22.0985 7.93016 22.0985C7.09016 22.0985 6.41016 21.4185 6.41016 20.5885ZM17.6602 20.5885C17.6602 19.7485 18.3402 19.0685 19.1802 19.0685C20.0102 19.0685 20.6902 19.7485 20.6902 20.5885C20.6902 21.4185 20.0102 22.0985 19.1802 22.0985C18.3402 22.0985 17.6602 21.4185 17.6602 20.5885Z" fill="#14362A"></path>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M20.6907 6.34899C21.3007 6.34899 21.7007 6.55899 22.1007 7.01899C22.5007 7.47899 22.5707 8.13899 22.4807 8.73799L21.5307 15.298C21.3507 16.559 20.2707 17.488 19.0007 17.488H8.09074C6.76074 17.488 5.66074 16.468 5.55074 15.149L4.63074 4.24799L3.12074 3.98799C2.72074 3.91799 2.44074 3.52799 2.51074 3.12799C2.58074 2.71799 2.97074 2.44799 3.38074 2.50799L5.76574 2.86799C6.10574 2.92899 6.35574 3.20799 6.38574 3.54799L6.57574 5.78799C6.60574 6.10899 6.86574 6.34899 7.18574 6.34899H20.6907ZM14.6307 11.548H17.4007C17.8207 11.548 18.1507 11.208 18.1507 10.798C18.1507 10.378 17.8207 10.048 17.4007 10.048H14.6307C14.2107 10.048 13.8807 10.378 13.8807 10.798C13.8807 11.208 14.2107 11.548 14.6307 11.548Z" fill="#14362A"></path>
-							</svg><span>0₽</span></a></div>
+							</svg><span>12 650₽</span></a></div>
 				</div>
 				<div class="display-none" id="city-drop">
 					<div class="cities-drop">
@@ -446,1040 +443,271 @@
 				</div>
 			</header>
 			<main class="main">
+				<div class="modal-clear" data-modal-wrapper="cart-clear">
+					<div class="modal-clear__close" data-modal-close="cart-clear"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner">
+						<p class="modal-clear__title">Очистить корзину?</p>
+						<div class="modal-clear__btns"><button class="button button--green-border" data-modal-close="cart-clear">Нет</button><button class="button button--red">Да</button></div>
+					</div>
+				</div>
+				<div class="modal-zones" data-modal-wrapper="map-zones">
+					<div class="modal-zones__close" data-modal-close="map-zones"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-zones__inner">
+						<div class="modal-zones__title">Зоны доставки</div>
+						<div class="modal-zones__map">
+							<div id="clients-map" data-map-center="37.617698,55.755864"></div>
+						</div>
+					</div>
+				</div>
+				<form class="modal-clear modal-verify" data-modal-wrapper="verify-mobile" data-send-wrapper="verify-sms">
+					<div class="modal-clear__close" data-modal-close="verify-mobile"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner modal-verify__inner">
+						<p class="modal-clear__title">Подтвердить номер телефона</p>
+						<div class="modal-verify__form"><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон</span></label><button class="button button--red">Отправить</button></div>
+					</div>
+				</form>
+				<form class="modal-clear modal-verify" data-modal-wrapper="verify-sms" data-send-wrapper="verify-done">
+					<div class="modal-clear__close" data-modal-close="verify-sms"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner modal-verify__inner">
+						<p class="modal-clear__title">Введите код из смс</p>
+						<div class="modal-verify__top">
+							<p class="modal-verify__text">Отправили на номер</p>
+							<div class="modal-verify__tel">
+								<p class="modal-verify__text">+7 (981) 157-92-90</p>
+								<div class="modal-verify__tel-edit" data-sms-edit>Изменить</div>
+							</div>
+						</div>
+						<div class="modal-verify__form"><label class="form-label"><input class="form-input" type="smsCode" data-input required data-verify-code-input><span class="form-placeholder">Код</span></label>
+							<div class="modal-verify__new active" data-verify-new>
+								<p class="modal-verify__new-text">Вы сможете запросить новый код через</p><span class="modal-verify__new-timer" data-verify-timer>0:56</span>
+							</div>
+							<div class="modal-verify__again active" data-verify-again>
+								<div class="modal-verify__again-icon"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.8901 5.08002C14.0201 4.82002 13.0601 4.65002 12.0001 4.65002C7.21008 4.65002 3.33008 8.53002 3.33008 13.32C3.33008 18.12 7.21008 22 12.0001 22C16.7901 22 20.6701 18.12 20.6701 13.33C20.6701 11.55 20.1301 9.89002 19.2101 8.51002" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16.1302 5.32L13.2402 2" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M16.1298 5.31995L12.7598 7.77995" stroke="#65897C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg></div>
+								<p class="modal-verify__again-text modal-verify__new-text">Отправить код еще раз</p>
+							</div><button class="button button--red modal-verify__btn disabled" data-verify-code-button>Подтвердить</button>
+						</div>
+					</div>
+				</form>
+				<div class="success-modal modal-verify_done" data-modal-wrapper="verify-done">
+					<div class="modal-clear__close" data-modal-close="verify-done"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<h2 class="bitter-heading modal__title">Готово</h2>
+					<div class="modal__text">Вы успешно зарегистрировались. Теперь вы можете&nbsp;пользоваться личным кабинетом.</div><button class="button button--red full-width">Войти</button>
+				</div>
+				<form class="success-modal modal-verify_done password" data-modal-wrapper="already-login">
+					<div class="modal-clear__close" data-modal-close="already-login"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<h2 class="bitter-heading modal__title">Вы уже зарегистрированы</h2>
+					<div class="modal-verify__labels"><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон</span></label><label class="form-label" data-password-label><input class="form-input" id="profile-password3" type="password" data-input minlength="6" maxlength="20" required><span class="form-placeholder">Пароль</span>
+							<div class="show-password" data-show-password type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.42 11.9999 8.42C13.9799 8.42 15.5799 10.02 15.5799 12Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.4C18.8198 5.8 15.5298 3.72 11.9998 3.72C8.46984 3.72 5.17984 5.8 2.88984 9.4C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div>
+						</label></div>
+					<div class="modal__text green-text text-button forgot-password"><span>Забыли пароль?</span></div><button class="button button--red full-width">Войти</button>
+				</form>
 				<div class="container top-section">
-					<section class="main-slider">
-						<div data-aos="fade-up">
-							<div class="swiper main-slider__container" data-slider-id="main">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide main-slider-slide">
-										<div class="main-slider-slide__bg-container">
-											<picture class="main-slider-slide__bg">
-												<source srcset="assets/images/main-slide-1-tablet.avif" type="image/avif" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-1-tablet.webp" type="image/webp" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-1-tablet.jpg" type="image/jpeg" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-1.avif" type="image/avif">
-												<source srcset="assets/images/main-slide-1.webp" type="image/webp"><img src="assets/images/main-slide-1.jpg" alt loading="eager">
-											</picture>
-										</div>
-										<div class="main-slider-slide__content">
-											<div class="h1 main-slider-slide__title bitter-heading">Бесплатная &nbsp;<br class="only-desktop">доставка &nbsp;<br class="no-tablet"><span class="green-accent">от 5 000₽</span></div><a class="button button--green-border">Подробнее</a>
-										</div>
-									</div>
-									<div class="swiper-slide main-slider-slide">
-										<div class="main-slider-slide__bg-container">
-											<picture class="main-slider-slide__bg">
-												<source srcset="assets/images/main-slide-2-mob.avif" type="image/avif" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-2-mob.webp" type="image/webp" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-2-mob.jpg" type="image/jpeg" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-2.avif" type="image/avif">
-												<source srcset="assets/images/main-slide-2.webp" type="image/webp"><img src="assets/images/main-slide-2.jpg" alt loading="eager">
-											</picture>
-										</div>
-										<div class="main-slider-slide__content">
-											<div class="h1 main-slider-slide__title bitter-heading">Яйца к Пасхе</div>
-											<div class="main-slider-slide__text">Куриные, цесариные, перепелиные</div><a class="button button--green-border">Подробнее</a>
-										</div>
-									</div>
-									<div class="swiper-slide main-slider-slide">
-										<div class="main-slider-slide__bg-container">
-											<picture class="main-slider-slide__bg">
-												<source srcset="assets/images/main-slide-3-mob.avif" type="image/avif" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-3-mob.webp" type="image/webp" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-3-mob.jpg" type="image/jpeg" media="(max-width: 1023px)">
-												<source srcset="assets/images/main-slide-3.avif" type="image/avif">
-												<source srcset="assets/images/main-slide-3.webp" type="image/webp"><img src="assets/images/main-slide-3.jpg" alt loading="eager">
-											</picture>
-										</div>
-										<div class="main-slider-slide__content">
-											<div class="h1 main-slider-slide__title bitter-heading">Пасхальные<br>блюда</div><a class="button button--green-border">Подробнее</a>
-										</div>
-									</div>
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list" data-aos="fade-up">
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
+							<li class="breadcrumbs__item">
+								<div class="breadcrumbs__text">Оформление заказа</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cart-page">
+						<form class="cart-page__col cart-page__col_content" data-order-form><a class="cart-back devices" href="#">
+								<div class="cart-back__icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
+									</svg></div>
+								<p class="cart-back__text">Вернуться в корзину</p>
+							</a>
+							<div class="cart-block mob-mt-0" data-aos="fade-up">
+								<h2 class="cart-page__ttl bitter-heading only-desktop">Оформление заказа</h2>
+								<h2 class="cart-page__subtitle bitter-heading">Ваши данные</h2>
+								<div class="cart-page__user"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон*</span></label></div>
+							</div>
+							<p>Кнопки просто для показа (удалить на бэке)</p>
+							<div class="simple-button" data-modal-btn="verify-mobile">Модалка подтвердить телефон</div>
+							<div class="simple-button" data-modal-btn="already-login">Модалка уже зареганы</div>
+							<div class="cart-block cart-block_ways" data-aos="fade-up">
+								<h2 class="cart-page__subtitle bitter-heading">Способ получения</h2>
+								<div class="delivery-tabs">
+									<div class="tabs" data-tabs-panel><button class="tabs__item active" data-tab type="button" data-delivery-tab="delivery">Доставка</button><button class="tabs__item" data-tab type="button" data-delivery-tab="pickup">Самовывоз</button></div>
+									<div class="delivery-tabs__link" data-modal-btn="map-zones"><span>Условия доставки</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.7839 13.7386C19.7048 12.9411 19.7048 11.5124 18.7839 10.7149L14.839 7.29847C13.5437 6.17672 11.5297 7.09683 11.5297 8.81033L11.5297 15.6432C11.5297 17.3567 13.5437 18.2768 14.839 17.155L18.7839 13.7386Z" fill="#14362A"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5293 12.2267C3.5293 11.8369 3.84533 11.5208 4.23518 11.5208L11.9999 11.5208C12.3897 11.5208 12.7058 11.8369 12.7058 12.2267C12.7058 12.6166 12.3897 12.9326 11.9999 12.9326L4.23518 12.9326C3.84533 12.9326 3.5293 12.6166 3.5293 12.2267Z" fill="#14362A"></path>
+										</svg></div>
 								</div>
 							</div>
-							<div class="main-slider__content">
-								<div class="slider-controls only-desktop"><button class="slider-controls__item" data-prev="main"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<div class="cart-block__delivery active" data-delivery-block="delivery" data-aos="fade-up">
+								<div class="row-2-inputs"><label class="form-label"><input class="form-input active" data-input required value="Москва"><span class="form-placeholder">Город</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Улица*</span></label></div>
+								<div class="row-3-inputs"><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Квартира</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Подъезд</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Этаж</span></label></div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-error"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.9994 21.41H5.93944C2.46944 21.41 1.01944 18.93 2.69944 15.9L5.81944 10.28L8.75944 5C10.5394 1.79 13.4594 1.79 15.2394 5L18.1794 10.29L21.2994 15.91C22.9794 18.94 21.5194 21.42 18.0594 21.42H11.9994V21.41Z" fill="#E94C4D"></path>
+											<path d="M12 9V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M11.9941 17H12.0031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg><span>Выберите адрес доставки, чтобы узнать стоимость</span></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-result">490₽</div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Дата доставки</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>07.02.2023</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>По согласованию</span></label></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Удобный интервал доставки</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>9:00–14:00</span></label><label class="cart-radio-item"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>14:00–18:00</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>18:00–22:00</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-time"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>По согласованию</span></label></div>
+								</div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Способ оплаты</h3>
+									<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>Курьеру наличными</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>Курьеру картой</span></label></div>
+								</div>
+							</div>
+							<div class="cart-block__delivery" data-delivery-block="pickup">
+								<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2 desk-grid-2"><input type="radio" name="user-address"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Балашиха, мкр. Гагарино, 21А, стр. 1</span></label><label class="cart-radio-item mob-grid-2 desk-grid-2"><input type="radio" name="user-address"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Санкт-Петербург, ул. Генерала Хрулёва, 7</span></label></div>
+								<div class="cart-block" data-aos="fade-up">
+									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
+									<div class="cart-delivery-result">0₽</div>
+								</div>
+								<div class="cart-radio-group"><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Курьеру наличными</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+											<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+											<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+										</svg><span>Курьеру картой</span></label></div>
+							</div>
+							<div class="cart-block" data-aos="fade-up">
+								<h3 class="h4 bitter-heading">Комментарий к заказу</h3>
+								<div class="create-modal__message"><label class="form-label"><textarea data-input></textarea><span class="form-placeholder">Например, по упаковке или удобному способу проезда к точке доставки</span></label></div>
+							</div>
+						</form>
+						<div class="cart-page__col cart-page__col_order"><a class="cart-back only-desktop" href="#">
+								<div class="cart-back__icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
+									</svg></div>
+								<p class="cart-back__text">Вернуться в корзину</p>
+							</a>
+							<aside class="cart-page__summary cart-page__summary_checkout">
+								<div class="cart-page__summary-inner">
+									<p class="cart-page__summary-title">Ваш заказ</p>
+									<ul class="cart-page__summary-items">
+										<li class="cart-page__summary-item">
+											<p class="cart-page__summary-text">4 товаров</p>
+											<p class="cart-page__summary-text bold">18 670₽</p>
+										</li>
+										<li class="cart-page__summary-item">
+											<p class="cart-page__summary-text">Скидки</p>
+											<p class="cart-page__summary-text bold green">-1 200₽</p>
+										</li>
+										<li class="cart-page__summary-item">
+											<p class="cart-page__summary-text">Промокод</p>
+											<p class="cart-page__summary-text bold green">-600₽</p>
+										</li>
+									</ul>
+									<div class="cart-page__summary-result">
+										<p class="cart-page__summary-text bold">Итого</p>
+										<p class="cart-page__summary-price">15 890₽</p>
+									</div>
+									<div class="cart-page__summary-btn"><a class="button button--green" href="#"><span>Оформить заказ</span></a></div>
+								</div>
+							</aside>
+							<div class="cart-page__message">
+								<div class="loyalty-top-note cart-note" data-aos="fade-up"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">После подтверждения заказа стоимость может измениться. Наш менеджер сообщит вам об этом.</span></div>
+							</div>
+							<div class="cart-checkout__ordering devices"><a class="cart-back devices" href="#">
+									<div class="cart-back__icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
-										</svg></button><button class="slider-controls__item" data-next="main"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M26.6094 19.8263C27.9141 18.6965 27.9141 16.6726 26.6094 15.5427L21.0207 10.7028C19.1857 9.11363 16.3325 10.4171 16.3325 12.8446L16.3325 22.5245C16.3325 24.9519 19.1857 26.2554 21.0207 24.6663L26.6094 19.8263Z" fill="#14362A"></path>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17.6844C5 17.1322 5.44772 16.6844 6 16.6844L17 16.6844C17.5523 16.6844 18 17.1322 18 17.6844C18 18.2367 17.5523 18.6844 17 18.6844L6 18.6844C5.44772 18.6844 5 18.2367 5 17.6844Z" fill="#14362A"></path>
-										</svg></button></div>
-								<div class="main-slider-pagination swiper-pagination" data-swiper-pagination="main"></div>
-							</div>
-						</div>
-					</section>
-					<section class="main-section" data-aos="fade-up">
-						<div class="main-section__top">
-							<div class="main-section__title-ico"><img src="assets/images/svg/actions.svg" alt="">
-								<h2 class="h2 bitter-heading">Товары по акции</h2>
-							</div>
-							<div class="slider-controls only-desktop"><button class="slider-controls__item" data-prev="products"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
-									</svg></button><button class="slider-controls__item" data-next="products"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.6094 19.8263C27.9141 18.6965 27.9141 16.6726 26.6094 15.5427L21.0207 10.7028C19.1857 9.11363 16.3325 10.4171 16.3325 12.8446L16.3325 22.5245C16.3325 24.9519 19.1857 26.2554 21.0207 24.6663L26.6094 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17.6844C5 17.1322 5.44772 16.6844 6 16.6844L17 16.6844C17.5523 16.6844 18 17.1322 18 17.6844C18 18.2367 17.5523 18.6844 17 18.6844L6 18.6844C5.44772 18.6844 5 18.2367 5 17.6844Z" fill="#14362A"></path>
-									</svg></button></div>
-						</div>
-						<div class="products-slider disable-container">
-							<div class="swiper" data-slider-id="products">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="main-section" data-aos="fade-up">
-						<div class="main-section__top">
-							<div class="main-section__title-ico"><img src="assets/images/svg/recommend.svg" alt="">
-								<h2 class="h2 bitter-heading">Рекомендуем</h2>
-							</div>
-							<div class="slider-controls only-desktop"><button class="slider-controls__item" data-prev="products-recomendation"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
-									</svg></button><button class="slider-controls__item" data-next="products-recomendation"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.6094 19.8263C27.9141 18.6965 27.9141 16.6726 26.6094 15.5427L21.0207 10.7028C19.1857 9.11363 16.3325 10.4171 16.3325 12.8446L16.3325 22.5245C16.3325 24.9519 19.1857 26.2554 21.0207 24.6663L26.6094 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17.6844C5 17.1322 5.44772 16.6844 6 16.6844L17 16.6844C17.5523 16.6844 18 17.1322 18 17.6844C18 18.2367 17.5523 18.6844 17 18.6844L6 18.6844C5.44772 18.6844 5 18.2367 5 17.6844Z" fill="#14362A"></path>
-									</svg></button></div>
-						</div>
-						<div class="products-slider disable-container">
-							<div class="swiper" data-slider-id="products-recomendation">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__actual"><span>756</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__actual"><span>756</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__actual"><span>756</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-1.avif" type="image/avif">
-														<source srcset="assets/images/product-1.webp" type="image/webp"><img src="assets/images/product-1.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Судак охлаждённый</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__actual"><span>756</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="card"><a href="#">
-												<div class="card__top">
-													<picture class="card__img">
-														<source srcset="assets/images/product-2.avif" type="image/avif">
-														<source srcset="assets/images/product-2.webp" type="image/webp"><img src="assets/images/product-2.jpg" alt loading="lazy">
-													</picture>
-													<div class="card__labels only-desktop">
-														<div>Лучшее для нового года</div>
-														<div>Хит на зиму</div>
-														<div>Удиви мужа</div>
-													</div>
-												</div>
-												<div class="card__title">Морковь нового урожая с ботвой</div>
-											</a>
-											<div class="card-price">
-												<div class="card-price__ico"><img src="assets/images/svg/discount.svg" alt=""><span>10%</span></div>
-												<div class="card-price__actual"><span>756</span>₽</div>
-												<div class="card-price__old"><span>980</span>₽</div>
-											</div><button class="button button--green-border full-width" data-fancy-button="cart"><svg class="cart2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M3.25 3.24988L5.33 3.60988L6.293 15.0829C6.37 16.0199 7.153 16.7389 8.093 16.7359H19.002C19.899 16.7379 20.66 16.0779 20.787 15.1899L21.736 8.63188C21.842 7.89888 21.333 7.21888 20.601 7.11288C20.537 7.10388 5.664 7.09888 5.664 7.09888" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M14.625 10.7948H17.398" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.65338 20.2025C7.95438 20.2025 8.19738 20.4465 8.19738 20.7465C8.19738 21.0475 7.95438 21.2915 7.65338 21.2915C7.35238 21.2915 7.10938 21.0475 7.10938 20.7465C7.10938 20.4465 7.35238 20.2025 7.65338 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9346 20.2025C19.2356 20.2025 19.4796 20.4465 19.4796 20.7465C19.4796 21.0475 19.2356 21.2915 18.9346 21.2915C18.6336 21.2915 18.3906 21.0475 18.3906 20.7465C18.3906 20.4465 18.6336 20.2025 18.9346 20.2025Z" fill="#14362A" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg><span>В корзину</span></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="categories-section main-section" data-aos="fade-up"><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-0.avif" type="image/avif">
-								<source srcset="assets/images/main-category-0.webp" type="image/webp"><img src="assets/images/main-category-0.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Мясо птицы</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-1.avif" type="image/avif">
-								<source srcset="assets/images/main-category-1.webp" type="image/webp"><img src="assets/images/main-category-1.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Овощи, фрукты,<br />ягоды, зелень</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-2.avif" type="image/avif">
-								<source srcset="assets/images/main-category-2.webp" type="image/webp"><img src="assets/images/main-category-2.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Мясо</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-3.avif" type="image/avif">
-								<source srcset="assets/images/main-category-3.webp" type="image/webp"><img src="assets/images/main-category-3.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Рыба и морепродукты</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-4.avif" type="image/avif">
-								<source srcset="assets/images/main-category-4.webp" type="image/webp"><img src="assets/images/main-category-4.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Мясо кролика<br />и нутрии</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-5.avif" type="image/avif">
-								<source srcset="assets/images/main-category-5.webp" type="image/webp"><img src="assets/images/main-category-5.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Молочные продукты</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-6.avif" type="image/avif">
-								<source srcset="assets/images/main-category-6.webp" type="image/webp"><img src="assets/images/main-category-6.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Яйцо</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-7.avif" type="image/avif">
-								<source srcset="assets/images/main-category-7.webp" type="image/webp"><img src="assets/images/main-category-7.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Бакалея<br />и консерванты</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-8.avif" type="image/avif">
-								<source srcset="assets/images/main-category-8.webp" type="image/webp"><img src="assets/images/main-category-8.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Копчения мясные</div>
-						</a><a class="categories-section__cell" href="#">
-							<picture class="categories-section__bg">
-								<source srcset="assets/images/main-category-9.avif" type="image/avif">
-								<source srcset="assets/images/main-category-9.webp" type="image/webp"><img src="assets/images/main-category-9.jpg" alt loading="lazy">
-							</picture>
-							<div class="categories-section__title">Праздничные<br />блюда</div>
-						</a></section>
-				</div>
-				<section class="chick" data-aos="fade-up" data-chick-section>
-					<picture class="chick__img only-desktop" data-chick-parallax>
-						<source srcset="assets/images/chick.avif" type="image/avif">
-						<source srcset="assets/images/chick.webp" type="image/webp"><img src="assets/images/chick.png" alt="">
-					</picture>
-					<h2 class="h1 h1--chick bitter-heading chick__title">Деревенская еда<br><span>с фермы Евгения Рошаля</span><br>и Краснодарских ферм</h2>
-					<div class="chick-list">
-						<div class="chick-list__item">
-							<div class="chick-list__item-ico">
-								<div class="chick-list__item-ico-1" data-lottie-1></div>
-							</div>
-							<div class="chick-list__item-text">Каждую неделю&nbsp;<br class="only-mobile">привозим<br class="only-desktop">&#32;свежие&nbsp;<br class="only-mobile">продукты с ферм</div>
-						</div>
-						<div class="chick-list__item">
-							<div class="chick-list__item-ico">
-								<div class="chick-list__item-ico-2" data-lottie-2></div>
-							</div>
-							<div class="chick-list__item-text"><span>6 дней в неделю</span><br>доставляем по Москве<br>и Московской области</div>
-						</div>
-					</div>
-					<div class="chick-cards" data-aos="fade-up">
-						<div class="chick-cards__item" data-chick-card-1>
-							<div class="chick-cards__item-hat" data-lottie-3></div>
-							<div class="chick-cards__item-top">
-								<picture class="chick-cards__item-img">
-									<source srcset="assets/images/chick-card-1.avif" type="image/avif">
-									<source srcset="assets/images/chick-card-1.webp" type="image/webp"><img src="assets/images/chick-card-1.jpg" alt loading="eager">
-								</picture>
-								<div class="chick-cards__item-grass" data-lottie-5></div>
-							</div>
-							<div class="chick-cards__item-bottom">
-								<div class="h3 bitter-heading">Выращиваем с 2012 года</div>
-								<div class="chick-cards__item-text">Производим экологически чистую продукцию, которую едим сами<br class="only-desktop">и предлагаем всем нашим друзьям и близким</div><button class="button button--red">Больше о нас</button>
-							</div>
-						</div>
-						<div class="chick-cards__item" data-chick-card-2>
-							<div class="chick-cards__item-hat" data-lottie-4></div>
-							<div class="chick-cards__item-top">
-								<picture class="chick-cards__item-img">
-									<source srcset="assets/images/chick-card-2.avif" type="image/avif">
-									<source srcset="assets/images/chick-card-2.webp" type="image/webp"><img src="assets/images/chick-card-2.jpg" alt loading="eager">
-								</picture>
-								<div class="chick-cards__item-grass" data-lottie-6></div>
-							</div>
-							<div class="chick-cards__item-bottom">
-								<div class="h3 bitter-heading">Не изменяем традициям<br>и качеству</div>
-								<div class="chick-cards__item-text">У нас все свое — корм, трава, вода и даже солнце</div><button class="button button--red">Покупателям</button>
+										</svg></div>
+									<p class="cart-back__text">Вернуться в корзину</p>
+								</a>
+								<div class="cart-checkout__ordering-btn"><a class="button button--green" href="#"><span>Оформить заказ</span></a></div>
 							</div>
 						</div>
 					</div>
-				</section>
-				<div class="container">
-					<section class="partners-section main-section" data-aos="fade-up">
-						<picture class="partners-section__bg">
-							<source srcset="assets/images/partners-bg-mob.avif" type="image/avif" media="(max-width: 767px)">
-							<source srcset="assets/images/partners-bg-mob.webp" type="image/webp" media="(max-width: 767px)">
-							<source srcset="assets/images/partners-bg-mob.jpg" type="image/jpeg" media="(max-width: 767px)">
-							<source srcset="assets/images/partners-bg-tablet.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1023px)">
-							<source srcset="assets/images/partners-bg-tablet.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1023px)">
-							<source srcset="assets/images/partners-bg-tablet.jpg" type="image/jpeg" media="(min-width: 768px) and (max-width: 1023px)">
-							<source srcset="assets/images/partners-bg.avif" type="image/avif">
-							<source srcset="assets/images/partners-bg.webp" type="image/webp"><img src="assets/images/partners-bg.jpg" alt loading="lazy">
-						</picture>
-						<div class="partners-section__content">
-							<div class="h1 h1--small bitter-heading">Станьте нашим<br>партнером</div>
-							<div class="partners-section__text">Мы работаем с множеством фермеров,&nbsp;<br class="only-mobile">и нашу продукцию<br class="only-desktop">можно найти&nbsp;<br class="only-mobile">практически на всех рынках Москвы<br>и популярных маркетплейсах России</div><button class="button button--red">Присоединиться к нам</button>
-						</div>
-					</section>
-					<section class="main-section recipes" data-aos="fade-up">
-						<div class="recipes__top">
-							<h2 class="h1 h1--small bitter-heading">Рецепты</h2><button class="button button--red only-desktop">Все рецепты</button>
-							<div class="slider-controls recipes__controls only-desktop"><button class="slider-controls__item" data-prev="recipes"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M7.39059 19.8263C6.08595 18.6965 6.08595 16.6726 7.39059 15.5427L12.9793 10.7028C14.8143 9.11363 17.6675 10.4171 17.6675 12.8446L17.6675 22.5245C17.6675 24.9519 14.8143 26.2554 12.9793 24.6663L7.39059 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M29 17.6844C29 17.1322 28.5523 16.6844 28 16.6844L17 16.6844C16.4477 16.6844 16 17.1322 16 17.6844C16 18.2367 16.4477 18.6844 17 18.6844L28 18.6844C28.5523 18.6844 29 18.2367 29 17.6844Z" fill="#14362A"></path>
-									</svg></button><button class="slider-controls__item" data-next="recipes"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.6094 19.8263C27.9141 18.6965 27.9141 16.6726 26.6094 15.5427L21.0207 10.7028C19.1857 9.11363 16.3325 10.4171 16.3325 12.8446L16.3325 22.5245C16.3325 24.9519 19.1857 26.2554 21.0207 24.6663L26.6094 19.8263Z" fill="#14362A"></path>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17.6844C5 17.1322 5.44772 16.6844 6 16.6844L17 16.6844C17.5523 16.6844 18 17.1322 18 17.6844C18 18.2367 17.5523 18.6844 17 18.6844L6 18.6844C5.44772 18.6844 5 18.2367 5 17.6844Z" fill="#14362A"></path>
-									</svg></button></div>
-						</div>
-						<div class="recipes-slider disable-container">
-							<div class="swiper" data-slider-id="recipes">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-0.avif" type="image/avif">
-													<source srcset="assets/images/recipe-0.webp" type="image/webp"><img src="assets/images/recipe-0.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Быстрое рагу из куриных или утиных сердечек с овощами</div>
-										</a></div>
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-1.avif" type="image/avif">
-													<source srcset="assets/images/recipe-1.webp" type="image/webp"><img src="assets/images/recipe-1.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Жареные куриные или утиные сердечки с луком и чесноком</div>
-										</a></div>
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-2.avif" type="image/avif">
-													<source srcset="assets/images/recipe-2.webp" type="image/webp"><img src="assets/images/recipe-2.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Жареные куриные или утиные сердечки с луком и чесноком</div>
-										</a></div>
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-0.avif" type="image/avif">
-													<source srcset="assets/images/recipe-0.webp" type="image/webp"><img src="assets/images/recipe-0.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Быстрое рагу из куриных или утиных сердечек с овощами</div>
-										</a></div>
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-1.avif" type="image/avif">
-													<source srcset="assets/images/recipe-1.webp" type="image/webp"><img src="assets/images/recipe-1.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Жареные куриные или утиные сердечки с луком и чесноком</div>
-										</a></div>
-									<div class="swiper-slide"><a class="recipe-card" href="#">
-											<div class="recipe-card__top">
-												<picture class="recipe-card__img">
-													<source srcset="assets/images/recipe-2.avif" type="image/avif">
-													<source srcset="assets/images/recipe-2.webp" type="image/webp"><img src="assets/images/recipe-2.jpg" alt loading="lazy">
-												</picture>
-												<div class="recipe-card__labels">
-													<div class="recipe-card__labels-top">
-														<div class="label">Ужин</div>
-														<div class="label">23 февраля</div>
-														<div class="label ico right"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3.75 9.61328C3.75 6.85186 5.98858 4.61328 8.75 4.61328H21.25C24.0114 4.61328 26.25 6.85186 26.25 9.61328V22.1133C26.25 24.8747 24.0114 27.1133 21.25 27.1133H8.75C5.98858 27.1133 3.75 24.8747 3.75 22.1133V9.61328Z" fill="#FFD066"></path>
-																<path d="M15 10.8633L15 15.8633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-																<path d="M15 15.8633L17.5 18.3633" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-															</svg><span>30 мин</span></div>
-													</div>
-													<div class="label ico"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<circle cx="15" cy="15.8633" r="11" fill="#FFD066"></circle>
-															<path d="M18.2525 16.8128C19.02 16.1482 19.02 14.9576 18.2525 14.293L14.9651 11.446C13.8857 10.5112 12.2073 11.278 12.2073 12.7059L12.2073 18.3999C12.2073 19.8278 13.8857 20.5946 14.9651 19.6598L18.2525 16.8128Z" fill="#14362A"></path>
-														</svg><span>Видео-рецепт</span></div>
-												</div>
-											</div>
-											<div class="recipe-card__title">Жареные куриные или утиные сердечки с луком и чесноком</div>
-										</a></div>
-								</div>
-							</div>
-						</div><button class="button button--red only-mobile recipes-more"><span>Все рецепты</span></button>
-					</section>
 					<section class="subscribe" data-aos="fade-up">
 						<div class="subscribe__title">
 							<h2 class="h1 h1--small bitter-heading">Специальные<br>предложения</h2>
@@ -2143,6 +1371,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=baaa4d77-4eeb-44c8-83d8-80b292a23687&amp;lang=ru_RU&amp;coordorder=longlat"></script>
 	</body>
 
 </html>
