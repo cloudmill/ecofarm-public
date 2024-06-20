@@ -647,7 +647,11 @@
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-											</svg><span>Курьеру картой</span></label></div>
+											</svg><span>Курьеру картой</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="pay-method"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
+												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
+												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
+											</svg><span>QR-кодом при получении</span></label></div>
 								</div>
 							</div>
 							<div class="cart-block__delivery" data-delivery-block="pickup">
@@ -710,8 +714,19 @@
 									<div class="cart-page__summary-btn" data-order-btn><a class="button button--green" href="#"><span>Оформить заказ</span></a></div>
 								</div>
 							</aside>
-							<div class="cart-page__message">
-								<div class="loyalty-top-note cart-note" data-aos="fade-up"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">После подтверждения заказа стоимость может измениться. Наш менеджер сообщит вам об этом.</span></div>
+							<div class="cart-page__message cart-page__message_minsum" data-aos="fade-up">
+								<div class="loyalty-top-note cart-note"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">Минимальная сумма заказа <span class="fw-700">1 500 ₽</span></span></div>
+							</div>
+							<div class="cart-page__message cart-page__message_car" data-aos="fade-up">
+								<div class="cart-page__message-row">
+									<div class="cart-page__message-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="8" fill="white"></rect>
+											<path d="M23.3333 8.88867V19.9998C23.3333 21.222 22.3333 22.222 21.1111 22.222H8.88889V13.3331C8.88889 10.8776 10.8778 8.88867 13.3333 8.88867H23.3333Z" fill="#ECB436"></path>
+											<path d="M31.1111 22.2222V25.5555C31.1111 27.3999 29.6222 28.8888 27.7778 28.8888H26.6667C26.6667 27.6666 25.6667 26.6666 24.4444 26.6666C23.2222 26.6666 22.2222 27.6666 22.2222 28.8888H17.7778C17.7778 27.6666 16.7778 26.6666 15.5556 26.6666C14.3333 26.6666 13.3333 27.6666 13.3333 28.8888H12.2222C10.3778 28.8888 8.88889 27.3999 8.88889 25.5555V22.2222H21.1111C22.3333 22.2222 23.3333 21.2222 23.3333 19.9999V12.2222H25.3778C26.1778 12.2222 26.9111 12.6555 27.3111 13.3444L29.2111 16.6666H27.7778C27.1667 16.6666 26.6667 17.1666 26.6667 17.7777V21.1111C26.6667 21.7222 27.1667 22.2222 27.7778 22.2222H31.1111Z" fill="#FFD066"></path>
+											<path d="M15.5555 31.1109C16.7828 31.1109 17.7778 30.116 17.7778 28.8887C17.7778 27.6614 16.7828 26.6665 15.5555 26.6665C14.3282 26.6665 13.3333 27.6614 13.3333 28.8887C13.3333 30.116 14.3282 31.1109 15.5555 31.1109Z" fill="#ECB436"></path>
+											<path d="M24.4444 31.1109C25.6717 31.1109 26.6666 30.116 26.6666 28.8887C26.6666 27.6614 25.6717 26.6665 24.4444 26.6665C23.2171 26.6665 22.2222 27.6614 22.2222 28.8887C22.2222 30.116 23.2171 31.1109 24.4444 31.1109Z" fill="#ECB436"></path>
+										</svg></div><span class="loyalty-top-note__txt">При заказе от <span class="fw-700">5000 ₽</span> бесплатная доставка в&nbsp;пределах МКАД</span>
+								</div>
 							</div>
 							<div class="cart-checkout__ordering devices"><a class="cart-back devices" href="#">
 									<div class="cart-back__icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
