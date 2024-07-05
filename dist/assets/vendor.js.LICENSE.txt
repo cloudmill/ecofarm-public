@@ -48,3 +48,7 @@
 * Marc-Andre Lafortune - <petroselinum@marc-andre.ca>
 * MIT Licensed
 */
+
+//! moment.js
+
+//! moment.js locale configuration

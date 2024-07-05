@@ -12,7 +12,7 @@
 		<title>ЭкоФерма</title>
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="368.css" rel="stylesheet">
+		<link href="519.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -552,7 +552,13 @@
 							<div class="cart-block mob-mt-0" data-aos="fade-up">
 								<h2 class="cart-page__ttl bitter-heading only-desktop">Оформление заказа</h2>
 								<h2 class="cart-page__subtitle bitter-heading">Ваши данные</h2>
-								<div class="cart-page__user"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон*</span></label></div>
+								<div class="cart-page__user">
+									<div class="cart-page__grid">
+										<div class="cart-page__grid-item"><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО*</span></label></div>
+										<div class="cart-page__grid-item"><label class="form-label"><input class="form-input" type="email" data-input required autocomplete="email"><span class="form-placeholder">Почта*</span></label></div>
+										<div class="cart-page__grid-item"><label class="form-label"><input class="form-input" type="tel" data-input required autocomplete="tel" data-mask-phone><span class="form-placeholder">Телефон*</span></label></div>
+									</div>
+								</div>
 							</div>
 							<p>Кнопки просто для показа (удалить на бэке)</p>
 							<div class="simple-button" data-modal-btn="verify-mobile">Модалка подтвердить телефон</div>
@@ -568,21 +574,59 @@
 								</div>
 							</div>
 							<div class="cart-block__delivery active" data-delivery-block="delivery" data-aos="fade-up">
-								<div class="row-2-inputs"><label class="form-label"><input class="form-input active" data-input required value="Москва"><span class="form-placeholder">Город</span></label><label class="form-label"><input class="form-input" data-input required data-checkout-address="first"><span class="form-placeholder">Улица*</span>
-										<div class="form-label__drop" data-checkout-streets="first">
-											<div class="form-label__list">
-												<p class="form-label__list-item" data-checkout-street>Frontend Street</p>
-												<p class="form-label__list-item" data-checkout-street>Backend Street</p>
-												<p class="form-label__list-item" data-checkout-street>PM street</p>
-												<p class="form-label__list-item" data-checkout-street>Alexander street</p>
-												<p class="form-label__list-item" data-checkout-street>Zahar Top street</p>
-												<p class="form-label__list-item" data-checkout-street>Ecofarm street</p>
-												<p class="form-label__list-item" data-checkout-street>Good luck street</p>
-												<div class="form-label__list-item empty-street">К сожалению ничего не найдено</div>
+								<div class="select-container cart-address">
+									<div class="dropdown dropdown--cart mini select" data-select="" data-address-select="">
+										<div class="dropdown__button" data-select-button="">
+											<div class="dropdown__wrapper">
+												<div class="dropdown__location"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path opacity="0.4" d="M16.0002 1.6665C9.55684 1.6665 4.3335 6.88985 4.3335 13.3332C4.3335 18.9808 6.80966 23.2143 9.43729 26.0171C10.7496 27.4169 12.1088 28.4708 13.2395 29.1802C13.8043 29.5346 14.3227 29.8097 14.7598 30C15.1481 30.1691 15.6075 30.3332 16.0002 30.3332C16.3928 30.3332 16.8522 30.1691 17.2405 30C17.6777 29.8097 18.196 29.5346 18.7608 29.1802C19.8915 28.4708 21.2507 27.4169 22.563 26.0171C25.1907 23.2143 27.6668 18.9808 27.6668 13.3332C27.6668 6.88985 22.4435 1.6665 16.0002 1.6665Z" fill="#32691A"></path>
+														<path d="M16 8.3335C13.2386 8.3335 11 10.5721 11 13.3335C11 16.0949 13.2386 18.3335 16 18.3335C18.7614 18.3335 21 16.0949 21 13.3335C21 10.5721 18.7614 8.3335 16 8.3335Z" fill="#32691A"></path>
+													</svg></div>
+												<div class="dropdown__title" data-select-active="" data-address-value=""></div>
+											</div>
+											<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
+												</svg></div>
+										</div>
+										<div class="dropdown__drop" data-select-drop="">
+											<div class="cart-address__container">
+												<div class="cart-address__item" data-address-item="{&quot;address&quot;:&quot;Москва, пр. Луначарского, 13&quot;,&quot;apartment&quot;:35,&quot;entrance&quot;:2,&quot;floor&quot;:12}">
+													<div class="cart-address__text">Москва, пр. Луначарского, 13</div>
+													<div class="cart-address__label">квартира 35, подъезд 2, этаж 12, домофон 13</div>
+												</div>
+												<div class="cart-address__item" data-address-item="{&quot;address&quot;:&quot;Москва, пр. Луначарского&quot;,&quot;apartment&quot;:56,&quot;entrance&quot;:3,&quot;floor&quot;:11}">
+													<div class="cart-address__text">Москва, пр. Луначарского</div>
+													<div class="cart-address__label">квартира 56, подъезд 3, этаж 11, домофон 56, Дача зятя</div>
+												</div>
+												<div class="cart-address__item" data-address-item="{&quot;address&quot;:&quot;Москва, ул. Зеленая&quot;,&quot;apartment&quot;:56,&quot;entrance&quot;:4,&quot;floor&quot;:10}">
+													<div class="cart-address__text">Москва, ул. Зеленая</div>
+													<div class="cart-address__label">квартира 56, подъезд 4, этаж 10, домофон 56, Дача тещи</div>
+												</div>
+												<div class="cart-address__btn" data-address-new="">
+													<div class="cart-address__icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M7 14H21" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															<path d="M14 21V7" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg></div>
+													<div class="cart-address__caption">Добавить новый адрес</div>
+												</div>
 											</div>
 										</div>
-									</label></div>
-								<div class="row-3-inputs"><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Квартира</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Подъезд</span></label><label class="form-label"><input class="form-input" type="number" data-input><span class="form-placeholder">Этаж</span></label></div>
+									</div>
+								</div><label class="form-label"><input class="form-input" data-input required data-checkout-address="first" data-address-input="address"><span class="form-placeholder">Введите адрес*</span>
+									<div class="form-label__drop" data-checkout-streets="first">
+										<div class="form-label__list">
+											<p class="form-label__list-item" data-checkout-street>Frontend Street</p>
+											<p class="form-label__list-item" data-checkout-street>Backend Street</p>
+											<p class="form-label__list-item" data-checkout-street>PM street</p>
+											<p class="form-label__list-item" data-checkout-street>Alexander street</p>
+											<p class="form-label__list-item" data-checkout-street>Zahar Top street</p>
+											<p class="form-label__list-item" data-checkout-street>Ecofarm street</p>
+											<p class="form-label__list-item" data-checkout-street>Good luck street</p>
+											<div class="form-label__list-item empty-street">К сожалению ничего не найдено</div>
+										</div>
+									</div>
+								</label>
+								<div class="row-3-inputs"><label class="form-label"><input class="form-input" type="number" data-input required data-address-input="apartment"><span class="form-placeholder">Квартира*</span></label><label class="form-label"><input class="form-input" type="number" data-input data-address-input="entrance"><span class="form-placeholder">Подъезд</span></label><label class="form-label"><input class="form-input" type="number" data-input data-address-input="floor"><span class="form-placeholder">Этаж</span></label></div>
 								<div class="cart-block" data-aos="fade-up">
 									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
 									<div class="cart-delivery-error"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -592,32 +636,40 @@
 										</svg><span>Выберите адрес доставки, чтобы узнать стоимость</span></div>
 								</div>
 								<div class="cart-block" data-aos="fade-up">
-									<h3 class="h4 bitter-heading">Стоимость доставки</h3>
-									<div class="cart-delivery-result">490₽</div>
-								</div>
-								<div class="cart-block" data-aos="fade-up">
 									<h3 class="h4 bitter-heading">Дата доставки</h3>
-									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="cart-radio-group"><label class="cart-radio-item"><input type="radio" name="delivery-date" data-date-radio=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-											</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											</svg><span>04.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date" data-date-radio=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-											</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											</svg><span>05.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date" data-date-radio=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-											</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											</svg><span>06.02.2023</span></label><label class="cart-radio-item"><input type="radio" name="delivery-date" data-date-radio=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
-											</svg><span>07.02.2023</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-date"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											</svg><span>07.02.2023</span></label><label class="cart-radio-item mob-grid-2"><input type="radio" name="delivery-date" value="picker" data-date-radio=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect class="bg" x="1" y="1" width="30" height="30" rx="11" fill="white"></rect>
 												<rect class="center" x="12" y="12" width="8" height="8" rx="3" fill="#E6EEE2"></rect>
 												<rect class="border" x="1" y="1" width="30" height="30" rx="11" stroke="#E6EEE2" stroke-width="2"></rect>
 											</svg><span>По согласованию</span></label></div>
+									<div class="cart-date hidden" data-picker-wrapper="">
+										<div class="cart-date__label">Выберите дату доставки</div>
+										<div class="cart-date__picker">
+											<div class="date-picker"><label class="date-picker__label"><input class="date-picker__input">
+													<div class="date-picker__icon"><svg class="date-picker__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M18.1925 3.28029C17.7485 3.24999 17.203 3.24999 16.5266 3.25H7.47337C6.79705 3.24999 6.25149 3.24999 5.80748 3.28029C5.35092 3.31144 4.94721 3.37711 4.56494 3.53545C3.64608 3.91605 2.91605 4.64608 2.53545 5.56494C2.51566 5.61272 2.49731 5.66084 2.4803 5.70936C2.36123 6.04897 2.30754 6.40799 2.28029 6.80748C2.2765 6.86298 2.27318 6.92007 2.27029 6.9788C2.24999 7.38992 2.25 7.88159 2.25 8.47337V17.5266C2.24999 18.203 2.24999 18.7485 2.28029 19.1925C2.31144 19.6491 2.37711 20.0528 2.53545 20.4351C2.91605 21.3539 3.64608 22.0839 4.56494 22.4645C4.94721 22.6229 5.35092 22.6886 5.80748 22.7197C6.25148 22.75 6.79704 22.75 7.47336 22.75H16.5266C17.203 22.75 17.7485 22.75 18.1925 22.7197C18.6491 22.6886 19.0528 22.6229 19.4351 22.4645C20.3539 22.0839 21.0839 21.3539 21.4645 20.4351C21.6229 20.0528 21.6886 19.6491 21.7197 19.1925C21.75 18.7485 21.75 18.203 21.75 17.5266V8.47336C21.75 7.79704 21.75 7.25148 21.7197 6.80748C21.6886 6.35092 21.6229 5.94721 21.4645 5.56494C21.0839 4.64608 20.3539 3.91605 19.4351 3.53545C19.0528 3.37711 18.6491 3.31144 18.1925 3.28029ZM3.75 10.75H20.25V17.5C20.25 18.2092 20.2496 18.7035 20.2232 19.0904C20.1973 19.4706 20.1487 19.692 20.0787 19.861C19.8504 20.4124 19.4124 20.8504 18.861 21.0787C18.692 21.1487 18.4706 21.1973 18.0904 21.2232C17.7035 21.2496 17.2092 21.25 16.5 21.25H7.5C6.79083 21.25 6.29651 21.2496 5.90959 21.2232C5.5294 21.1973 5.308 21.1487 5.13896 21.0787C4.58765 20.8504 4.14963 20.4124 3.92127 19.861C3.85125 19.692 3.80275 19.4706 3.77681 19.0904C3.75041 18.7035 3.75 18.2092 3.75 17.5V10.75Z" fill="#32691A"></path>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.25C7.41421 1.25 7.75 1.58579 7.75 2V6C7.75 6.41421 7.41421 6.75 7 6.75C6.58579 6.75 6.25 6.41421 6.25 6V2C6.25 1.58579 6.58579 1.25 7 1.25Z" fill="#32691A"></path>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M17 1.25C17.4142 1.25 17.75 1.58579 17.75 2V6C17.75 6.41421 17.4142 6.75 17 6.75C16.5858 6.75 16.25 6.41421 16.25 6V2C16.25 1.58579 16.5858 1.25 17 1.25Z" fill="#32691A"></path>
+														</svg></div>
+												</label></div>
+										</div>
+									</div>
 								</div>
 								<div class="cart-block" data-aos="fade-up">
 									<h3 class="h4 bitter-heading">Удобный интервал доставки</h3>
@@ -708,7 +760,12 @@
 											<p class="cart-page__summary-text">Промокод</p>
 											<p class="cart-page__summary-text bold green">-600₽</p>
 										</li>
+										<li class="cart-page__summary-item">
+											<p class="cart-page__summary-text">Доставка</p>
+											<p class="cart-page__summary-text bold green">600₽</p>
+										</li>
 									</ul>
+									<div class="cart-page__summary-free">До бесплатной доставки не хватает <span>1 200 ₽</span></div>
 									<div class="cart-page__summary-result">
 										<p class="cart-page__summary-text bold">Итого</p>
 										<p class="cart-page__summary-price">15 890₽</p>
