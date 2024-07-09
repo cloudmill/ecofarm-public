@@ -448,11 +448,41 @@
 				</div>
 			</header>
 			<main class="main">
+				<form class="modal-clear modal-verify holidays-modal" data-modal-wrapper="holidays" data-send-wrapper="send-holidays" data-form-reset>
+					<div class="modal-clear__close" data-modal-close="holidays"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="modal-clear__inner modal-verify__inner">
+						<p class="modal-clear__title">Добавить<br>праздничную дату</p>
+						<p class="holidays-modal__subtitle">Как это работает?</p>
+						<ul class="holidays-modal__list dot-list">
+							<li class="holidays-modal__list-item">Укажите дату и напишите в комментариях название праздника (день рождение сына, юбилей мамы и т.п.)</li>
+							<li class="holidays-modal__list-item">Скидка будет применена автоматически при оформлении заказа в указанный период</li>
+						</ul>
+						<div class="modal-verify__form"><label class="form-label"><input class="form-input" data-input required data-mask-bday data-holidays-date><span class="form-placeholder">Дата</span></label>
+							<div class="create-modal__message"><label class="form-label"><textarea data-input required></textarea><span class="form-placeholder">Название праздника</span></label></div><button class="button button--red" data-holidays-btn>Добавить</button>
+						</div>
+					</div>
+				</form>
+				<div class="review-send" data-modal-wrapper="send-holidays">
+					<div class="review-send__close" data-modal-close="send-holidays"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8333 10.8333L29.1666 29.1666" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.8334 29.1666L29.1667 10.8333" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg></div>
+					<div class="review-send__inner">
+						<div class="review-send__title">
+							<h2 class="bitter-heading modal__title">Дата добавлена</h2>
+						</div>
+						<p class="holidays-block__text holidays-block__text_modal">Спасибо за уделённое время!<br>Данные будут опубликованы после прохождения модерации.</p>
+						<div class="review-send__btn"><button class="button button--red edit-profile-form__button" data-modal-close="send-holidays"><span>Понятно</span></button></div>
+					</div>
+				</div>
 				<div class="container top-section">
 					<div class="lk-top">
 						<div class="lk-top__list-wrapper">
-							<div class="lk-top__list" data-aos="fade-up"><a class="tabs__item" href="#">Заказы</a>
-								<div class="tabs__item active">Программа лояльности</div><a class="tabs__item" href="#">Реферальная программа</a><a class="tabs__item" href="#">Адреса доставки</a><a class="tabs__item" href="#">Профиль</a><a class="tabs__item" href="#">Семейные праздники</a>
+							<div class="lk-top__list" data-aos="fade-up"><a class="tabs__item" href="#">Заказы</a><a class="tabs__item" href="#">Программа лояльности</a><a class="tabs__item" href="#">Реферальная программа</a><a class="tabs__item" href="#">Адреса доставки</a><a class="tabs__item" href="#">Профиль</a>
+								<div class="tabs__item active">Семейные праздники</div>
 							</div>
 						</div><button class="lk-top__exit tabs__item" data-aos="fade-up"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.90002 7.56C9.21002 3.96 11.06 2.49 15.11 2.49H15.24C19.71 2.49 21.5 4.28 21.5 8.75V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -460,844 +490,98 @@
 								<path d="M5.85 8.65L2.5 12L5.85 15.35" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg><span>Выйти из аккаунта</span></button>
 					</div>
-					<h1 class="h1 h1--small bitter-heading" data-aos="fade-up">Программа лояльности</h1>
-					<div class="loyalty-page">
-						<div class="loyalty-levels" data-aos="fade-up">
-							<h2 class="h3 bitter-heading loyalty-levels__title">Накапливайте скидки</h2>
-							<div class="loyalty-levels__text">Скидку постоянного покупателя можно получить уже со второго заказа.<br>Размер скидки определяется одним из показателей: <b>суммой всех заказов или количеством заказов.</b></div>
-							<div class="loyalty-levels__row">
-								<div class="loyalty-levels__info only-desktop">
-									<div class="loyalty-levels__info-txt">Размер скидки</div>
-									<div class="loyalty-levels__info-italic">Одно из условий<br>получения скидки</div>
-									<div class="loyalty-levels__info-bold">Сумма заказов</div>
-									<div class="loyalty-levels__info-bold">Количество заказов</div>
-								</div>
-								<div class="loyalty-levels__list-wrapper">
-									<div class="loyalty-levels__list">
-										<div class="swiper" data-slider-name="loyalty">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-0.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>1 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>1</p>
-																</div>
-															</div>
-														</div>
-														<div class="loyalty-levels__promo">
-															<div class="loyalty-levels__promo-title">Промокод за первый заказ</div>
-															<div class="loyalty-levels__promo-discount">500 ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-1.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>10 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>2</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card active">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-2.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>20 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>5</p>
-																</div>
-															</div>
-														</div>
-														<div class="loyalty-levels__promo">
-															<div class="loyalty-levels__promo-title">Промокод за уровень</div>
-															<div class="loyalty-levels__promo-discount">300 ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-3.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>30 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>8</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-4.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>50 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>10</p>
-																</div>
-															</div>
-														</div>
-														<div class="loyalty-levels__promo">
-															<div class="loyalty-levels__promo-title">Промокод на бесплатную доставку</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-5.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>60 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>Любое</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-6.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>70 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>Любое</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-7.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>80 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>Любое</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-8.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>90 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>Любое</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="loyalty-levels__card">
-														<div class="loyalty-levels__card-inner">
-															<div class="loyalty-levels__card-image">
-																<p class="only-mobile">Размер скидки</p><img src="assets/images/svg/loyalty-9.svg" alt="">
-															</div>
-															<div class="loyalty-levels__card-info">
-																<div class="loyalty-levels__card-condition only-mobile">Одно из условий получения скидки</div>
-																<div class="loyalty-levels__card-sum">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Сумма заказов</div>
-																	<p>&gt;100 000 ₽</p>
-																</div>
-																<div class="loyalty-levels__card-count">
-																	<div class="loyalty-levels__card-subtitle only-mobile">Количество заказов</div>
-																	<p>Любое</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+					<h1 class="h1 h1--small bitter-heading" data-aos="fade-up">Семейные праздники</h1>
+					<div class="holidays" data-aos="fade-up">
+						<div class="holidays-block">
+							<p class="holidays-block__title">Скоро у вас семейный праздник?<br>Мы поможем сделать его особенным!</p>
+							<p class="holidays-block__text">Чтобы получить дополнительные скидки на заказы, назовите нам важные для вашей семьи торжества. Но учтите, что воспользоваться скидкой можно будет только 4 раза.</p>
+							<p class="holidays-block__text">Если вы хотите изменить дату праздника, пожалуйста, свяжитесь с нашим менеджером по телефону &nbsp;<br class="only-desktop"><a href="tel:+79123456789">8 912 345-67-89</a></p>
+							<p class="holidays-block__empty">Праздничных дат пока нет. Самое время добавить!</p>
+							<div class="holidays-block__btn"><button class="button button--green" data-modal-btn="holidays">Добавить дату</button></div>
 						</div>
-						<div class="loyalty-cards" data-aos="fade-up">
-							<div class="loyalty-cards-item">
-								<div class="loyalty-cards-item__ttl">Ваша скидка</div>
-								<div class="loyalty-cards-item__value green">3%</div>
+						<div class="holidays-block">
+							<p class="holidays-block__text">Чтобы получить дополнительные скидки на заказы, назовите нам важные для вашей семьи торжества. Но учтите, что воспользоваться скидкой можно будет только 4 раза.</p>
+							<p class="holidays-block__text">Если вы хотите изменить дату праздника, пожалуйста, свяжитесь с нашим менеджером по телефону &nbsp;<br class="only-desktop"><a href="tel:+79123456789">8 912 345-67-89</a></p>
+							<div class="holidays-block__message">
+								<div class="loyalty-top-note"><img class="loyalty-top-note__svg" src="assets/images/svg/loyalty-chick.svg" alt=""><span class="loyalty-top-note__txt">Скидка действительна при осуществлении заказа за 7 дней до и в течение 7 дней после праздничной даты</span></div>
 							</div>
-							<div class="loyalty-cards-item">
-								<div class="loyalty-cards-item__ttl">Сумма покупок</div>
-								<div class="loyalty-cards-item__value">12 340₽</div>
-							</div>
-							<div class="loyalty-cards-item">
-								<div class="loyalty-cards-item__ttl">Количество заказов</div>
-								<div class="loyalty-cards-item__value">7</div>
-							</div>
-						</div>
-						<h2 class="bitter-heading h2 loyalty-page__ttl" data-aos="fade-up">Доступные промокоды</h2>
-						<div class="loyalty-page__list" data-aos="fade-up">
-							<div class="promocode-card">
-								<div>
-									<div class="promocode-card__title">Скидка 500₽</div>
-									<div class="promocode-card__date">Действует до 31.03.2023</div>
-								</div>
-								<div class="promocode-card__copy"><button class="referal-main-top__item-link" data-referal-btn><span data-referal-link>327E532</span>
-										<div class="referal-main-top__icon"><svg class="referal-main-top__icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg>
-											<div class="referal-main-top__success" data-referal-success>
-												<div class="referal-main-top__success-inner">Скопировано!<svg class="referal-main-top__success-tail" width="18" height="6" viewbox="0 0 18 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M6.95177 4.81633C7.97948 5.52835 9.34103 5.52835 10.3687 4.81633L17.3205 0H0L6.95177 4.81633Z" fill="#FFD066"></path>
-													</svg></div>
-											</div>
+							<div class="holidays-block__cards">
+								<div class="holidays-block__card">
+									<div class="holidays-block__card-row">
+										<div class="holidays-block__card-col">
+											<p class="holidays-block__card-title">День рождения ребенка</p>
+											<p class="holidays-block__card-date">24.05.1999</p>
 										</div>
-									</button></div>
-							</div>
-							<div class="promocode-card">
-								<div>
-									<div class="promocode-card__title">Бесплатная доставка</div>
-									<div class="promocode-card__date">Действует до 31.03.2023</div>
-								</div>
-								<div class="promocode-card__copy"><button class="referal-main-top__item-link" data-referal-btn><span data-referal-link>327E532</span>
-										<div class="referal-main-top__icon"><svg class="referal-main-top__icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#A1BBB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg>
-											<div class="referal-main-top__success" data-referal-success>
-												<div class="referal-main-top__success-inner">Скопировано!<svg class="referal-main-top__success-tail" width="18" height="6" viewbox="0 0 18 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M6.95177 4.81633C7.97948 5.52835 9.34103 5.52835 10.3687 4.81633L17.3205 0H0L6.95177 4.81633Z" fill="#FFD066"></path>
-													</svg></div>
-											</div>
-										</div>
-									</button></div>
-							</div>
-						</div>
-						<h2 class="bitter-heading h2 loyalty-page__ttl" data-aos="fade-up">Завершенные заказы</h2>
-						<div class="loyalty-page__list" data-aos="fade-up">
-							<div class="dropdown" data-dropdown>
-								<div class="dropdown__button order1" data-dropdown-button>
-									<div>
-										<div class="dropdown__title">Заказ №323</div>
-										<div class="dropdown__note">24 июня 2023, 18:35</div>
-									</div>
-									<div class="dropdown__title bold">23 800₽</div>
-									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
-										</svg></div>
-								</div>
-								<div class="dropdown__drop" data-dropdown-drop>
-									<div class="order1-drop-inner">
-										<div class="order1-rate">
-											<div class="order1-rate__left">
-												<div class="order1-rate__icon"><svg width="66" height="84" viewbox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M53.467 11.3028C53.467 11.3028 49.444 5.94473 45.2534 10.309C41.0627 14.6672 27.0899 38.1708 27.521 40.5954C27.7126 41.6729 31.0471 39.2364 31.4602 38.955C33.3699 37.6619 35.1001 36.1652 36.8721 34.6985C41.7871 30.6216 46.8638 26.6166 51.6052 22.3361C54.9218 19.3428 57.4781 14.9127 53.467 11.3028Z" fill="#F5A163"></path>
-														<path d="M52.5513 10.321L57.8241 0.603999C57.9931 0.292563 58.3548 0.139102 58.6962 0.233979L59.5631 0.474916C60.0782 0.618065 60.2887 1.23398 59.969 1.66246L53.102 10.8658L52.5513 10.321Z" fill="#32691A"></path>
-														<path d="M54.1861 12.0391C54.5765 11.9403 62.2455 6.25606 64.9096 4.27561C65.4136 3.90098 65.5178 3.19527 65.1508 2.68572C64.7766 2.16623 64.0503 2.05216 63.5349 2.43194L54.3478 9.20144L53.1025 10.8717L54.1861 12.0391Z" fill="#11936C"></path>
-														<path d="M43.7148 12.1709L46.5166 15.2659" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M50.7013 23.1444L47.9175 20.5821" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M39.2246 18.7382L42.9543 22.6714" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M43.9423 28.8915L41.2603 26.9219" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M34.6689 26.1616L36.8122 28.7957" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M38.2851 33.5252L35.9204 31.0766" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M30.6401 33.2977L32.4182 35.0996" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M31.9093 23.1743C36.2637 23.1743 39.7937 19.6443 39.7937 15.2899C39.7937 10.9354 36.2637 7.40547 31.9093 7.40547C27.5549 7.40547 24.0249 10.9354 24.0249 15.2899C24.0249 19.6443 27.5549 23.1743 31.9093 23.1743Z" fill="#11936C"></path>
-														<path d="M33.3756 6.45359C32.6153 5.47179 31.4479 4.81326 30.2086 4.67557C30.7774 4.63367 31.0109 5.37001 31.3581 5.81901C31.6275 6.16624 32.0346 6.36979 32.3878 6.62721C32.741 6.88464 33.0703 7.25581 33.0583 7.69283C31.6514 7.74671 30.6217 9.02186 29.3286 9.56665C30.8073 9.17153 32.3399 8.97995 33.8725 9.00989C33.5013 9.22541 33.4414 9.7223 33.4235 10.1474C33.3636 11.4405 33.3037 12.7276 33.2439 14.0207C34.4412 13.1047 34.2197 10.8957 35.5966 10.279C35.9019 11.5123 36.6263 12.6378 37.6201 13.428C37.3926 12.5061 37.0574 11.6081 36.6263 10.758C37.9194 10.3449 39.3263 10.285 40.6433 10.5963C40.356 9.96177 39.6077 9.68638 38.9192 9.56665C38.2307 9.44692 37.5004 9.41099 36.9197 9.02785C38.0272 8.72851 39.009 7.99216 39.6017 7.01634C38.3924 7.63895 37.0274 7.95624 35.6625 7.93828C35.5667 7.00437 35.0279 6.13032 34.2436 5.61547C34.519 5.79507 35.1117 7.25581 34.8124 7.51922C34.3454 7.92631 33.5851 6.72299 33.3756 6.45359Z" fill="#32691A"></path>
-														<path d="M12.5439 16.7582C12.9674 16.7574 13.2941 16.3991 13.198 15.9866C12.7442 14.039 10.6291 8.98549 0.880048 8.6005C0.418779 8.58228 0.065853 8.98353 0.199693 9.42533C0.834218 11.5199 3.34325 16.7753 12.5439 16.7582Z" fill="#11936C"></path>
-														<path d="M22.7797 17.1158C22.9309 17.2263 26.7776 8.17729 19.344 1.36524C18.9963 1.04658 18.4588 1.14822 18.2738 1.58205C17.244 3.99619 15.0177 11.3349 22.7797 17.1158Z" fill="#11936C"></path>
-														<path d="M23.0789 31.9267C23.474 31.8309 21.3188 22.0308 8.1123 22.4558C8.1123 22.4558 11.9557 34.6147 23.0789 31.9267Z" fill="#11936C"></path>
-														<path d="M26.4611 31.1365C26.6047 31.4957 33.6869 29.2567 32.1005 17.9838C32.1005 17.9838 23.366 23.2341 26.4611 31.1365Z" fill="#11936C"></path>
-														<path d="M14.4548 12.3728C14.9048 12.5466 15.3808 12.2417 15.3853 11.7593C15.4083 9.27023 14.7675 2.5021 7.38484 0.203077C6.99164 0.0806283 6.58617 0.313181 6.52534 0.720495C6.2083 2.84348 6.05564 9.12898 14.4548 12.3728Z" fill="#11936C"></path>
-														<path d="M24.387 36.3277C24.4409 35.1723 24.2972 34.0108 24.1655 32.8614C24.0338 31.712 23.8602 30.5625 23.6447 29.4251C23.2197 27.1502 22.6569 24.9052 21.8787 22.726C21.5015 21.6365 21.0764 20.5649 20.5975 19.5172C20.1186 18.4696 19.5499 17.4638 18.9691 16.47C17.7658 14.5004 16.2931 12.7044 14.563 11.1419C15.5029 11.8304 16.3769 12.6146 17.1851 13.4587C17.9694 14.3268 18.6998 15.2487 19.3583 16.2246C20.6634 18.1822 21.6512 20.3314 22.4474 22.5345C23.1897 24.7615 23.7644 27.0364 24.0997 29.3533C24.405 31.6581 24.6564 34.0049 24.387 36.3277Z" fill="#40785F"></path>
-														<path d="M21.172 19.8884C20.4895 19.3975 19.8071 18.9245 19.1306 18.4516C18.4481 17.9906 17.7656 17.5296 17.0592 17.1166C16.3528 16.6975 15.6344 16.3084 14.892 15.9731C14.1437 15.6558 13.3714 15.3745 12.5513 15.1949C13.3894 15.141 14.2515 15.2787 15.0597 15.5421C15.8738 15.7995 16.6342 16.1827 17.3705 16.6077C18.8013 17.4818 20.1184 18.5713 21.172 19.8884Z" fill="#40785F"></path>
-														<path d="M22.178 22.2711C22.2918 21.6964 22.3576 21.1396 22.4055 20.5828C22.4414 20.0261 22.4654 19.4693 22.4354 18.9186C22.4115 18.3678 22.3696 17.811 22.2858 17.2603C22.2139 16.7035 22.0942 16.1527 22.0044 15.572C22.3217 16.0629 22.5791 16.5957 22.7407 17.1585C22.9263 17.7212 22.9982 18.3079 23.0341 18.9006C23.0521 19.4933 22.9982 20.086 22.8665 20.6607C22.7288 21.2294 22.5192 21.7921 22.178 22.2711Z" fill="#40785F"></path>
-														<path d="M24.2495 32.1849C23.7825 31.9933 23.4533 31.712 23.136 31.4066C22.9863 31.251 22.8366 31.0953 22.7049 30.9217C22.5673 30.7481 22.4535 30.5745 22.2979 30.3769C22.5553 30.353 22.8007 30.4488 23.0043 30.5625C23.2138 30.6763 23.3934 30.8259 23.555 30.9816C23.8783 31.3169 24.1477 31.688 24.2495 32.1849Z" fill="#40785F"></path>
-														<path d="M25.6863 29.5867C25.5007 30.2812 25.2493 30.8858 25.0218 31.5025C24.9021 31.8078 24.7943 32.1131 24.6806 32.4244L24.3633 33.3942C24.0999 32.7118 24.2256 31.9455 24.4651 31.2929C24.5968 30.9637 24.7584 30.6464 24.9619 30.359C25.1535 30.0716 25.387 29.8022 25.6863 29.5867Z" fill="#40785F"></path>
-														<path d="M55.6768 16.9507C56.3314 16.6052 57.0108 16.9537 57.0388 17.6933C57.3555 26.0726 58.2857 68.8157 57.6321 79.9242C57.547 81.3717 56.4065 82.3754 54.9601 82.4755C46.794 83.0407 20.2479 84.747 12.4347 83.6272C12.4347 83.6272 10.1146 25.7812 11.2301 15.3987C11.3005 14.744 11.9455 14.4122 12.5702 14.6202L16.4071 15.8977C16.731 16.0056 17.0862 15.9627 17.3751 15.7809L22.416 12.6082C22.8883 12.311 23.5063 12.399 23.8767 12.8163L27.048 16.3886C27.5092 16.9081 28.3248 16.8993 28.7859 16.3796C29.8908 15.1343 31.6876 13.2054 31.8973 13.5837C32.133 14.0089 34.3749 16.037 35.3841 16.939C35.6866 17.2093 36.1092 17.2949 36.4943 17.1675L43.6927 14.7865C44.1392 14.6388 44.6306 14.7802 44.9302 15.1427L46.2119 16.6932C46.543 17.0936 47.1027 17.2198 47.5735 17.0002L49.7198 15.9988C50.1545 15.796 50.6696 15.8868 51.0088 16.226L52.5009 17.7181C52.8547 18.0718 53.3976 18.1538 53.8401 17.9203L55.6768 16.9507Z" fill="#B3816E"></path>
-														<path d="M11.2189 15.4556C11.258 15.08 10.746 14.8349 10.4653 15.0876L7.57588 17.689C7.46208 17.7915 7.29793 17.8156 7.1594 17.7504L4.39148 16.4464C4.05965 16.2901 3.61329 16.667 3.69023 17.0257C5.3836 24.919 3.56606 63.8354 3.35212 72.6772C3.32442 73.822 3.73688 74.8887 4.52177 75.7225C7.2842 78.657 12.4288 83.6272 12.4288 83.6272C12.4288 83.6272 10.1225 25.991 11.2189 15.4556Z" fill="#CFA899"></path>
-														<path d="M12.4348 83.6272C11.9798 82.6634 11.5368 81.6935 11.1297 80.7057C10.7166 79.7239 10.2975 78.7481 9.90242 77.7543C9.11817 75.7728 8.35787 73.7852 7.64546 71.7797L8.01663 71.9054L5.69981 73.1925C5.31666 73.408 4.92154 73.6056 4.53241 73.8151C4.14328 74.0247 4.27012 73.88 3.875 74.0716C4.2342 73.8082 4.07743 73.9049 4.43663 73.6595C4.80181 73.414 5.16101 73.1506 5.53218 72.9171L7.75322 71.4684L8.00466 71.3067L8.12439 71.6001C8.93259 73.5697 9.6869 75.5632 10.4173 77.5628C10.7825 78.5625 11.1237 79.5743 11.4649 80.58C11.8122 81.5858 12.1294 82.6095 12.4348 83.6272Z" fill="#B3816E"></path>
-														<path d="M7.88543 71.6899L7.98122 58.22C8.01115 53.73 8.08299 49.24 8.07701 44.7501C8.11891 40.2601 8.11891 35.7701 8.06503 31.2861C8.06503 30.1666 8.0351 29.0411 8.01714 27.9216C7.99918 26.8021 7.96925 25.6767 7.91537 24.5572L7.8555 22.8749L7.74774 21.1987C7.69985 20.0732 7.53222 18.9716 7.39453 17.8521C8.23865 22.2703 8.34641 26.7902 8.526 31.2742C8.67567 35.7641 8.66968 40.2601 8.67567 44.7501C8.63376 49.24 8.56791 53.736 8.44219 58.22C8.3045 62.7159 8.14286 67.2059 7.88543 71.6899Z" fill="#B3816E"></path>
-														<path d="M35.4952 38.7353C34.7912 35.8359 30.6678 35.8359 29.9638 38.7353C29.7673 39.5447 28.84 39.9288 28.1286 39.4954C25.5807 37.943 22.665 40.8587 24.2174 43.4067C24.6508 44.118 24.2667 45.0453 23.4572 45.2418C20.5579 45.9458 20.5579 50.0692 23.4572 50.7732C24.2667 50.9697 24.6508 51.897 24.2174 52.6083C22.665 55.1563 25.5807 58.072 28.1286 56.5196C28.84 56.0862 29.7673 56.4703 29.9638 57.2798C30.6678 60.1791 34.7912 60.1791 35.4952 57.2798C35.6917 56.4703 36.619 56.0862 37.3303 56.5196C39.8783 58.072 42.794 55.1563 41.2416 52.6083C40.8082 51.897 41.1923 50.9697 42.0017 50.7732C44.9011 50.0692 44.9011 45.9458 42.0017 45.2418C41.1923 45.0453 40.8082 44.118 41.2416 43.4067C42.794 40.8587 39.8783 37.943 37.3303 39.4954C36.619 39.9288 35.6917 39.5447 35.4952 38.7353Z" fill="#FFD066"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M37.6208 44.2146C37.9305 44.5359 37.9211 45.0474 37.5998 45.3571L32.0108 50.7441C31.6971 51.0464 31.2003 51.0457 30.8875 50.7424L27.8573 47.804C27.537 47.4934 27.5291 46.9818 27.8398 46.6614C28.1504 46.3411 28.662 46.3332 28.9824 46.6439L31.4517 49.0384L36.4782 44.1935C36.7996 43.8838 37.3111 43.8933 37.6208 44.2146Z" fill="#32691A"></path>
-													</svg></div>
-												<div class="order1-rate__texts">
-													<p class="order1-rate__title">Заказ доставлен</p>
-													<p class="order1-rate__text">Спасибо, что доверили нам выбор продуктов</p>
-												</div>
-											</div>
-											<div class="order1-rate__right">
-												<div class="order1-rate__btn" data-modal-btn="rate-order"><button class="button button--green full-width">Оценить заказ</button></div>
-											</div>
-										</div>
-										<div class="order-table1 order1-drop-block">
-											<div class="order-table1__row">
-												<div class="order-table1__title">Стоимость доставки</div>
-												<div class="order-table1__value">1 200₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Скидки</div>
-												<div class="order-table1__value green">-500₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Желаемая дата доставки</div>
-												<div class="order-table1__value">24 июня 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Дата получения заказа</div>
-												<div class="order-table1__value">1 июля 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Способ оплаты</div>
-												<div class="order-table1__value">Наличными курьеру</div>
-											</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Получатель</div>
-											<div class="order1-drop__text">Спартак Давидов</div>
-											<div class="order1-drop__text">Москва, пр. Луначарского 13, кв, 15</div>
-											<div class="order1-drop__text">spartaktimber@mail.ru</div>
-											<div class="order1-drop__text">+7 981 157 92 90</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Состав заказа</div>
-											<div class="order-table2">
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Изменить заказ</div>
-											<div class="order1-contacts">
-												<div>
-													<div class="order1-contacts__title">Напишите нам в месседжерах</div>
-													<div class="faq-socials"><a class="faq-socials__item" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_150_52027)">
-																	<path class="bg" d="M0.0478516 20L1.45368 14.8642C0.586185 13.3608 0.130352 11.6567 0.131185 9.90917C0.133685 4.44583 4.57952 0 10.042 0C12.6929 0.000833333 15.1812 1.03333 17.0529 2.90667C18.9237 4.78 19.9537 7.27 19.9529 9.91833C19.9504 15.3825 15.5045 19.8283 10.042 19.8283C8.38368 19.8275 6.74952 19.4117 5.30202 18.6217L0.0478516 20ZM5.54535 16.8275C6.94202 17.6567 8.27535 18.1533 10.0387 18.1542C14.5787 18.1542 18.277 14.4592 18.2795 9.91667C18.2812 5.365 14.6004 1.675 10.0454 1.67333C5.50202 1.67333 1.80618 5.36833 1.80452 9.91C1.80368 11.7642 2.34702 13.1525 3.25952 14.605L2.42702 17.645L5.54535 16.8275ZM15.0345 12.2742C14.9729 12.1708 14.8079 12.1092 14.5595 11.985C14.312 11.8608 13.0945 11.2617 12.867 11.1792C12.6404 11.0967 12.4754 11.055 12.3095 11.3033C12.1445 11.5508 11.6695 12.1092 11.5254 12.2742C11.3812 12.4392 11.2362 12.46 10.9887 12.3358C10.7412 12.2117 9.94285 11.9508 8.99702 11.1067C8.26118 10.45 7.76368 9.63917 7.61952 9.39083C7.47535 9.14333 7.60452 9.00917 7.72785 8.88583C7.83952 8.775 7.97535 8.59667 8.09952 8.45167C8.22535 8.30833 8.26618 8.205 8.34952 8.03917C8.43202 7.87417 8.39118 7.72917 8.32868 7.605C8.26618 7.48167 7.77118 6.2625 7.56535 5.76667C7.36368 5.28417 7.15952 5.34917 7.00785 5.34167L6.53285 5.33333C6.36785 5.33333 6.09952 5.395 5.87285 5.64333C5.64618 5.89167 5.00618 6.49 5.00618 7.70917C5.00618 8.92833 5.89368 10.1058 6.01702 10.2708C6.14118 10.4358 7.76285 12.9375 10.247 14.01C10.8378 14.265 11.2995 14.4175 11.6587 14.5317C12.252 14.72 12.792 14.6933 13.2187 14.63C13.6945 14.5592 14.6837 14.0308 14.8904 13.4525C15.097 12.8733 15.097 12.3775 15.0345 12.2742Z" fill="#FFD066"></path>
+										<div class="holidays-block__card-col">
+											<div class="holidays-block__card-discount holidays-block__discount">
+												<div class="holidays-block__discount-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+														<g clip-path="url(#clip0_2589_27386)">
+															<path d="M12.0075 5.15956C12.8225 3.92623 13.2301 3.30956 13.7772 2.896C14.2817 2.51474 14.8693 2.2585 15.492 2.14831C16.1674 2.02878 16.8966 2.1498 18.3549 2.39185L28.3989 4.05887L38.212 6.77259C39.6368 7.16662 40.3493 7.36363 40.9117 7.75623C41.4302 8.11817 41.8554 8.59788 42.1527 9.156C42.475 9.76139 42.5853 10.4923 42.8057 11.9541L44.3241 22.0216L44.7756 32.193C44.8411 33.6699 44.8739 34.4083 44.6743 35.0645C44.4903 35.6694 44.1655 36.2222 43.7265 36.6773C43.2504 37.171 42.5893 37.5017 41.2672 38.163L32.1616 42.7181L22.6276 46.2907C21.2433 46.8094 20.5511 47.0687 19.8653 47.0817C19.2331 47.0936 18.6071 46.9555 18.0386 46.6787C17.4219 46.3784 16.9032 45.8519 15.8656 44.7989L8.71967 37.5465L2.3758 29.5831C1.45468 28.4268 0.994128 27.8487 0.769899 27.2005C0.563181 26.6029 0.501078 25.9648 0.588685 25.3386C0.683711 24.6593 1.02414 24.0033 1.705 22.6911L6.3942 13.6538L12.0075 5.15956Z" fill="#E94C4D"></path>
+															<g clip-path="url(#clip1_2589_27386)">
+																<mask id="mask0_2589_27386" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="2" width="45" height="46">
+																	<path d="M12.0075 5.15932C12.8225 3.92598 13.2301 3.30932 13.7772 2.89576C14.2817 2.5145 14.8693 2.25826 15.492 2.14806C16.1674 2.02854 16.8966 2.14956 18.3549 2.39161L28.3989 4.05863L38.212 6.77235C39.6368 7.16637 40.3493 7.36338 40.9117 7.75598C41.4302 8.11793 41.8554 8.59763 42.1527 9.15575C42.475 9.76115 42.5853 10.492 42.8057 11.9538L44.3241 22.0214L44.7756 32.1928C44.8411 33.6696 44.8739 34.408 44.6743 35.0642C44.4903 35.6692 44.1655 36.2219 43.7265 36.677C43.2504 37.1707 42.5893 37.5014 41.2672 38.1628L32.1616 42.7179L22.6276 46.2904C21.2433 46.8091 20.5511 47.0685 19.8653 47.0815C19.2331 47.0934 18.6071 46.9553 18.0386 46.6784C17.4219 46.3782 16.9032 45.8517 15.8656 44.7986L8.71967 37.5463L2.3758 29.5828C1.45468 28.4266 0.994128 27.8484 0.769899 27.2002C0.563181 26.6027 0.501078 25.9646 0.588685 25.3384C0.683711 24.6591 1.02414 24.003 1.705 22.6908L6.3942 13.6535L12.0075 5.15932Z" fill="#FFD066"></path>
+																</mask>
+																<g mask="url(#mask0_2589_27386)">
+																	<path d="M15.5959 47.9741C15.1442 48.3374 14.7604 48.3227 14.4445 47.9299C14.3497 47.8121 14.3021 47.6725 14.3017 47.5112L13.4215 16.6833C13.4167 16.396 13.4436 16.148 13.5021 15.9392C13.5802 15.7147 13.7567 15.4918 14.0316 15.2706L16.6237 13.1855C17.0754 12.8222 17.4592 12.8369 17.7751 13.2296C17.8699 13.3474 17.9175 13.487 17.9179 13.6484L18.7687 44.4999C18.7734 44.7872 18.7465 45.0353 18.6881 45.244C18.6296 45.4528 18.4629 45.6677 18.188 45.8889L15.5959 47.9741ZM31.1196 35.7288C29.7647 36.8188 28.3807 37.3499 26.9676 37.3223C25.5741 37.2788 24.3642 36.6995 23.3379 35.5845C22.8879 35.1055 22.5049 34.6697 22.189 34.2769C21.8769 33.8488 21.5095 33.3518 21.0869 32.7862C20.2018 31.5252 19.8677 30.2252 20.0845 28.8864C20.3209 27.5318 21.1559 26.278 22.5894 25.1248C24.0229 23.9716 25.4167 23.4326 26.7709 23.5076C28.1447 23.5669 29.3429 24.1718 30.3654 25.3222C30.8469 25.8405 31.2536 26.3058 31.5853 26.7182C31.9013 27.1109 32.245 27.5784 32.6164 28.1205C33.5053 29.3461 33.8119 30.652 33.5362 32.0382C33.2801 33.4086 32.4746 34.6388 31.1196 35.7288ZM28.7975 32.8422C29.0528 32.6368 29.2097 32.4297 29.2681 32.221C29.3108 31.9926 29.3004 31.7584 29.2367 31.5185C29.1573 31.2589 29.0386 31.031 28.8807 30.8346C28.5882 30.3906 28.2761 29.9625 27.9444 29.5501C27.6126 29.1377 27.2692 28.7509 26.914 28.3898C26.6416 28.0914 26.3321 27.8876 25.9854 27.7783C25.6387 27.669 25.2887 27.7565 24.9352 28.0409C24.5621 28.341 24.3918 28.6721 24.4242 29.0341C24.4567 29.3961 24.5895 29.7422 24.8226 30.0721C25.1189 30.4807 25.4329 30.8911 25.7647 31.3035C26.0964 31.7159 26.4379 32.1204 26.7893 32.517C26.9669 32.6975 27.1642 32.8623 27.381 33.0113C27.6017 33.1248 27.8282 33.1852 28.0605 33.1925C28.2965 33.1643 28.5422 33.0475 28.7975 32.8422ZM9.69491 35.9342C8.33995 37.0242 6.97365 37.5573 5.59601 37.5334C4.20257 37.49 2.98285 36.9186 1.93686 35.8194C1.48687 35.3404 1.10391 34.9045 0.787977 34.5118C0.475882 34.0836 0.108499 33.5867 -0.314173 33.0211C-1.19923 31.76 -1.52353 30.4522 -1.2871 29.0976C-1.05066 27.743 -0.22551 26.497 1.18836 25.3597C2.62186 24.2065 4.0157 23.6674 5.36987 23.7425C6.74367 23.8018 7.95164 24.3988 8.99379 25.5334C9.47538 26.0517 9.88203 26.517 10.2138 26.9294C10.5297 27.3221 10.8734 27.7895 11.2448 28.3317C12.1141 29.5731 12.4109 30.8869 12.1351 32.2731C11.8633 33.6239 11.0499 34.8442 9.69491 35.9342ZM7.39648 33.077C7.65176 32.8717 7.80864 32.6646 7.86712 32.4558C7.9098 32.2274 7.89932 31.9933 7.8357 31.7534C7.75628 31.4938 7.63759 31.2658 7.47962 31.0695C7.17137 30.6059 6.85927 30.1777 6.54334 29.7849C6.21161 29.3726 5.86814 28.9858 5.51293 28.6247C5.24054 28.3263 4.93102 28.1224 4.58436 28.0132C4.25734 27.8881 3.90728 27.9756 3.53418 28.2758C3.16107 28.5759 2.99075 28.907 3.02322 29.269C3.05568 29.631 3.18847 29.977 3.42158 30.307C3.71788 30.7155 4.03189 31.126 4.36362 31.5384C4.67956 31.9311 5.02111 32.3356 5.38827 32.7518C5.56588 32.9324 5.76312 33.0972 5.98 33.2462C6.20072 33.3597 6.43702 33.4122 6.68889 33.4037C6.92497 33.3755 7.16084 33.2666 7.39648 33.077Z" fill="white"></path>
 																</g>
-																<defs>
-																	<clipPath id="clip0_150_52027">
-																		<rect width="20" height="20" fill="white"></rect>
-																	</clipPath>
-																</defs>
-															</svg><span>WhatsApp</span></a><a class="faq-socials__item" href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="bg" d="M1.22615 7.90355L13.1395 2.85766C14.3155 2.33205 18.3036 0.650082 18.3036 0.650082C18.3036 0.650082 20.1443 -0.0857776 19.9909 1.70131C19.9398 2.43717 19.5307 5.01267 19.1217 7.79843L17.8435 16.0506C17.8435 16.0506 17.7412 17.2595 16.872 17.4697C16.0028 17.68 14.5711 16.7339 14.3155 16.5236C14.111 16.3659 10.4807 14.0007 9.15133 12.8443C8.79341 12.529 8.38437 11.8982 9.20246 11.1624C11.0431 9.42783 13.2417 7.27281 14.5711 5.90622C15.1847 5.27548 15.7982 3.80376 13.2417 5.59085L6.03238 10.5842C6.03238 10.5842 5.2143 11.1098 3.6804 10.6367C2.14649 10.1637 0.356936 9.53295 0.356936 9.53295C0.356936 9.53295 -0.870188 8.74453 1.22615 7.90355Z" fill="#FFD066"></path>
-															</svg><span>Телеграм</span></a></div>
-												</div>
-												<div>
-													<div class="order1-contacts__title">Позвоните или напишите на почту</div>
-													<ul class="dot-list">
-														<li><a href="tel:84997559790">8 499 755-97-90</a></li>
-														<li><a href="mailto:zakaz@gurmanych.ru">zakaz@gurmanych.ru</a></li>
-													</ul>
-												</div>
-											</div>
-										</div><button class="button button--green-border order1-repeat" data-fancy-button="repeat-order"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg><span>Повторить заказ</span></button>
-									</div>
-								</div>
-							</div>
-							<div class="dropdown" data-dropdown>
-								<div class="dropdown__button order1" data-dropdown-button>
-									<div>
-										<div class="dropdown__title">Заказ №323</div>
-										<div class="dropdown__note">24 июня 2023, 18:35</div>
-									</div>
-									<div class="dropdown__title bold">23 800₽</div>
-									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
-										</svg></div>
-								</div>
-								<div class="dropdown__drop" data-dropdown-drop>
-									<div class="order1-drop-inner">
-										<div class="order1-rate">
-											<div class="order1-rate__left">
-												<div class="order1-rate__icon"><svg width="66" height="84" viewbox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M53.467 11.3028C53.467 11.3028 49.444 5.94473 45.2534 10.309C41.0627 14.6672 27.0899 38.1708 27.521 40.5954C27.7126 41.6729 31.0471 39.2364 31.4602 38.955C33.3699 37.6619 35.1001 36.1652 36.8721 34.6985C41.7871 30.6216 46.8638 26.6166 51.6052 22.3361C54.9218 19.3428 57.4781 14.9127 53.467 11.3028Z" fill="#F5A163"></path>
-														<path d="M52.5513 10.321L57.8241 0.603999C57.9931 0.292563 58.3548 0.139102 58.6962 0.233979L59.5631 0.474916C60.0782 0.618065 60.2887 1.23398 59.969 1.66246L53.102 10.8658L52.5513 10.321Z" fill="#32691A"></path>
-														<path d="M54.1861 12.0391C54.5765 11.9403 62.2455 6.25606 64.9096 4.27561C65.4136 3.90098 65.5178 3.19527 65.1508 2.68572C64.7766 2.16623 64.0503 2.05216 63.5349 2.43194L54.3478 9.20144L53.1025 10.8717L54.1861 12.0391Z" fill="#11936C"></path>
-														<path d="M43.7148 12.1709L46.5166 15.2659" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M50.7013 23.1444L47.9175 20.5821" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M39.2246 18.7382L42.9543 22.6714" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M43.9423 28.8915L41.2603 26.9219" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M34.6689 26.1616L36.8122 28.7957" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M38.2851 33.5252L35.9204 31.0766" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M30.6401 33.2977L32.4182 35.0996" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M31.9093 23.1743C36.2637 23.1743 39.7937 19.6443 39.7937 15.2899C39.7937 10.9354 36.2637 7.40547 31.9093 7.40547C27.5549 7.40547 24.0249 10.9354 24.0249 15.2899C24.0249 19.6443 27.5549 23.1743 31.9093 23.1743Z" fill="#11936C"></path>
-														<path d="M33.3756 6.45359C32.6153 5.47179 31.4479 4.81326 30.2086 4.67557C30.7774 4.63367 31.0109 5.37001 31.3581 5.81901C31.6275 6.16624 32.0346 6.36979 32.3878 6.62721C32.741 6.88464 33.0703 7.25581 33.0583 7.69283C31.6514 7.74671 30.6217 9.02186 29.3286 9.56665C30.8073 9.17153 32.3399 8.97995 33.8725 9.00989C33.5013 9.22541 33.4414 9.7223 33.4235 10.1474C33.3636 11.4405 33.3037 12.7276 33.2439 14.0207C34.4412 13.1047 34.2197 10.8957 35.5966 10.279C35.9019 11.5123 36.6263 12.6378 37.6201 13.428C37.3926 12.5061 37.0574 11.6081 36.6263 10.758C37.9194 10.3449 39.3263 10.285 40.6433 10.5963C40.356 9.96177 39.6077 9.68638 38.9192 9.56665C38.2307 9.44692 37.5004 9.41099 36.9197 9.02785C38.0272 8.72851 39.009 7.99216 39.6017 7.01634C38.3924 7.63895 37.0274 7.95624 35.6625 7.93828C35.5667 7.00437 35.0279 6.13032 34.2436 5.61547C34.519 5.79507 35.1117 7.25581 34.8124 7.51922C34.3454 7.92631 33.5851 6.72299 33.3756 6.45359Z" fill="#32691A"></path>
-														<path d="M12.5439 16.7582C12.9674 16.7574 13.2941 16.3991 13.198 15.9866C12.7442 14.039 10.6291 8.98549 0.880048 8.6005C0.418779 8.58228 0.065853 8.98353 0.199693 9.42533C0.834218 11.5199 3.34325 16.7753 12.5439 16.7582Z" fill="#11936C"></path>
-														<path d="M22.7797 17.1158C22.9309 17.2263 26.7776 8.17729 19.344 1.36524C18.9963 1.04658 18.4588 1.14822 18.2738 1.58205C17.244 3.99619 15.0177 11.3349 22.7797 17.1158Z" fill="#11936C"></path>
-														<path d="M23.0789 31.9267C23.474 31.8309 21.3188 22.0308 8.1123 22.4558C8.1123 22.4558 11.9557 34.6147 23.0789 31.9267Z" fill="#11936C"></path>
-														<path d="M26.4611 31.1365C26.6047 31.4957 33.6869 29.2567 32.1005 17.9838C32.1005 17.9838 23.366 23.2341 26.4611 31.1365Z" fill="#11936C"></path>
-														<path d="M14.4548 12.3728C14.9048 12.5466 15.3808 12.2417 15.3853 11.7593C15.4083 9.27023 14.7675 2.5021 7.38484 0.203077C6.99164 0.0806283 6.58617 0.313181 6.52534 0.720495C6.2083 2.84348 6.05564 9.12898 14.4548 12.3728Z" fill="#11936C"></path>
-														<path d="M24.387 36.3277C24.4409 35.1723 24.2972 34.0108 24.1655 32.8614C24.0338 31.712 23.8602 30.5625 23.6447 29.4251C23.2197 27.1502 22.6569 24.9052 21.8787 22.726C21.5015 21.6365 21.0764 20.5649 20.5975 19.5172C20.1186 18.4696 19.5499 17.4638 18.9691 16.47C17.7658 14.5004 16.2931 12.7044 14.563 11.1419C15.5029 11.8304 16.3769 12.6146 17.1851 13.4587C17.9694 14.3268 18.6998 15.2487 19.3583 16.2246C20.6634 18.1822 21.6512 20.3314 22.4474 22.5345C23.1897 24.7615 23.7644 27.0364 24.0997 29.3533C24.405 31.6581 24.6564 34.0049 24.387 36.3277Z" fill="#40785F"></path>
-														<path d="M21.172 19.8884C20.4895 19.3975 19.8071 18.9245 19.1306 18.4516C18.4481 17.9906 17.7656 17.5296 17.0592 17.1166C16.3528 16.6975 15.6344 16.3084 14.892 15.9731C14.1437 15.6558 13.3714 15.3745 12.5513 15.1949C13.3894 15.141 14.2515 15.2787 15.0597 15.5421C15.8738 15.7995 16.6342 16.1827 17.3705 16.6077C18.8013 17.4818 20.1184 18.5713 21.172 19.8884Z" fill="#40785F"></path>
-														<path d="M22.178 22.2711C22.2918 21.6964 22.3576 21.1396 22.4055 20.5828C22.4414 20.0261 22.4654 19.4693 22.4354 18.9186C22.4115 18.3678 22.3696 17.811 22.2858 17.2603C22.2139 16.7035 22.0942 16.1527 22.0044 15.572C22.3217 16.0629 22.5791 16.5957 22.7407 17.1585C22.9263 17.7212 22.9982 18.3079 23.0341 18.9006C23.0521 19.4933 22.9982 20.086 22.8665 20.6607C22.7288 21.2294 22.5192 21.7921 22.178 22.2711Z" fill="#40785F"></path>
-														<path d="M24.2495 32.1849C23.7825 31.9933 23.4533 31.712 23.136 31.4066C22.9863 31.251 22.8366 31.0953 22.7049 30.9217C22.5673 30.7481 22.4535 30.5745 22.2979 30.3769C22.5553 30.353 22.8007 30.4488 23.0043 30.5625C23.2138 30.6763 23.3934 30.8259 23.555 30.9816C23.8783 31.3169 24.1477 31.688 24.2495 32.1849Z" fill="#40785F"></path>
-														<path d="M25.6863 29.5867C25.5007 30.2812 25.2493 30.8858 25.0218 31.5025C24.9021 31.8078 24.7943 32.1131 24.6806 32.4244L24.3633 33.3942C24.0999 32.7118 24.2256 31.9455 24.4651 31.2929C24.5968 30.9637 24.7584 30.6464 24.9619 30.359C25.1535 30.0716 25.387 29.8022 25.6863 29.5867Z" fill="#40785F"></path>
-														<path d="M55.6768 16.9507C56.3314 16.6052 57.0108 16.9537 57.0388 17.6933C57.3555 26.0726 58.2857 68.8157 57.6321 79.9242C57.547 81.3717 56.4065 82.3754 54.9601 82.4755C46.794 83.0407 20.2479 84.747 12.4347 83.6272C12.4347 83.6272 10.1146 25.7812 11.2301 15.3987C11.3005 14.744 11.9455 14.4122 12.5702 14.6202L16.4071 15.8977C16.731 16.0056 17.0862 15.9627 17.3751 15.7809L22.416 12.6082C22.8883 12.311 23.5063 12.399 23.8767 12.8163L27.048 16.3886C27.5092 16.9081 28.3248 16.8993 28.7859 16.3796C29.8908 15.1343 31.6876 13.2054 31.8973 13.5837C32.133 14.0089 34.3749 16.037 35.3841 16.939C35.6866 17.2093 36.1092 17.2949 36.4943 17.1675L43.6927 14.7865C44.1392 14.6388 44.6306 14.7802 44.9302 15.1427L46.2119 16.6932C46.543 17.0936 47.1027 17.2198 47.5735 17.0002L49.7198 15.9988C50.1545 15.796 50.6696 15.8868 51.0088 16.226L52.5009 17.7181C52.8547 18.0718 53.3976 18.1538 53.8401 17.9203L55.6768 16.9507Z" fill="#B3816E"></path>
-														<path d="M11.2189 15.4556C11.258 15.08 10.746 14.8349 10.4653 15.0876L7.57588 17.689C7.46208 17.7915 7.29793 17.8156 7.1594 17.7504L4.39148 16.4464C4.05965 16.2901 3.61329 16.667 3.69023 17.0257C5.3836 24.919 3.56606 63.8354 3.35212 72.6772C3.32442 73.822 3.73688 74.8887 4.52177 75.7225C7.2842 78.657 12.4288 83.6272 12.4288 83.6272C12.4288 83.6272 10.1225 25.991 11.2189 15.4556Z" fill="#CFA899"></path>
-														<path d="M12.4348 83.6272C11.9798 82.6634 11.5368 81.6935 11.1297 80.7057C10.7166 79.7239 10.2975 78.7481 9.90242 77.7543C9.11817 75.7728 8.35787 73.7852 7.64546 71.7797L8.01663 71.9054L5.69981 73.1925C5.31666 73.408 4.92154 73.6056 4.53241 73.8151C4.14328 74.0247 4.27012 73.88 3.875 74.0716C4.2342 73.8082 4.07743 73.9049 4.43663 73.6595C4.80181 73.414 5.16101 73.1506 5.53218 72.9171L7.75322 71.4684L8.00466 71.3067L8.12439 71.6001C8.93259 73.5697 9.6869 75.5632 10.4173 77.5628C10.7825 78.5625 11.1237 79.5743 11.4649 80.58C11.8122 81.5858 12.1294 82.6095 12.4348 83.6272Z" fill="#B3816E"></path>
-														<path d="M7.88543 71.6899L7.98122 58.22C8.01115 53.73 8.08299 49.24 8.07701 44.7501C8.11891 40.2601 8.11891 35.7701 8.06503 31.2861C8.06503 30.1666 8.0351 29.0411 8.01714 27.9216C7.99918 26.8021 7.96925 25.6767 7.91537 24.5572L7.8555 22.8749L7.74774 21.1987C7.69985 20.0732 7.53222 18.9716 7.39453 17.8521C8.23865 22.2703 8.34641 26.7902 8.526 31.2742C8.67567 35.7641 8.66968 40.2601 8.67567 44.7501C8.63376 49.24 8.56791 53.736 8.44219 58.22C8.3045 62.7159 8.14286 67.2059 7.88543 71.6899Z" fill="#B3816E"></path>
-														<path d="M35.4952 38.7353C34.7912 35.8359 30.6678 35.8359 29.9638 38.7353C29.7673 39.5447 28.84 39.9288 28.1286 39.4954C25.5807 37.943 22.665 40.8587 24.2174 43.4067C24.6508 44.118 24.2667 45.0453 23.4572 45.2418C20.5579 45.9458 20.5579 50.0692 23.4572 50.7732C24.2667 50.9697 24.6508 51.897 24.2174 52.6083C22.665 55.1563 25.5807 58.072 28.1286 56.5196C28.84 56.0862 29.7673 56.4703 29.9638 57.2798C30.6678 60.1791 34.7912 60.1791 35.4952 57.2798C35.6917 56.4703 36.619 56.0862 37.3303 56.5196C39.8783 58.072 42.794 55.1563 41.2416 52.6083C40.8082 51.897 41.1923 50.9697 42.0017 50.7732C44.9011 50.0692 44.9011 45.9458 42.0017 45.2418C41.1923 45.0453 40.8082 44.118 41.2416 43.4067C42.794 40.8587 39.8783 37.943 37.3303 39.4954C36.619 39.9288 35.6917 39.5447 35.4952 38.7353Z" fill="#FFD066"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M37.6208 44.2146C37.9305 44.5359 37.9211 45.0474 37.5998 45.3571L32.0108 50.7441C31.6971 51.0464 31.2003 51.0457 30.8875 50.7424L27.8573 47.804C27.537 47.4934 27.5291 46.9818 27.8398 46.6614C28.1504 46.3411 28.662 46.3332 28.9824 46.6439L31.4517 49.0384L36.4782 44.1935C36.7996 43.8838 37.3111 43.8933 37.6208 44.2146Z" fill="#32691A"></path>
+															</g>
+														</g>
+														<defs>
+															<clippath id="clip0_2589_27386">
+																<rect width="48" height="48" fill="white"></rect>
+															</clippath>
+															<clippath id="clip1_2589_27386">
+																<rect width="53.41" height="61.52" fill="white"></rect>
+															</clippath>
+														</defs>
 													</svg></div>
-												<div class="order1-rate__texts">
-													<p class="order1-rate__title">Заказ доставлен</p>
-													<p class="order1-rate__text">Спасибо, что доверили нам выбор продуктов</p>
-												</div>
-											</div>
-											<div class="order1-rate__right">
-												<div class="order1-rate__btn" data-modal-btn="rate-order"><button class="button button--green full-width">Оценить заказ</button></div>
-											</div>
-										</div>
-										<div class="order-table1 order1-drop-block">
-											<div class="order-table1__row">
-												<div class="order-table1__title">Стоимость доставки</div>
-												<div class="order-table1__value">1 200₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Скидки</div>
-												<div class="order-table1__value green">-500₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Желаемая дата доставки</div>
-												<div class="order-table1__value">24 июня 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Дата получения заказа</div>
-												<div class="order-table1__value">1 июля 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Способ оплаты</div>
-												<div class="order-table1__value">Наличными курьеру</div>
-											</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Получатель</div>
-											<div class="order1-drop__text">Спартак Давидов</div>
-											<div class="order1-drop__text">Москва, пр. Луначарского 13, кв, 15</div>
-											<div class="order1-drop__text">spartaktimber@mail.ru</div>
-											<div class="order1-drop__text">+7 981 157 92 90</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Состав заказа</div>
-											<div class="order-table2">
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
+												<div class="holidays-block__discount-texts">
+													<p class="holidays-block__discount-title">Ваша скидка</p>
+													<p class="holidays-block__discount-number">10%</p>
 												</div>
 											</div>
 										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Изменить заказ</div>
-											<div class="order1-contacts">
-												<div>
-													<div class="order1-contacts__title">Напишите нам в месседжерах</div>
-													<div class="faq-socials"><a class="faq-socials__item" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_150_52027)">
-																	<path class="bg" d="M0.0478516 20L1.45368 14.8642C0.586185 13.3608 0.130352 11.6567 0.131185 9.90917C0.133685 4.44583 4.57952 0 10.042 0C12.6929 0.000833333 15.1812 1.03333 17.0529 2.90667C18.9237 4.78 19.9537 7.27 19.9529 9.91833C19.9504 15.3825 15.5045 19.8283 10.042 19.8283C8.38368 19.8275 6.74952 19.4117 5.30202 18.6217L0.0478516 20ZM5.54535 16.8275C6.94202 17.6567 8.27535 18.1533 10.0387 18.1542C14.5787 18.1542 18.277 14.4592 18.2795 9.91667C18.2812 5.365 14.6004 1.675 10.0454 1.67333C5.50202 1.67333 1.80618 5.36833 1.80452 9.91C1.80368 11.7642 2.34702 13.1525 3.25952 14.605L2.42702 17.645L5.54535 16.8275ZM15.0345 12.2742C14.9729 12.1708 14.8079 12.1092 14.5595 11.985C14.312 11.8608 13.0945 11.2617 12.867 11.1792C12.6404 11.0967 12.4754 11.055 12.3095 11.3033C12.1445 11.5508 11.6695 12.1092 11.5254 12.2742C11.3812 12.4392 11.2362 12.46 10.9887 12.3358C10.7412 12.2117 9.94285 11.9508 8.99702 11.1067C8.26118 10.45 7.76368 9.63917 7.61952 9.39083C7.47535 9.14333 7.60452 9.00917 7.72785 8.88583C7.83952 8.775 7.97535 8.59667 8.09952 8.45167C8.22535 8.30833 8.26618 8.205 8.34952 8.03917C8.43202 7.87417 8.39118 7.72917 8.32868 7.605C8.26618 7.48167 7.77118 6.2625 7.56535 5.76667C7.36368 5.28417 7.15952 5.34917 7.00785 5.34167L6.53285 5.33333C6.36785 5.33333 6.09952 5.395 5.87285 5.64333C5.64618 5.89167 5.00618 6.49 5.00618 7.70917C5.00618 8.92833 5.89368 10.1058 6.01702 10.2708C6.14118 10.4358 7.76285 12.9375 10.247 14.01C10.8378 14.265 11.2995 14.4175 11.6587 14.5317C12.252 14.72 12.792 14.6933 13.2187 14.63C13.6945 14.5592 14.6837 14.0308 14.8904 13.4525C15.097 12.8733 15.097 12.3775 15.0345 12.2742Z" fill="#FFD066"></path>
+									</div>
+								</div>
+								<div class="holidays-block__card">
+									<div class="holidays-block__card-row">
+										<div class="holidays-block__card-col">
+											<p class="holidays-block__card-title">День рождения мужа</p>
+											<p class="holidays-block__card-date">24.05.1970</p>
+										</div>
+										<div class="holidays-block__card-col">
+											<div class="holidays-block__card-discount holidays-block__discount">
+												<div class="holidays-block__discount-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+														<g clip-path="url(#clip0_2589_27386)">
+															<path d="M12.0075 5.15956C12.8225 3.92623 13.2301 3.30956 13.7772 2.896C14.2817 2.51474 14.8693 2.2585 15.492 2.14831C16.1674 2.02878 16.8966 2.1498 18.3549 2.39185L28.3989 4.05887L38.212 6.77259C39.6368 7.16662 40.3493 7.36363 40.9117 7.75623C41.4302 8.11817 41.8554 8.59788 42.1527 9.156C42.475 9.76139 42.5853 10.4923 42.8057 11.9541L44.3241 22.0216L44.7756 32.193C44.8411 33.6699 44.8739 34.4083 44.6743 35.0645C44.4903 35.6694 44.1655 36.2222 43.7265 36.6773C43.2504 37.171 42.5893 37.5017 41.2672 38.163L32.1616 42.7181L22.6276 46.2907C21.2433 46.8094 20.5511 47.0687 19.8653 47.0817C19.2331 47.0936 18.6071 46.9555 18.0386 46.6787C17.4219 46.3784 16.9032 45.8519 15.8656 44.7989L8.71967 37.5465L2.3758 29.5831C1.45468 28.4268 0.994128 27.8487 0.769899 27.2005C0.563181 26.6029 0.501078 25.9648 0.588685 25.3386C0.683711 24.6593 1.02414 24.0033 1.705 22.6911L6.3942 13.6538L12.0075 5.15956Z" fill="#E94C4D"></path>
+															<g clip-path="url(#clip1_2589_27386)">
+																<mask id="mask0_2589_27386" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="2" width="45" height="46">
+																	<path d="M12.0075 5.15932C12.8225 3.92598 13.2301 3.30932 13.7772 2.89576C14.2817 2.5145 14.8693 2.25826 15.492 2.14806C16.1674 2.02854 16.8966 2.14956 18.3549 2.39161L28.3989 4.05863L38.212 6.77235C39.6368 7.16637 40.3493 7.36338 40.9117 7.75598C41.4302 8.11793 41.8554 8.59763 42.1527 9.15575C42.475 9.76115 42.5853 10.492 42.8057 11.9538L44.3241 22.0214L44.7756 32.1928C44.8411 33.6696 44.8739 34.408 44.6743 35.0642C44.4903 35.6692 44.1655 36.2219 43.7265 36.677C43.2504 37.1707 42.5893 37.5014 41.2672 38.1628L32.1616 42.7179L22.6276 46.2904C21.2433 46.8091 20.5511 47.0685 19.8653 47.0815C19.2331 47.0934 18.6071 46.9553 18.0386 46.6784C17.4219 46.3782 16.9032 45.8517 15.8656 44.7986L8.71967 37.5463L2.3758 29.5828C1.45468 28.4266 0.994128 27.8484 0.769899 27.2002C0.563181 26.6027 0.501078 25.9646 0.588685 25.3384C0.683711 24.6591 1.02414 24.003 1.705 22.6908L6.3942 13.6535L12.0075 5.15932Z" fill="#FFD066"></path>
+																</mask>
+																<g mask="url(#mask0_2589_27386)">
+																	<path d="M15.5959 47.9741C15.1442 48.3374 14.7604 48.3227 14.4445 47.9299C14.3497 47.8121 14.3021 47.6725 14.3017 47.5112L13.4215 16.6833C13.4167 16.396 13.4436 16.148 13.5021 15.9392C13.5802 15.7147 13.7567 15.4918 14.0316 15.2706L16.6237 13.1855C17.0754 12.8222 17.4592 12.8369 17.7751 13.2296C17.8699 13.3474 17.9175 13.487 17.9179 13.6484L18.7687 44.4999C18.7734 44.7872 18.7465 45.0353 18.6881 45.244C18.6296 45.4528 18.4629 45.6677 18.188 45.8889L15.5959 47.9741ZM31.1196 35.7288C29.7647 36.8188 28.3807 37.3499 26.9676 37.3223C25.5741 37.2788 24.3642 36.6995 23.3379 35.5845C22.8879 35.1055 22.5049 34.6697 22.189 34.2769C21.8769 33.8488 21.5095 33.3518 21.0869 32.7862C20.2018 31.5252 19.8677 30.2252 20.0845 28.8864C20.3209 27.5318 21.1559 26.278 22.5894 25.1248C24.0229 23.9716 25.4167 23.4326 26.7709 23.5076C28.1447 23.5669 29.3429 24.1718 30.3654 25.3222C30.8469 25.8405 31.2536 26.3058 31.5853 26.7182C31.9013 27.1109 32.245 27.5784 32.6164 28.1205C33.5053 29.3461 33.8119 30.652 33.5362 32.0382C33.2801 33.4086 32.4746 34.6388 31.1196 35.7288ZM28.7975 32.8422C29.0528 32.6368 29.2097 32.4297 29.2681 32.221C29.3108 31.9926 29.3004 31.7584 29.2367 31.5185C29.1573 31.2589 29.0386 31.031 28.8807 30.8346C28.5882 30.3906 28.2761 29.9625 27.9444 29.5501C27.6126 29.1377 27.2692 28.7509 26.914 28.3898C26.6416 28.0914 26.3321 27.8876 25.9854 27.7783C25.6387 27.669 25.2887 27.7565 24.9352 28.0409C24.5621 28.341 24.3918 28.6721 24.4242 29.0341C24.4567 29.3961 24.5895 29.7422 24.8226 30.0721C25.1189 30.4807 25.4329 30.8911 25.7647 31.3035C26.0964 31.7159 26.4379 32.1204 26.7893 32.517C26.9669 32.6975 27.1642 32.8623 27.381 33.0113C27.6017 33.1248 27.8282 33.1852 28.0605 33.1925C28.2965 33.1643 28.5422 33.0475 28.7975 32.8422ZM9.69491 35.9342C8.33995 37.0242 6.97365 37.5573 5.59601 37.5334C4.20257 37.49 2.98285 36.9186 1.93686 35.8194C1.48687 35.3404 1.10391 34.9045 0.787977 34.5118C0.475882 34.0836 0.108499 33.5867 -0.314173 33.0211C-1.19923 31.76 -1.52353 30.4522 -1.2871 29.0976C-1.05066 27.743 -0.22551 26.497 1.18836 25.3597C2.62186 24.2065 4.0157 23.6674 5.36987 23.7425C6.74367 23.8018 7.95164 24.3988 8.99379 25.5334C9.47538 26.0517 9.88203 26.517 10.2138 26.9294C10.5297 27.3221 10.8734 27.7895 11.2448 28.3317C12.1141 29.5731 12.4109 30.8869 12.1351 32.2731C11.8633 33.6239 11.0499 34.8442 9.69491 35.9342ZM7.39648 33.077C7.65176 32.8717 7.80864 32.6646 7.86712 32.4558C7.9098 32.2274 7.89932 31.9933 7.8357 31.7534C7.75628 31.4938 7.63759 31.2658 7.47962 31.0695C7.17137 30.6059 6.85927 30.1777 6.54334 29.7849C6.21161 29.3726 5.86814 28.9858 5.51293 28.6247C5.24054 28.3263 4.93102 28.1224 4.58436 28.0132C4.25734 27.8881 3.90728 27.9756 3.53418 28.2758C3.16107 28.5759 2.99075 28.907 3.02322 29.269C3.05568 29.631 3.18847 29.977 3.42158 30.307C3.71788 30.7155 4.03189 31.126 4.36362 31.5384C4.67956 31.9311 5.02111 32.3356 5.38827 32.7518C5.56588 32.9324 5.76312 33.0972 5.98 33.2462C6.20072 33.3597 6.43702 33.4122 6.68889 33.4037C6.92497 33.3755 7.16084 33.2666 7.39648 33.077Z" fill="white"></path>
 																</g>
-																<defs>
-																	<clipPath id="clip0_150_52027">
-																		<rect width="20" height="20" fill="white"></rect>
-																	</clipPath>
-																</defs>
-															</svg><span>WhatsApp</span></a><a class="faq-socials__item" href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="bg" d="M1.22615 7.90355L13.1395 2.85766C14.3155 2.33205 18.3036 0.650082 18.3036 0.650082C18.3036 0.650082 20.1443 -0.0857776 19.9909 1.70131C19.9398 2.43717 19.5307 5.01267 19.1217 7.79843L17.8435 16.0506C17.8435 16.0506 17.7412 17.2595 16.872 17.4697C16.0028 17.68 14.5711 16.7339 14.3155 16.5236C14.111 16.3659 10.4807 14.0007 9.15133 12.8443C8.79341 12.529 8.38437 11.8982 9.20246 11.1624C11.0431 9.42783 13.2417 7.27281 14.5711 5.90622C15.1847 5.27548 15.7982 3.80376 13.2417 5.59085L6.03238 10.5842C6.03238 10.5842 5.2143 11.1098 3.6804 10.6367C2.14649 10.1637 0.356936 9.53295 0.356936 9.53295C0.356936 9.53295 -0.870188 8.74453 1.22615 7.90355Z" fill="#FFD066"></path>
-															</svg><span>Телеграм</span></a></div>
-												</div>
-												<div>
-													<div class="order1-contacts__title">Позвоните или напишите на почту</div>
-													<ul class="dot-list">
-														<li><a href="tel:84997559790">8 499 755-97-90</a></li>
-														<li><a href="mailto:zakaz@gurmanych.ru">zakaz@gurmanych.ru</a></li>
-													</ul>
-												</div>
-											</div>
-										</div><button class="button button--green-border order1-repeat" data-fancy-button="repeat-order"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg><span>Повторить заказ</span></button>
-									</div>
-								</div>
-							</div>
-							<div class="dropdown" data-dropdown>
-								<div class="dropdown__button order1" data-dropdown-button>
-									<div>
-										<div class="dropdown__title">Заказ №323</div>
-										<div class="dropdown__note">24 июня 2023, 18:35</div>
-									</div>
-									<div class="dropdown__title bold">23 800₽</div>
-									<div class="dropdown__status"><img src="assets/images/svg/order-done.svg" alt=""><span>Получен</span></div>
-									<div class="dropdown__arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.73946 12.7119C9.40408 13.4793 10.5946 13.4793 11.2592 12.7119L14.1062 9.42442C15.041 8.34502 14.2743 6.66667 12.8464 6.66667H7.15232C5.7244 6.66667 4.95765 8.34502 5.89244 9.42442L8.73946 12.7119Z" fill="#14362A"></path>
-										</svg></div>
-								</div>
-								<div class="dropdown__drop" data-dropdown-drop>
-									<div class="order1-drop-inner">
-										<div class="order1-rate">
-											<div class="order1-rate__left">
-												<div class="order1-rate__icon"><svg width="66" height="84" viewbox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M53.467 11.3028C53.467 11.3028 49.444 5.94473 45.2534 10.309C41.0627 14.6672 27.0899 38.1708 27.521 40.5954C27.7126 41.6729 31.0471 39.2364 31.4602 38.955C33.3699 37.6619 35.1001 36.1652 36.8721 34.6985C41.7871 30.6216 46.8638 26.6166 51.6052 22.3361C54.9218 19.3428 57.4781 14.9127 53.467 11.3028Z" fill="#F5A163"></path>
-														<path d="M52.5513 10.321L57.8241 0.603999C57.9931 0.292563 58.3548 0.139102 58.6962 0.233979L59.5631 0.474916C60.0782 0.618065 60.2887 1.23398 59.969 1.66246L53.102 10.8658L52.5513 10.321Z" fill="#32691A"></path>
-														<path d="M54.1861 12.0391C54.5765 11.9403 62.2455 6.25606 64.9096 4.27561C65.4136 3.90098 65.5178 3.19527 65.1508 2.68572C64.7766 2.16623 64.0503 2.05216 63.5349 2.43194L54.3478 9.20144L53.1025 10.8717L54.1861 12.0391Z" fill="#11936C"></path>
-														<path d="M43.7148 12.1709L46.5166 15.2659" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M50.7013 23.1444L47.9175 20.5821" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M39.2246 18.7382L42.9543 22.6714" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M43.9423 28.8915L41.2603 26.9219" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M34.6689 26.1616L36.8122 28.7957" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M38.2851 33.5252L35.9204 31.0766" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M30.6401 33.2977L32.4182 35.0996" stroke="#14362A" stroke-width="0.380256" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M31.9093 23.1743C36.2637 23.1743 39.7937 19.6443 39.7937 15.2899C39.7937 10.9354 36.2637 7.40547 31.9093 7.40547C27.5549 7.40547 24.0249 10.9354 24.0249 15.2899C24.0249 19.6443 27.5549 23.1743 31.9093 23.1743Z" fill="#11936C"></path>
-														<path d="M33.3756 6.45359C32.6153 5.47179 31.4479 4.81326 30.2086 4.67557C30.7774 4.63367 31.0109 5.37001 31.3581 5.81901C31.6275 6.16624 32.0346 6.36979 32.3878 6.62721C32.741 6.88464 33.0703 7.25581 33.0583 7.69283C31.6514 7.74671 30.6217 9.02186 29.3286 9.56665C30.8073 9.17153 32.3399 8.97995 33.8725 9.00989C33.5013 9.22541 33.4414 9.7223 33.4235 10.1474C33.3636 11.4405 33.3037 12.7276 33.2439 14.0207C34.4412 13.1047 34.2197 10.8957 35.5966 10.279C35.9019 11.5123 36.6263 12.6378 37.6201 13.428C37.3926 12.5061 37.0574 11.6081 36.6263 10.758C37.9194 10.3449 39.3263 10.285 40.6433 10.5963C40.356 9.96177 39.6077 9.68638 38.9192 9.56665C38.2307 9.44692 37.5004 9.41099 36.9197 9.02785C38.0272 8.72851 39.009 7.99216 39.6017 7.01634C38.3924 7.63895 37.0274 7.95624 35.6625 7.93828C35.5667 7.00437 35.0279 6.13032 34.2436 5.61547C34.519 5.79507 35.1117 7.25581 34.8124 7.51922C34.3454 7.92631 33.5851 6.72299 33.3756 6.45359Z" fill="#32691A"></path>
-														<path d="M12.5439 16.7582C12.9674 16.7574 13.2941 16.3991 13.198 15.9866C12.7442 14.039 10.6291 8.98549 0.880048 8.6005C0.418779 8.58228 0.065853 8.98353 0.199693 9.42533C0.834218 11.5199 3.34325 16.7753 12.5439 16.7582Z" fill="#11936C"></path>
-														<path d="M22.7797 17.1158C22.9309 17.2263 26.7776 8.17729 19.344 1.36524C18.9963 1.04658 18.4588 1.14822 18.2738 1.58205C17.244 3.99619 15.0177 11.3349 22.7797 17.1158Z" fill="#11936C"></path>
-														<path d="M23.0789 31.9267C23.474 31.8309 21.3188 22.0308 8.1123 22.4558C8.1123 22.4558 11.9557 34.6147 23.0789 31.9267Z" fill="#11936C"></path>
-														<path d="M26.4611 31.1365C26.6047 31.4957 33.6869 29.2567 32.1005 17.9838C32.1005 17.9838 23.366 23.2341 26.4611 31.1365Z" fill="#11936C"></path>
-														<path d="M14.4548 12.3728C14.9048 12.5466 15.3808 12.2417 15.3853 11.7593C15.4083 9.27023 14.7675 2.5021 7.38484 0.203077C6.99164 0.0806283 6.58617 0.313181 6.52534 0.720495C6.2083 2.84348 6.05564 9.12898 14.4548 12.3728Z" fill="#11936C"></path>
-														<path d="M24.387 36.3277C24.4409 35.1723 24.2972 34.0108 24.1655 32.8614C24.0338 31.712 23.8602 30.5625 23.6447 29.4251C23.2197 27.1502 22.6569 24.9052 21.8787 22.726C21.5015 21.6365 21.0764 20.5649 20.5975 19.5172C20.1186 18.4696 19.5499 17.4638 18.9691 16.47C17.7658 14.5004 16.2931 12.7044 14.563 11.1419C15.5029 11.8304 16.3769 12.6146 17.1851 13.4587C17.9694 14.3268 18.6998 15.2487 19.3583 16.2246C20.6634 18.1822 21.6512 20.3314 22.4474 22.5345C23.1897 24.7615 23.7644 27.0364 24.0997 29.3533C24.405 31.6581 24.6564 34.0049 24.387 36.3277Z" fill="#40785F"></path>
-														<path d="M21.172 19.8884C20.4895 19.3975 19.8071 18.9245 19.1306 18.4516C18.4481 17.9906 17.7656 17.5296 17.0592 17.1166C16.3528 16.6975 15.6344 16.3084 14.892 15.9731C14.1437 15.6558 13.3714 15.3745 12.5513 15.1949C13.3894 15.141 14.2515 15.2787 15.0597 15.5421C15.8738 15.7995 16.6342 16.1827 17.3705 16.6077C18.8013 17.4818 20.1184 18.5713 21.172 19.8884Z" fill="#40785F"></path>
-														<path d="M22.178 22.2711C22.2918 21.6964 22.3576 21.1396 22.4055 20.5828C22.4414 20.0261 22.4654 19.4693 22.4354 18.9186C22.4115 18.3678 22.3696 17.811 22.2858 17.2603C22.2139 16.7035 22.0942 16.1527 22.0044 15.572C22.3217 16.0629 22.5791 16.5957 22.7407 17.1585C22.9263 17.7212 22.9982 18.3079 23.0341 18.9006C23.0521 19.4933 22.9982 20.086 22.8665 20.6607C22.7288 21.2294 22.5192 21.7921 22.178 22.2711Z" fill="#40785F"></path>
-														<path d="M24.2495 32.1849C23.7825 31.9933 23.4533 31.712 23.136 31.4066C22.9863 31.251 22.8366 31.0953 22.7049 30.9217C22.5673 30.7481 22.4535 30.5745 22.2979 30.3769C22.5553 30.353 22.8007 30.4488 23.0043 30.5625C23.2138 30.6763 23.3934 30.8259 23.555 30.9816C23.8783 31.3169 24.1477 31.688 24.2495 32.1849Z" fill="#40785F"></path>
-														<path d="M25.6863 29.5867C25.5007 30.2812 25.2493 30.8858 25.0218 31.5025C24.9021 31.8078 24.7943 32.1131 24.6806 32.4244L24.3633 33.3942C24.0999 32.7118 24.2256 31.9455 24.4651 31.2929C24.5968 30.9637 24.7584 30.6464 24.9619 30.359C25.1535 30.0716 25.387 29.8022 25.6863 29.5867Z" fill="#40785F"></path>
-														<path d="M55.6768 16.9507C56.3314 16.6052 57.0108 16.9537 57.0388 17.6933C57.3555 26.0726 58.2857 68.8157 57.6321 79.9242C57.547 81.3717 56.4065 82.3754 54.9601 82.4755C46.794 83.0407 20.2479 84.747 12.4347 83.6272C12.4347 83.6272 10.1146 25.7812 11.2301 15.3987C11.3005 14.744 11.9455 14.4122 12.5702 14.6202L16.4071 15.8977C16.731 16.0056 17.0862 15.9627 17.3751 15.7809L22.416 12.6082C22.8883 12.311 23.5063 12.399 23.8767 12.8163L27.048 16.3886C27.5092 16.9081 28.3248 16.8993 28.7859 16.3796C29.8908 15.1343 31.6876 13.2054 31.8973 13.5837C32.133 14.0089 34.3749 16.037 35.3841 16.939C35.6866 17.2093 36.1092 17.2949 36.4943 17.1675L43.6927 14.7865C44.1392 14.6388 44.6306 14.7802 44.9302 15.1427L46.2119 16.6932C46.543 17.0936 47.1027 17.2198 47.5735 17.0002L49.7198 15.9988C50.1545 15.796 50.6696 15.8868 51.0088 16.226L52.5009 17.7181C52.8547 18.0718 53.3976 18.1538 53.8401 17.9203L55.6768 16.9507Z" fill="#B3816E"></path>
-														<path d="M11.2189 15.4556C11.258 15.08 10.746 14.8349 10.4653 15.0876L7.57588 17.689C7.46208 17.7915 7.29793 17.8156 7.1594 17.7504L4.39148 16.4464C4.05965 16.2901 3.61329 16.667 3.69023 17.0257C5.3836 24.919 3.56606 63.8354 3.35212 72.6772C3.32442 73.822 3.73688 74.8887 4.52177 75.7225C7.2842 78.657 12.4288 83.6272 12.4288 83.6272C12.4288 83.6272 10.1225 25.991 11.2189 15.4556Z" fill="#CFA899"></path>
-														<path d="M12.4348 83.6272C11.9798 82.6634 11.5368 81.6935 11.1297 80.7057C10.7166 79.7239 10.2975 78.7481 9.90242 77.7543C9.11817 75.7728 8.35787 73.7852 7.64546 71.7797L8.01663 71.9054L5.69981 73.1925C5.31666 73.408 4.92154 73.6056 4.53241 73.8151C4.14328 74.0247 4.27012 73.88 3.875 74.0716C4.2342 73.8082 4.07743 73.9049 4.43663 73.6595C4.80181 73.414 5.16101 73.1506 5.53218 72.9171L7.75322 71.4684L8.00466 71.3067L8.12439 71.6001C8.93259 73.5697 9.6869 75.5632 10.4173 77.5628C10.7825 78.5625 11.1237 79.5743 11.4649 80.58C11.8122 81.5858 12.1294 82.6095 12.4348 83.6272Z" fill="#B3816E"></path>
-														<path d="M7.88543 71.6899L7.98122 58.22C8.01115 53.73 8.08299 49.24 8.07701 44.7501C8.11891 40.2601 8.11891 35.7701 8.06503 31.2861C8.06503 30.1666 8.0351 29.0411 8.01714 27.9216C7.99918 26.8021 7.96925 25.6767 7.91537 24.5572L7.8555 22.8749L7.74774 21.1987C7.69985 20.0732 7.53222 18.9716 7.39453 17.8521C8.23865 22.2703 8.34641 26.7902 8.526 31.2742C8.67567 35.7641 8.66968 40.2601 8.67567 44.7501C8.63376 49.24 8.56791 53.736 8.44219 58.22C8.3045 62.7159 8.14286 67.2059 7.88543 71.6899Z" fill="#B3816E"></path>
-														<path d="M35.4952 38.7353C34.7912 35.8359 30.6678 35.8359 29.9638 38.7353C29.7673 39.5447 28.84 39.9288 28.1286 39.4954C25.5807 37.943 22.665 40.8587 24.2174 43.4067C24.6508 44.118 24.2667 45.0453 23.4572 45.2418C20.5579 45.9458 20.5579 50.0692 23.4572 50.7732C24.2667 50.9697 24.6508 51.897 24.2174 52.6083C22.665 55.1563 25.5807 58.072 28.1286 56.5196C28.84 56.0862 29.7673 56.4703 29.9638 57.2798C30.6678 60.1791 34.7912 60.1791 35.4952 57.2798C35.6917 56.4703 36.619 56.0862 37.3303 56.5196C39.8783 58.072 42.794 55.1563 41.2416 52.6083C40.8082 51.897 41.1923 50.9697 42.0017 50.7732C44.9011 50.0692 44.9011 45.9458 42.0017 45.2418C41.1923 45.0453 40.8082 44.118 41.2416 43.4067C42.794 40.8587 39.8783 37.943 37.3303 39.4954C36.619 39.9288 35.6917 39.5447 35.4952 38.7353Z" fill="#FFD066"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M37.6208 44.2146C37.9305 44.5359 37.9211 45.0474 37.5998 45.3571L32.0108 50.7441C31.6971 51.0464 31.2003 51.0457 30.8875 50.7424L27.8573 47.804C27.537 47.4934 27.5291 46.9818 27.8398 46.6614C28.1504 46.3411 28.662 46.3332 28.9824 46.6439L31.4517 49.0384L36.4782 44.1935C36.7996 43.8838 37.3111 43.8933 37.6208 44.2146Z" fill="#32691A"></path>
+															</g>
+														</g>
+														<defs>
+															<clippath id="clip0_2589_27386">
+																<rect width="48" height="48" fill="white"></rect>
+															</clippath>
+															<clippath id="clip1_2589_27386">
+																<rect width="53.41" height="61.52" fill="white"></rect>
+															</clippath>
+														</defs>
 													</svg></div>
-												<div class="order1-rate__texts">
-													<p class="order1-rate__title">Заказ доставлен</p>
-													<p class="order1-rate__text">Спасибо, что доверили нам выбор продуктов</p>
-												</div>
-											</div>
-											<div class="order1-rate__right">
-												<div class="order1-rate__btn" data-modal-btn="rate-order"><button class="button button--green full-width">Оценить заказ</button></div>
-											</div>
-										</div>
-										<div class="order-table1 order1-drop-block">
-											<div class="order-table1__row">
-												<div class="order-table1__title">Стоимость доставки</div>
-												<div class="order-table1__value">1 200₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Скидки</div>
-												<div class="order-table1__value green">-500₽</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Желаемая дата доставки</div>
-												<div class="order-table1__value">24 июня 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Дата получения заказа</div>
-												<div class="order-table1__value">1 июля 2023</div>
-											</div>
-											<div class="order-table1__row">
-												<div class="order-table1__title">Способ оплаты</div>
-												<div class="order-table1__value">Наличными курьеру</div>
-											</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Получатель</div>
-											<div class="order1-drop__text">Спартак Давидов</div>
-											<div class="order1-drop__text">Москва, пр. Луначарского 13, кв, 15</div>
-											<div class="order1-drop__text">spartaktimber@mail.ru</div>
-											<div class="order1-drop__text">+7 981 157 92 90</div>
-										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Состав заказа</div>
-											<div class="order-table2">
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
-												</div>
-												<div class="order-table2__row">
-													<div class="order-table2__left">
-														<div class="order-table1__title">Утиные окорочка</div>
-														<div class="order-table2__price">
-															<div class="price-current">378₽</div><span class="old">560₽</span><span>/шт</span><span>/2 кг</span>
-														</div>
-													</div>
-													<div class="order-table2__right">
-														<div class="order-table1__title">5 шт</div>
-														<div class="price-current">5 670₽</div>
-													</div>
+												<div class="holidays-block__discount-texts">
+													<p class="holidays-block__discount-title">Ваша скидка</p>
+													<p class="holidays-block__discount-number">Уточняется на модерации</p>
 												</div>
 											</div>
 										</div>
-										<div class="order1-drop-block">
-											<div class="order1-drop__title bitter-heading">Изменить заказ</div>
-											<div class="order1-contacts">
-												<div>
-													<div class="order1-contacts__title">Напишите нам в месседжерах</div>
-													<div class="faq-socials"><a class="faq-socials__item" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_150_52027)">
-																	<path class="bg" d="M0.0478516 20L1.45368 14.8642C0.586185 13.3608 0.130352 11.6567 0.131185 9.90917C0.133685 4.44583 4.57952 0 10.042 0C12.6929 0.000833333 15.1812 1.03333 17.0529 2.90667C18.9237 4.78 19.9537 7.27 19.9529 9.91833C19.9504 15.3825 15.5045 19.8283 10.042 19.8283C8.38368 19.8275 6.74952 19.4117 5.30202 18.6217L0.0478516 20ZM5.54535 16.8275C6.94202 17.6567 8.27535 18.1533 10.0387 18.1542C14.5787 18.1542 18.277 14.4592 18.2795 9.91667C18.2812 5.365 14.6004 1.675 10.0454 1.67333C5.50202 1.67333 1.80618 5.36833 1.80452 9.91C1.80368 11.7642 2.34702 13.1525 3.25952 14.605L2.42702 17.645L5.54535 16.8275ZM15.0345 12.2742C14.9729 12.1708 14.8079 12.1092 14.5595 11.985C14.312 11.8608 13.0945 11.2617 12.867 11.1792C12.6404 11.0967 12.4754 11.055 12.3095 11.3033C12.1445 11.5508 11.6695 12.1092 11.5254 12.2742C11.3812 12.4392 11.2362 12.46 10.9887 12.3358C10.7412 12.2117 9.94285 11.9508 8.99702 11.1067C8.26118 10.45 7.76368 9.63917 7.61952 9.39083C7.47535 9.14333 7.60452 9.00917 7.72785 8.88583C7.83952 8.775 7.97535 8.59667 8.09952 8.45167C8.22535 8.30833 8.26618 8.205 8.34952 8.03917C8.43202 7.87417 8.39118 7.72917 8.32868 7.605C8.26618 7.48167 7.77118 6.2625 7.56535 5.76667C7.36368 5.28417 7.15952 5.34917 7.00785 5.34167L6.53285 5.33333C6.36785 5.33333 6.09952 5.395 5.87285 5.64333C5.64618 5.89167 5.00618 6.49 5.00618 7.70917C5.00618 8.92833 5.89368 10.1058 6.01702 10.2708C6.14118 10.4358 7.76285 12.9375 10.247 14.01C10.8378 14.265 11.2995 14.4175 11.6587 14.5317C12.252 14.72 12.792 14.6933 13.2187 14.63C13.6945 14.5592 14.6837 14.0308 14.8904 13.4525C15.097 12.8733 15.097 12.3775 15.0345 12.2742Z" fill="#FFD066"></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_150_52027">
-																		<rect width="20" height="20" fill="white"></rect>
-																	</clipPath>
-																</defs>
-															</svg><span>WhatsApp</span></a><a class="faq-socials__item" href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="bg" d="M1.22615 7.90355L13.1395 2.85766C14.3155 2.33205 18.3036 0.650082 18.3036 0.650082C18.3036 0.650082 20.1443 -0.0857776 19.9909 1.70131C19.9398 2.43717 19.5307 5.01267 19.1217 7.79843L17.8435 16.0506C17.8435 16.0506 17.7412 17.2595 16.872 17.4697C16.0028 17.68 14.5711 16.7339 14.3155 16.5236C14.111 16.3659 10.4807 14.0007 9.15133 12.8443C8.79341 12.529 8.38437 11.8982 9.20246 11.1624C11.0431 9.42783 13.2417 7.27281 14.5711 5.90622C15.1847 5.27548 15.7982 3.80376 13.2417 5.59085L6.03238 10.5842C6.03238 10.5842 5.2143 11.1098 3.6804 10.6367C2.14649 10.1637 0.356936 9.53295 0.356936 9.53295C0.356936 9.53295 -0.870188 8.74453 1.22615 7.90355Z" fill="#FFD066"></path>
-															</svg><span>Телеграм</span></a></div>
-												</div>
-												<div>
-													<div class="order1-contacts__title">Позвоните или напишите на почту</div>
-													<ul class="dot-list">
-														<li><a href="tel:84997559790">8 499 755-97-90</a></li>
-														<li><a href="mailto:zakaz@gurmanych.ru">zakaz@gurmanych.ru</a></li>
-													</ul>
-												</div>
-											</div>
-										</div><button class="button button--green-border order1-repeat" data-fancy-button="repeat-order"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.61008 5.08002C10.4801 4.82002 11.4401 4.65002 12.5001 4.65002C17.2901 4.65002 21.1701 8.53002 21.1701 13.32C21.1701 18.11 17.2901 21.99 12.5001 21.99C7.71008 21.99 3.83008 18.11 3.83008 13.32C3.83008 11.54 4.37008 9.88002 5.29008 8.50002" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.32L11.2601 2" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												<path d="M8.37012 5.31995L11.7401 7.77995" stroke="#14362A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg><span>Повторить заказ</span></button>
 									</div>
 								</div>
 							</div>
-							<div class="loyalty-page__list-more" data-aos="fade-up"><button class="button button--green-border full-width">Показать еще</button></div>
+							<div class="holidays-block__btn"><button class="button button--green" data-modal-btn="holidays">Добавить дату</button></div>
 						</div>
 					</div>
 					<section class="subscribe" data-aos="fade-up">
@@ -1960,13 +1244,6 @@
 					<div class="review-modal__text">
 						<p class="review-card__text">В этом году мы съездили на выставку, на которой нашли новых партнеров. Выставки для нас это всегда праздник...</p>
 					</div>
-				</div>
-			</div>
-			<div class="modal success-modal" id="fancy-modal-repeat-order">
-				<div class="modal__wrapper"><img class="repeat-order-img" src="assets/images/repeat-order.jpg" alt="">
-					<h2 class="bitter-heading modal__title">Готово</h2>
-					<div class="modal__text">Ваш заказ собран и добавлен в корзину.</div>
-					<div class="success-modal__buttons"><button class="button button--green-border" data-fancybox-close><span>Закрыть</span></button><a class="button button--red"><span>В корзину</span></a></div>
 				</div>
 			</div>
 		</div>
